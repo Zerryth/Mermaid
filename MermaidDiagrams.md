@@ -98,5 +98,10 @@ merge newbranch
       BFS-->>Your Bot: 200 OK
       Your Bot-->>-BFS: 200 OK
 ```
+## 1
+
+![test](./mermaid-diagram-20191125142523.svg)
+
+## 2
 
 <img src="./mermaid-diagram-20191125142523.svg">
