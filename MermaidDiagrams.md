@@ -104,6 +104,5 @@ merge newbranch
 
 ```mermaid
 classDiagram
-    class Animal
-    Vehicle <|-- Car
+    Dialog <|-- Prompt
 ```
