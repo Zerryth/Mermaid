@@ -102,6 +102,8 @@ merge newbranch
 
 ![test](./mermaid-diagram-20191125142523.svg)
 
-## 2
-
-<img src="./mermaid-diagram-20191125142523.svg">
+```mermaid
+classDiagram
+    class Animal
+    Vehicle <|-- Car
+```
