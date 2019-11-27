@@ -26,7 +26,7 @@ ____
 ### Prompt Class Diagram
 Abbreviated work by only showing details of NumberPrompt class out of the subclasses of Prompt class.
 
-![Prompt Class Diagram](GraphSVGs/PromptClassDiagram.svg "Prompt Class Diagram")
+![Prompt Class Diagram](GraphSVGs/CorrectedPromptClassDiagram.svg "Prompt Class Diagram")
 
 ### ChoicePrompt Association
 ![ChoicePrompt Association](GraphSVGs/ChoicePromptAssociation.svg "ChoicePrompt Association")
