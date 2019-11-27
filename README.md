@@ -49,11 +49,16 @@ ___
     * Allows you to write inside Markdown fenced code block, using Markdown-like syntax to create diagrams
     * From the Mermaid syntax, you can then create svg, png, or pdf files
 * (The *sort of* good): GitHub-friendly, because the file types you can create from Mermaid can play nicely with GitHub
+* From their GH
+    > "The most exciting use of technology" - [JS Open Source Awards (2019)](https://osawards.com/javascript/#nominees)
+* Open Source with 116 contributors
+    * To compare, botbuilder-dotnet has 114 contributors (11/27/19)
 
 ### The bad?
 * Not directly GitHub-friendly
     * GH does not directly render Mermaid syntax into graphs
         * Whereas other sites like GitLab do have Mermaid baked-in
+        * In turn, cannot directly edit diagrams on GH
 * (The *maybe* bad): when you want to create a structural model, Mermaid is a bit more limited in how much detail you can put in
     * Asynchronicity?
     * Denoting types?
