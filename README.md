@@ -16,6 +16,9 @@ Clone of diagram from documentation on [Managing state](https://docs.microsoft.c
 
 ![State Sequence](GraphSVGs/StateSequence.svg "State Sequence Diagram")
 
+> This diagram illustrates parts of the interaction sequence between these layers, with the solid arrows representing a method call, and the dashed arrows representing the response (with or without a return value).
+
+
 ____
 
 ## Class Diagrams
@@ -36,5 +39,5 @@ ____
 
 2. Went to mermaid's [live editor](https://mermaidjs.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbkFbQ2hyaXN0bWFzXSAtLT58R2V0IG1vbmV5fCBCKEdvIHNob3BwaW5nKVxuQiAtLT4gQ3tMZXQgbWUgdGhpbmt9XG5DIC0tPnxPbmV8IERbTGFwdG9wXVxuQyAtLT58VHdvfCBFW2lQaG9uZV1cbkMgLS0-fFRocmVlfCBGW2ZhOmZhLWNhciBDYXJdXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ) to create SVGs of the models coded up in VS Code
     * Note: should dig into using [mermaid CLI](https://github.com/mermaidjs/mermaid.cli) to generate svg/png/pdf files
-    
+
 3. Included SVGs in GH repo to refer to in README
