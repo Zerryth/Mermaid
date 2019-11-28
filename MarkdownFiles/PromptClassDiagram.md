@@ -45,6 +45,6 @@ classDiagram
     Prompt <|-- ConfirmPrompt
     Prompt <|-- DateTimePrompt
     Prompt <|-- NumberPrompt
-    Prompt <|-- OAuthPrompt
+    Dialog <|-- OAuthPrompt
     Prompt <|-- TextPrompt
 ```
