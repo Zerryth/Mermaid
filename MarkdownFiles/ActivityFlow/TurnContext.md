@@ -18,12 +18,6 @@
         }
         <<Interface>> ITurnContext
 
-        class ITurnContextofT {
-            %% where T implements IActivity
-            + Activity Activity
-        }
-        <<Interface>> ITurnContextofT
-
         class TurnContext {
             - IList<SendActivitiesHandler> _onSendActivities
             - IList<UpdateActivityHandler> _onUpdateActivity

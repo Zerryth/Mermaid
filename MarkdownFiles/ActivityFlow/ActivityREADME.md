@@ -5,15 +5,23 @@
 
 ___
 
-### EchoBot's Adapter Hierarchy
-![EchoBot's Adapter Hierarchy](../../GraphSVGs/EchoAdapterHierarchy.svg "Activity Flow C# EchoBot")
-
-___
-
 ### `ProcessAsync()` Flow
 ![Process Async](../../GraphSVGs/ProcessAsync.svg "Activity Flow C# EchoBot")
 
 ___
 
 ### `ProcessActivityAsync()` Flow
-![ProcessActivityAsync](../../GraphSVGs/ProcessActivityAsync.svg "Activity Flow C# EchoBot")
+![ProcessActivityAsync](../../GraphSVGs/ProcessActivityAsync.svg "ProcessActivityAsync")
+
+___
+___
+### *Hierarchies that I looked into in order to better understand and learn about the Activity flow*
+
+### EchoBot's Adapter Class Diagram
+![EchoBot's Adapter Hierarchy](../../GraphSVGs/EchoAdapterHierarchy.svg "EchoBot's Adapter Hierarchy")
+
+### MiddlewareSet Class Diagram
+![MiddlewareSet Class Diagram](../../GraphSVGs/MiddlewareSetClassDiagram.svg "MiddlewareSet Class Diagram")
+
+### TurnContext Class Diagram
+![TurnContext Class Diagram](../../GraphSVGs/TurnContext.svg "TurnContext Class Diagram")
