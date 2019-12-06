@@ -8,7 +8,7 @@
     IsGet -->|No| Deserialize[Deseriliaze Activity]
     subgraph Process the Activity
     Deserialize --> Auth[Grab auth header from inbound request]
-    Auth --> ProcessActivityAsync["BotFrameworkAdatper.ProcessActivity()"]
+    Auth --> ProcessActivityAsync["BotFrameworkAdapter.ProcessActivityAsync()"]
     end
     ProcessActivityAsync --> WriteResponse
     ConnectWebSocket --> Stop
