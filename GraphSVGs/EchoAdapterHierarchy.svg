@@ -1,0 +1,494 @@
+<svg id="mermaid-1575649323296" width="1671.5" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="-10 -10 1121 1049"><style>
+
+
+
+#mermaid-1575649323296 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1575649323296 .label text {
+  fill: #333; }
+
+#mermaid-1575649323296 .node rect,
+#mermaid-1575649323296 .node circle,
+#mermaid-1575649323296 .node ellipse,
+#mermaid-1575649323296 .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1575649323296 .node .label {
+  text-align: center; }
+
+#mermaid-1575649323296 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1575649323296 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1575649323296 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1575649323296 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1575649323296 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1575649323296 .cluster text {
+  fill: #333; }
+
+#mermaid-1575649323296 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1575649323296 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1575649323296 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1575649323296 .actor-line {
+  stroke: grey; }
+
+#mermaid-1575649323296 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1575649323296 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1575649323296 #arrowhead {
+  fill: #333; }
+
+#mermaid-1575649323296 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1575649323296 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1575649323296 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1575649323296 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1575649323296 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1575649323296 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1575649323296 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1575649323296 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1575649323296 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1575649323296 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1575649323296 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1575649323296 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1575649323296 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1575649323296 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1575649323296 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1575649323296 .section2 {
+  fill: #fff400; }
+
+#mermaid-1575649323296 .section1,
+#mermaid-1575649323296 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1575649323296 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1575649323296 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1575649323296 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1575649323296 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1575649323296 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1575649323296 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+#mermaid-1575649323296   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1575649323296 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1575649323296 .task {
+  stroke-width: 2; }
+
+#mermaid-1575649323296 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1575649323296 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1575649323296 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1575649323296 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1575649323296 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1575649323296 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1575649323296 .taskText0,
+#mermaid-1575649323296 .taskText1,
+#mermaid-1575649323296 .taskText2,
+#mermaid-1575649323296 .taskText3 {
+  fill: white; }
+
+#mermaid-1575649323296 .task0,
+#mermaid-1575649323296 .task1,
+#mermaid-1575649323296 .task2,
+#mermaid-1575649323296 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1575649323296 .taskTextOutside0,
+#mermaid-1575649323296 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1575649323296 .taskTextOutside1,
+#mermaid-1575649323296 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1575649323296 .active0,
+#mermaid-1575649323296 .active1,
+#mermaid-1575649323296 .active2,
+#mermaid-1575649323296 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1575649323296 .activeText0,
+#mermaid-1575649323296 .activeText1,
+#mermaid-1575649323296 .activeText2,
+#mermaid-1575649323296 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1575649323296 .done0,
+#mermaid-1575649323296 .done1,
+#mermaid-1575649323296 .done2,
+#mermaid-1575649323296 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1575649323296 .doneText0,
+#mermaid-1575649323296 .doneText1,
+#mermaid-1575649323296 .doneText2,
+#mermaid-1575649323296 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1575649323296 .crit0,
+#mermaid-1575649323296 .crit1,
+#mermaid-1575649323296 .crit2,
+#mermaid-1575649323296 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1575649323296 .activeCrit0,
+#mermaid-1575649323296 .activeCrit1,
+#mermaid-1575649323296 .activeCrit2,
+#mermaid-1575649323296 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1575649323296 .doneCrit0,
+#mermaid-1575649323296 .doneCrit1,
+#mermaid-1575649323296 .doneCrit2,
+#mermaid-1575649323296 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1575649323296 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1575649323296 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1575649323296 .doneCritText0,
+#mermaid-1575649323296 .doneCritText1,
+#mermaid-1575649323296 .doneCritText2,
+#mermaid-1575649323296 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1575649323296 .activeCritText0,
+#mermaid-1575649323296 .activeCritText1,
+#mermaid-1575649323296 .activeCritText2,
+#mermaid-1575649323296 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1575649323296 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1575649323296   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1575649323296 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1575649323296 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1575649323296 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1575649323296 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1575649323296 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 .commit-id,
+#mermaid-1575649323296 .commit-msg,
+#mermaid-1575649323296 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575649323296 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1575649323296 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1575649323296 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1575649323296 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575649323296 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1575649323296 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1575649323296 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1575649323296   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1575649323296 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1575649323296 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1575649323296 {
+    color: rgba(0, 0, 0, 0.65);
+    font: ;
+  }</style><g></g><defs><marker id="extensionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 1,7 L18,13 V 1 Z"></path></marker></defs><defs><marker id="extensionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 1,1 V 13 L18,7 Z"></path></marker></defs><defs><marker id="compositionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="compositionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 5,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><g id="classId0" class="classGroup" transform="translate(0,0 )"><rect x="0" y="0" width="271.484375" height="141.84375"></rect><text y="15" x="0"><tspan x="85.03125">«Abstract»</tspan><tspan class="title" dy="10" x="85.03125">BotAdapter</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="271.484375"></line><text x="5" y="42.015625" fill="white" class="classText"><tspan x="5">+ Func&lt;ITurnContext, Exception, Task&gt; OnTurnError</tspan><tspan x="5" dy="10">+ MiddlewareSet MiddlewareSet</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="271.484375"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">+ Use(middleware)</tspan><tspan x="5" dy="10">+ SendActivitiesAsync(turnContext, activities)</tspan><tspan x="5" dy="10">+ UpdateActivityAsync(turnContext, activity)</tspan><tspan x="5" dy="10">+ DeleteActivityAsync(turnContext, reference)</tspan><tspan x="5" dy="10">+ ContinueConversationAsync(botId, reference, callback)</tspan><tspan x="5" dy="10">+ ProcessActivityAsync(identity, activity, callback)</tspan><tspan x="5" dy="10"># RunPipelineAsync(turnContext, callback)</tspan></text></g><g id="classId1" class="classGroup" transform="translate(321.484375,36.0078125 )"><rect x="0" y="0" width="271.484375" height="69.828125"></rect><text y="15" x="0"><tspan x="64.15625">«Interface»</tspan><tspan class="title" dy="10" x="64.15625">IAdapterIntegration</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="271.484375"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="271.484375"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ ProcessActivityAsync(authHeader, activity, callback)</tspan><tspan x="5" dy="10">+ ContinueConversationAsync(botId, reference, callback)</tspan></text></g><g id="classId2" class="classGroup" transform="translate(642.96875,16.0078125 )"><rect x="0" y="0" width="377.8125" height="109.828125"></rect><text y="15" x="0"><tspan x="117.09375">«Interface»</tspan><tspan class="title" dy="10" x="117.09375">IUserTokenProvider</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="377.8125"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="377.8125"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ GetUserTokenAsync(turnContext, connectionName, magicCode)</tspan><tspan x="5" dy="10">+ GetOauthSignInLinkAsync(turnContext, connectionName)</tspan><tspan x="5" dy="10">+ GetOauthSignInLinkAsync(turnContext, connectionName, userId, finalRedirect)</tspan><tspan x="5" dy="10">+ SignOutUserAsync(turnContext, connectionName, userId)</tspan><tspan x="5" dy="10">+ GetTokenStatusAsync(context, userId, includeFilter)</tspan><tspan x="5" dy="10">+ GetAadTokensAsync(context, connectionName, resourceUrls, userId)</tspan></text></g><g id="classId3" class="classGroup" transform="translate(51.89453125,191.84375 )"><rect x="0" y="0" width="503.921875" height="431.84375"></rect><text y="15" x="0"><tspan class="title" x="198.9140625">BotFrameworkAdapter</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="503.921875"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">~ string InvokeResponseKey</tspan><tspan x="5" dy="10">~ string BotIdentityKey</tspan><tspan x="5" dy="10">- HttpClient DefaultHttpClient</tspan><tspan x="5" dy="10">- HttpClient _httpClient</tspan><tspan x="5" dy="10">- RetryPolicy _connectorClientRetryPolicy</tspan><tspan x="5" dy="10">- AppCredentials _appCredentials</tspan><tspan x="5" dy="10">- AuthenticationConfiguration _authCongifuration</tspan><tspan x="5" dy="10">- ConcurrentDictionary&lt;string, AppCredentials&gt; _appCredentialMap</tspan><tspan x="5" dy="10">- ConcurrentDictionary&lt;string, ConnectorClient&gt; _connectorClients</tspan><tspan x="5" dy="10"># ICredentialProvider CredentialProvider</tspan><tspan x="5" dy="10"># IChannelProvider ChannelProvider</tspan><tspan x="5" dy="10"># ILogger Logger</tspan><tspan x="5" dy="10">~ class TenantIdWorkaroundForTeamsMiddleware</tspan></text><line x1="0" y1="159.03125" y2="159.03125" x2="503.921875"></line><text x="5" y="174.03125" fill="white" class="classText"><tspan x="5">+ ContinueConversationAsync(botAppId, reference, callback)</tspan><tspan x="5" dy="10">+ Use(middleware)</tspan><tspan x="5" dy="10">+ ProcessActivityAsync(authHeader, activity, callback)</tspan><tspan x="5" dy="10">+ SendActivitiesAsync(turnContext, activities)</tspan><tspan x="5" dy="10">+ UpdateActivityAsync(turnContext, activity)</tspan><tspan x="5" dy="10">+ DeleteActivityAsync(turnContext, reference)</tspan><tspan x="5" dy="10">+ DeleteConversationMemberAsync(turnContext, memberId)</tspan><tspan x="5" dy="10">+ GetActivityMembersAsync(turnContext, activityId)</tspan><tspan x="5" dy="10">+ GetConversationMembersAsync(turnContext)</tspan><tspan x="5" dy="10">+ GetConversationsAsync(serviceUrl, credentials, continuationToken)</tspan><tspan x="5" dy="10">+ GetConversationsAsync(turnContext, continuationToken)</tspan><tspan x="5" dy="10">+ GetUserTokenAsync(turnContext, connectionName, magicCode)</tspan><tspan x="5" dy="10">+ GetOauthSignInLinkAsync(turnContext, connectionName)</tspan><tspan x="5" dy="10">+ GetOauthSignInLinkAsync(turnContext, connectionName, userId, finalRedirect)</tspan><tspan x="5" dy="10">+ SignOutUserAsync(turnContext, connectionName, userId)</tspan><tspan x="5" dy="10">+ GetTokenStatusAsync(context, userId, includeFilter)</tspan><tspan x="5" dy="10">+ GetAadTokensAsync(context, connectionName, resourceUrls, userId)</tspan><tspan x="5" dy="10">+ CreateConversationAsync(channelId, serviceUrl, credentials, conversationParameters, callback)</tspan><tspan x="5" dy="10">+ CreateConversationAsync(channelId, serviceUrl, credentials, conversationParameters, callback, reference)</tspan><tspan x="5" dy="10"># CreateOAuthApiClientAsync(turnContext)</tspan><tspan x="5" dy="10"># CanProcessOutgoingActivity(activity)</tspan><tspan x="5" dy="10"># ProcessOutgoingActivityAsync(turnContext, activity)</tspan><tspan x="5" dy="10">- CreateConnectorClientAsync(serviceUrl, claimsIdentity)</tspan><tspan x="5" dy="10">- CreateConnectorClient(serviceUrl, appCredentials)</tspan><tspan x="5" dy="10">- GetAppCredentialsAsync(appId, oAuthScope)</tspan><tspan x="5" dy="10">- GetBotAppId(turnContext)</tspan></text></g><g id="classId4" class="classGroup" transform="translate(605.81640625,377.8515625 )"><rect x="0" y="0" width="287.265625" height="59.828125"></rect><text y="15" x="0"><tspan x="52.0703125">«Interface»</tspan><tspan class="title" dy="10" x="52.0703125">IStreamingActivityProcessor</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="287.265625"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="287.265625"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">ProcessStreamingActivityAsync(activity, botCallbackHandler)</tspan></text></g><g id="classId5" class="classGroup" transform="translate(872.53125,704.6953125 )"><rect x="0" y="0" width="228.46875" height="59.828125"></rect><text y="15" x="0"><tspan x="23.796875">«Interface»</tspan><tspan class="title" dy="10" x="23.796875">IBotFrameworkHttpAdapter</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="228.46875"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="228.46875"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ProcessAsync(httpRequest, httpResponse, bot)</tspan></text></g><g id="classId6" class="classGroup" transform="translate(537.515625,673.6875 )"><rect x="0" y="0" width="285.015625" height="121.84375"></rect><text y="15" x="0"><tspan class="title" x="68.4375">BotFrameworkHttpAdapterBase</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="285.015625"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5"># ConnectedBot</tspan><tspan x="5" dy="10"># ClaimsIdentity</tspan><tspan x="5" dy="10"># RequestHandlers</tspan></text><line x1="0" y1="59.03125" y2="59.03125" x2="285.015625"></line><text x="5" y="74.03125" fill="white" class="classText"><tspan x="5">+ ProcessStreamingActivityAsync(activity, callbackHandler)</tspan><tspan x="5" dy="10">+ SendStreamingActivityAsync(activity)</tspan><tspan x="5" dy="10"># CanProcessOutgoingActivity(activity)</tspan><tspan x="5" dy="10"># ProcessOutgoingActivityAsync(activity)</tspan><tspan x="5" dy="10">- CreateStreamingConnectorClient(activity, requestHandler)</tspan></text></g><g id="classId7" class="classGroup" transform="translate(664.24609375,845.53125 )"><rect x="0" y="0" width="338.296875" height="101.84375"></rect><text y="15" x="0"><tspan class="title" x="105.8046875">BotFrameworkHttpAdapter</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="338.296875"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- AuthHeaderName</tspan><tspan x="5" dy="10">- ChannelIdHeaderName</tspan></text><line x1="0" y1="49.03125" y2="49.03125" x2="338.296875"></line><text x="5" y="64.03125" fill="white" class="classText"><tspan x="5">+ ProcessAsync(httpRequest, httpResponse, bot)</tspan><tspan x="5" dy="10">- ConnectWebSocketAsync(bot, httpRequest, httpResponse)</tspan><tspan x="5" dy="10">- AuthenticateRequestAsync(httpRequest, httpResponse)</tspan><tspan x="5" dy="10">- WriteUnauthorizedResponse(headerName, httpRequest, httpResponse)</tspan></text></g><g id="classId8" class="classGroup" transform="translate(767.72265625,997.375 )"><rect x="0" y="0" width="131.34375" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">AdapterWithErrorHandler</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="131.34375"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="131.34375"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><path d="M833.39453125,947.375L833.39453125,951.5416666666666C833.39453125,955.7083333333334,833.39453125,964.0416666666666,833.39453125,972.375C833.39453125,980.7083333333334,833.39453125,989.0416666666666,833.39453125,993.2083333333334L833.39453125,997.375" id="edge8" class="relation" marker-start="url(#extensionStart)"></path><path d="M680.0234375,795.53125L680.0234375,799.6979166666666C680.0234375,803.8645833333334,680.0234375,812.1979166666666,688.440592950367,820.53125C696.8577484007341,828.8645833333334,713.692059301468,837.1979166666666,722.1092147518351,841.3645833333334L730.5263702022021,845.53125" id="edge9" class="relation" marker-start="url(#extensionStart)"></path><path d="M986.765625,764.5234375L986.765625,773.8580729166666C986.765625,783.1927083333334,986.765625,801.8619791666666,978.348469549633,815.36328125C969.9313140992659,828.8645833333334,953.097003198532,837.1979166666666,944.6798477481649,841.3645833333334L936.2626922977979,845.53125" id="edge10" class="relation" marker-start="url(#extensionStart)"></path><path d="M303.85546875,623.6875L303.85546875,627.8541666666666C303.85546875,632.0208333333334,303.85546875,640.3541666666666,342.798828125,653.4160257321381C381.7421875,666.4778847976095,459.62890625,684.268269595219,498.572265625,693.1634619940238L537.515625,702.0586543928285" id="edge11" class="relation" marker-start="url(#extensionStart)"></path><path d="M749.44921875,437.6796875L749.44921875,472.84765625C749.44921875,508.015625,749.44921875,578.3515625,746.082508135949,617.6861979166666C742.7157975218979,657.0208333333334,735.9823762937958,665.3541666666666,732.6156656797448,669.5208333333334L729.2489550656937,673.6875" id="edge12" class="relation" marker-start="url(#extensionStart)"></path><path d="M135.7421875,141.84375L135.7421875,146.01041666666666C135.7421875,150.17708333333334,135.7421875,158.51041666666666,138.64965285659468,166.84375C141.55711821318937,175.17708333333334,147.3720489263787,183.51041666666666,150.2795142829734,187.67708333333334L153.18697963956808,191.84375" id="edge13" class="relation" marker-start="url(#extensionStart)"></path><path d="M457.2265625,105.8359375L457.2265625,116.00390625C457.2265625,126.171875,457.2265625,146.5078125,454.5740585546512,160.84244791666666C451.92155460930235,175.17708333333334,446.61654671860475,183.51041666666666,443.9640427732559,187.67708333333334L441.31153882790716,191.84375" id="edge14" class="relation" marker-start="url(#extensionStart)"></path><path d="M831.875,125.8359375L831.875,132.67057291666666C831.875,139.50520833333334,831.875,153.17447916666666,785.865234375,181.00219977555C739.85546875,208.8299203844333,647.8359375,250.8160907688666,601.826171875,271.8091759610832L555.81640625,292.80226115329987" id="edge15" class="relation" marker-start="url(#extensionStart)"></path></svg>

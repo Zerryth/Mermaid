@@ -77,7 +77,7 @@
 
         BFS ->> Channel: ReplyToActivityWithHttpMessagesAsync()
 
-        Channel -->> Bot: 200 OK
-        Bot -->> Channel: 200 OK
+        BFS -->> Bot: 200 OK
+        Bot -->> BFS: 200 OK
         
 ```
