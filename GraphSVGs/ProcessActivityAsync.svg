@@ -1,0 +1,494 @@
+<svg id="mermaid-1575651940843" width="2523.94140625" xmlns="http://www.w3.org/2000/svg" height="1939.393798828125" viewBox="0 0 2523.94140625 1939.393798828125"><style>
+
+
+
+#mermaid-1575651940843 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1575651940843 .label text {
+  fill: #333; }
+
+#mermaid-1575651940843 .node rect,
+#mermaid-1575651940843 .node circle,
+#mermaid-1575651940843 .node ellipse,
+#mermaid-1575651940843 .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1575651940843 .node .label {
+  text-align: center; }
+
+#mermaid-1575651940843 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1575651940843 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1575651940843 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1575651940843 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1575651940843 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1575651940843 .cluster text {
+  fill: #333; }
+
+#mermaid-1575651940843 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1575651940843 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1575651940843 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1575651940843 .actor-line {
+  stroke: grey; }
+
+#mermaid-1575651940843 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1575651940843 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1575651940843 #arrowhead {
+  fill: #333; }
+
+#mermaid-1575651940843 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1575651940843 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1575651940843 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1575651940843 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1575651940843 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1575651940843 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1575651940843 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1575651940843 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1575651940843 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1575651940843 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1575651940843 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1575651940843 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1575651940843 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1575651940843 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1575651940843 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1575651940843 .section2 {
+  fill: #fff400; }
+
+#mermaid-1575651940843 .section1,
+#mermaid-1575651940843 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1575651940843 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1575651940843 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1575651940843 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1575651940843 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1575651940843 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1575651940843 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+#mermaid-1575651940843   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1575651940843 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1575651940843 .task {
+  stroke-width: 2; }
+
+#mermaid-1575651940843 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1575651940843 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1575651940843 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1575651940843 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1575651940843 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1575651940843 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1575651940843 .taskText0,
+#mermaid-1575651940843 .taskText1,
+#mermaid-1575651940843 .taskText2,
+#mermaid-1575651940843 .taskText3 {
+  fill: white; }
+
+#mermaid-1575651940843 .task0,
+#mermaid-1575651940843 .task1,
+#mermaid-1575651940843 .task2,
+#mermaid-1575651940843 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1575651940843 .taskTextOutside0,
+#mermaid-1575651940843 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1575651940843 .taskTextOutside1,
+#mermaid-1575651940843 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1575651940843 .active0,
+#mermaid-1575651940843 .active1,
+#mermaid-1575651940843 .active2,
+#mermaid-1575651940843 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1575651940843 .activeText0,
+#mermaid-1575651940843 .activeText1,
+#mermaid-1575651940843 .activeText2,
+#mermaid-1575651940843 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1575651940843 .done0,
+#mermaid-1575651940843 .done1,
+#mermaid-1575651940843 .done2,
+#mermaid-1575651940843 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1575651940843 .doneText0,
+#mermaid-1575651940843 .doneText1,
+#mermaid-1575651940843 .doneText2,
+#mermaid-1575651940843 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1575651940843 .crit0,
+#mermaid-1575651940843 .crit1,
+#mermaid-1575651940843 .crit2,
+#mermaid-1575651940843 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1575651940843 .activeCrit0,
+#mermaid-1575651940843 .activeCrit1,
+#mermaid-1575651940843 .activeCrit2,
+#mermaid-1575651940843 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1575651940843 .doneCrit0,
+#mermaid-1575651940843 .doneCrit1,
+#mermaid-1575651940843 .doneCrit2,
+#mermaid-1575651940843 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1575651940843 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1575651940843 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1575651940843 .doneCritText0,
+#mermaid-1575651940843 .doneCritText1,
+#mermaid-1575651940843 .doneCritText2,
+#mermaid-1575651940843 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1575651940843 .activeCritText0,
+#mermaid-1575651940843 .activeCritText1,
+#mermaid-1575651940843 .activeCritText2,
+#mermaid-1575651940843 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1575651940843 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1575651940843   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1575651940843 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1575651940843 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1575651940843 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1575651940843 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1575651940843 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 .commit-id,
+#mermaid-1575651940843 .commit-msg,
+#mermaid-1575651940843 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1575651940843 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1575651940843 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1575651940843 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1575651940843 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1575651940843 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1575651940843 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1575651940843 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1575651940843   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1575651940843 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1575651940843 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1575651940843 {
+    color: rgba(0, 0, 0, 0.65);
+    font: ;
+  }</style><g transform="translate(0, 0)"><g class="output"><g class="clusters"><g class="cluster" id="CallMiddleware" transform="translate(1262.001953125,969.6968688964844)" style="opacity: 1;"><rect width="2091.59765625" height="1923.3937377929688" x="-1045.798828125" y="-961.6968688964844"></rect><g class="label" transform="translate(0, -947.6968994140625)" id="mermaid-1575651940843Text"><g transform="translate(-48.28125,-13.125)"><foreignObject width="96.5625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Run Pipeline</div></foreignObject></g></g></g><g class="cluster" id="subGraph0" transform="translate(1323.876953125,1350.8562316894531)" style="opacity: 1;"><rect width="1695.25390625" height="866.0750122070312" x="-847.626953125" y="-433.0375061035156"></rect><g class="label" transform="translate(0, -419.0375061035156)" id="mermaid-1575651940843Text"><g transform="translate(-53.140625,-13.125)"><foreignObject width="106.2890625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Run Bot Logic</div></foreignObject></g></g></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M94.6015625,1312.7312316894531L94.6015625,1578.2687377929688L94.6015625,1616.3937377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead837)" style="fill:none"></path><defs><marker id="arrowhead837" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M94.6015625,1662.6437377929688L94.6015625,1687.6437377929688L94.6015625,1712.6437377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead838)" style="fill:none"></path><defs><marker id="arrowhead838" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M181.203125,1753.471263925373L330.03125,1783.8937377929688L330.03125,1822.0187377929688L727.7312469482422,1873.800527891908" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead839)" style="fill:none"></path><defs><marker id="arrowhead839" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M873.1687469482422,1880.066832095629L2191.50390625,1822.0187377929688L2191.50390625,1783.8937377929688L2191.50390625,1735.7687377929688L2191.50390625,1687.6437377929688L2191.50390625,1639.5187377929688L2191.50390625,1578.2687377929688L2191.50390625,1289.6062316894531L2191.50390625,1014.0687255859375L2191.50390625,965.9437255859375L2191.50390625,917.8187255859375L2191.50390625,879.6937255859375L2191.50390625,703.3835754394531L2191.50390625,527.0734252929688L1525.0182712788508,316.31298482466485" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead840)" style="fill:none"></path><defs><marker id="arrowhead840" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1175.5979166388354,313.1635355353199L443.859375,527.0734252929688L443.859375,703.3835754394531L443.859375,879.6937255859375L443.859375,917.8187255859375L443.859375,965.9437255859375L443.859375,1014.0687255859375L443.859375,1289.6062316894531L443.859375,1578.2687377929688L443.859375,1639.5187377929688L443.859375,1687.6437377929688L443.859375,1735.7687377929688L443.859375,1783.8937377929688L443.859375,1822.0187377929688L727.7312469482422,1870.7781585030107" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead841)" style="fill:none"></path><defs><marker id="arrowhead841" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1351.8828124999998,489.44843139648435L1351.3828125,527.0734252929688L1351.8828125,565.6984313964847" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead842)" style="fill:none"></path><defs><marker id="arrowhead842" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1351.8828125,842.0687316894529L1351.3828125,879.6937255859375L1351.3828125,917.8187255859375L1351.3828125,942.8187255859375" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead843)" style="fill:none"></path><defs><marker id="arrowhead843" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1351.3828125,989.0687255859375L1351.3828125,1014.0687255859375L1351.8828125,1039.5687316894537" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead844)" style="fill:none"></path><defs><marker id="arrowhead844" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1176.5822305856252,1365.343149775078L678.8046875,1578.2687377929688L678.8046875,1616.3937377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead845)" style="fill:none"></path><defs><marker id="arrowhead845" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1214.0126033872516,1402.7735225767046L998.1484375,1578.2687377929688L998.1484375,1616.3937377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead846)" style="fill:none"></path><defs><marker id="arrowhead846" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1351.8828125,1540.6437194824227L1351.3828125,1578.2687377929688L1351.3828125,1616.3937377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead847)" style="fill:none"></path><defs><marker id="arrowhead847" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1478.7715898257507,1413.7549421566723L1647.609375,1578.2687377929688L1647.609375,1616.3937377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead848)" style="fill:none"></path><defs><marker id="arrowhead848" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1520.8457851725057,1371.6807468099166L1949.28125,1578.2687377929688L1949.28125,1616.3937377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead849)" style="fill:none"></path><defs><marker id="arrowhead849" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M678.8046875,1662.6437377929688L678.8046875,1687.6437377929688L1071.671875,1718.2917865626457" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead850)" style="fill:none"></path><defs><marker id="arrowhead850" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M998.1484375,1662.6437377929688L998.1484375,1687.6437377929688L1152.7223011363635,1712.6437377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead851)" style="fill:none"></path><defs><marker id="arrowhead851" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1351.3828125,1662.6437377929688L1351.3828125,1687.6437377929688L1322.458299512987,1712.6437377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead852)" style="fill:none"></path><defs><marker id="arrowhead852" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1647.609375,1662.6437377929688L1647.609375,1687.6437377929688L1464.8009334415585,1712.6437377929688" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead853)" style="fill:none"></path><defs><marker id="arrowhead853" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1949.28125,1662.6437377929688L1949.28125,1687.6437377929688L1519.734375,1719.2726166808218" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead854)" style="fill:none"></path><defs><marker id="arrowhead854" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1295.703125,1758.8937377929688L1295.703125,1783.8937377929688L1295.703125,1822.0187377929688L873.1687469482422,1874.275309614087" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead855)" style="fill:none"></path><defs><marker id="arrowhead855" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1467.395443759031,726.5561126374527L2249.65234375,879.6937255859375L2249.65234375,917.8187255859375L2343.0127333603896,942.8187255859375" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead856)" style="fill:none"></path><defs><marker id="arrowhead856" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M2429.37109375,989.0687255859375L2429.37109375,1014.0687255859375L2429.37109375,1266.4812316894531" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead857)" style="fill:none"></path><defs><marker id="arrowhead857" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(330.03125,1822.0187377929688)" style="opacity: 1;"><g transform="translate(-93.828125,-13.125)" class="label"><foreignObject width="187.65625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Passing the TurnContext</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(443.859375,1289.6062316894531)" style="opacity: 1;"><g transform="translate(-12.390625,-13.125)" class="label"><foreignObject width="24.78515625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Yes</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1351.3828125,527.0734252929688)" style="opacity: 1;"><g transform="translate(-10.28125,-13.125)" class="label"><foreignObject width="20.56640625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1351.3828125,879.6937255859375)" style="opacity: 1;"><g transform="translate(-31.2265625,-13.125)" class="label"><foreignObject width="62.4609375" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Inbound</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(678.8046875,1578.2687377929688)" style="opacity: 1;"><g transform="translate(-40.4375,-13.125)" class="label"><foreignObject width="80.87890625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Is Message</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(998.1484375,1578.2687377929688)" style="opacity: 1;"><g transform="translate(-87.625,-13.125)" class="label"><foreignObject width="175.25390625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Is ConversationUpdate</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1351.3828125,1578.2687377929688)" style="opacity: 1;"><g transform="translate(-76.9609375,-13.125)" class="label"><foreignObject width="153.92578125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Is Message Reaction</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1647.609375,1578.2687377929688)" style="opacity: 1;"><g transform="translate(-30.609375,-13.125)" class="label"><foreignObject width="61.23046875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Is Event</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1949.28125,1578.2687377929688)" style="opacity: 1;"><g transform="translate(-115.0625,-13.125)" class="label"><foreignObject width="230.13671875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Is Unrecognized Activity Type</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(2249.65234375,879.6937255859375)" style="opacity: 1;"><g transform="translate(-38.1484375,-13.125)" class="label"><foreignObject width="76.30859375" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Outbound</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="HasMiddlewareInQueue" transform="translate(1351.3828125,260.9742126464844)" style="opacity: 1;"><polygon points="227.97421875,0 455.9484375,-227.97421875 227.97421875,-455.9484375 0,-227.97421875" transform="translate(-227.97421875,227.97421875)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-220.1796875,-13.125)"><foreignObject width="440.37109375" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Are there any remaining Middlewares to run in pipeline?</div></foreignObject></g></g></g><g class="node" id="Middleware" transform="translate(800.4499969482422,1883.2687377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-72.71875" y="-23.125" width="145.4375" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-62.71875,-13.125)"><foreignObject width="125.44921875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Call Middleware</div></foreignObject></g></g></g><g class="node" id="InOrOut" transform="translate(1351.3828125,703.3835754394531)" style="opacity: 1;"><polygon points="138.18515625,0 276.3703125,-138.18515625 138.18515625,-276.3703125 0,-138.18515625" transform="translate(-138.18515625,138.18515625)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-120.4140625,-13.125)"><foreignObject width="240.83984375" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Inbound Message or Outbound?</div></foreignObject></g></g></g><g class="node" id="BotLogic" transform="translate(1351.3828125,965.9437255859375)" style="opacity: 1;"><rect rx="0" ry="0" x="-128.9453125" y="-23.125" width="257.890625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-118.9453125,-13.125)"><foreignObject width="237.890625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">ActivityHandler.OnTurnAsync()</div></foreignObject></g></g></g><g class="node" id="SendActivity" transform="translate(1295.703125,1735.7687377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-224.03125" y="-23.125" width="448.0625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-214.03125,-13.125)"><foreignObject width="428.06640625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">TurnContext.SendActivity() to send outbound response</div></foreignObject></g></g></g><g class="node" id="CorrespondingActivityHandler" transform="translate(1351.3828125,1289.6062316894531)" style="opacity: 1;"><polygon points="250.5375,0 501.075,-250.5375 250.5375,-501.075 0,-250.5375" transform="translate(-250.5375,250.5375)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-245.25,-13.125)"><foreignObject width="490.5078125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Run corresponding Activity handler depending on Activity type</div></foreignObject></g></g></g><g class="node" id="OnMessage" transform="translate(678.8046875,1639.5187377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-111.078125" y="-23.125" width="222.15625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-101.078125,-13.125)"><foreignObject width="202.16796875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OnMessageActivityAsync()</div></foreignObject></g></g></g><g class="node" id="OnConversationUpdate" transform="translate(998.1484375,1639.5187377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-158.265625" y="-23.125" width="316.53125" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-148.265625,-13.125)"><foreignObject width="296.54296875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OnConversationUpdateActivityAsync()</div></foreignObject></g></g></g><g class="node" id="OnMessageReaction" transform="translate(1351.3828125,1639.5187377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-144.96875" y="-23.125" width="289.9375" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-134.96875,-13.125)"><foreignObject width="269.94140625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OnMessageReactionActivityAsync()</div></foreignObject></g></g></g><g class="node" id="OnEvent" transform="translate(1647.609375,1639.5187377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-101.2578125" y="-23.125" width="202.515625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-91.2578125,-13.125)"><foreignObject width="182.51953125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OnEventActivityAsync()</div></foreignObject></g></g></g><g class="node" id="OnUncrecognizedActivityType" transform="translate(1949.28125,1639.5187377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-150.4140625" y="-23.125" width="300.828125" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-140.4140625,-13.125)"><foreignObject width="280.83984375" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OnUnrecognizedActivityTypeAsync()</div></foreignObject></g></g></g><g class="node" id="Start" transform="translate(94.6015625,1289.6062316894531)" style="opacity: 1;"><rect rx="0" ry="0" x="-29.1484375" y="-23.125" width="58.296875" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-19.1484375,-13.125)"><foreignObject width="38.30078125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Start</div></foreignObject></g></g></g><g class="node" id="ReceiveActivity" transform="translate(94.6015625,1639.5187377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-72.828125" y="-23.125" width="145.65625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-62.828125,-13.125)"><foreignObject width="125.6640625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Receive Activity</div></foreignObject></g></g></g><g class="node" id="CreateTC" transform="translate(94.6015625,1735.7687377929688)" style="opacity: 1;"><rect rx="0" ry="0" x="-86.6015625" y="-23.125" width="173.203125" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-76.6015625,-13.125)"><foreignObject width="153.203125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Create TurnContext</div></foreignObject></g></g></g><g class="node" id="ReturnResponse" transform="translate(2429.37109375,965.9437255859375)" style="opacity: 1;"><rect rx="0" ry="0" x="-86.5703125" y="-23.125" width="173.140625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-76.5703125,-13.125)"><foreignObject width="153.14453125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Return Response ...</div></foreignObject></g></g></g><g class="node" id="Stop" transform="translate(2429.37109375,1289.6062316894531)" style="opacity: 1;"><rect rx="0" ry="0" x="-27.25" y="-23.125" width="54.5" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-17.25,-13.125)"><foreignObject width="34.51171875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Stop</div></foreignObject></g></g></g></g></g></g></svg>

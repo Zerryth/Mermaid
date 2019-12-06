@@ -10,3 +10,10 @@ ___
 
 ___
 
+### `ProcessAsync()` Flow
+![Process Async](../../GraphSVGs/ProcessAsync.svg "Activity Flow C# EchoBot")
+
+___
+
+### `ProcessActivityAsync()` Flow
+![ProcessActivityAsync](../../GraphSVGs/ProcessActivityAsync.svg "Activity Flow C# EchoBot")
