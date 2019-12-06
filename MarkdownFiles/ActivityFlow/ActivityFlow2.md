@@ -89,8 +89,8 @@
 
         BFS ->> Channel: ReplyToActivityWithHttpMessagesAsync()
 
-        BFS -->> Bot: 200 OK
-        Bot -->> BFS: 200 OK
+        Channel -->> Bot: 200 OK
+        Bot -->> Channel: 200 OK
 
         deactivate TurnContext
         deactivate Bot
