@@ -16,18 +16,27 @@
         participant ActivityHandler
         participant Bot
 
+        activate Channel
+
         Channel ->> BFS: HTTP POST
+        activate BFS
         Note right of Channel: JSON payload of Activity info
 
         BFS ->> WebServer: HTTP POST
+        activate WebServer
         Note right of BFS: JSON Payload of Activity info
 
         WebServer ->> Adapter: PostAsync()
+        activate Adapter
         rect rgba(0, 0, 255, .1)
             Adapter ->> BotFrameworkHttpAdapter: ProcessAsync()
+            activate BotFrameworkHttpAdapter
             BotFrameworkHttpAdapter ->> BotFrameworkAdapter: ProcessAsync()
+            activate BotFrameworkAdapter
             BotFrameworkAdapter ->> BotAdapter : ProcessActivityAsync()
+            activate BotAdapter
             BotAdapter ->> Middleware: RunPipeline()
+            activate Middleware
         end
         Note over Adapter, BotAdapter: Adapter
         loop If uncalled Middleware
@@ -35,9 +44,11 @@
         end
 
         Middleware ->> ActivityHandler: OnTurnAsync()
+        activate ActivityHandler
         Note over Middleware, Bot: Call Turn Handler of Bot registered in Adapter's .ProcessAysnc() call
         alt is Message
                 ActivityHandler ->> Bot: OnMessageAsync()
+                activate Bot
             
             else is ConversationUpdate
                 ActivityHandler ->> Bot: OnConversationUpdateActivityAsync()
@@ -56,6 +67,7 @@
         end
 
         Bot ->> TurnContext: SendActivityAsync()
+        activate TurnContext
 
         alt no callbacks registered
                 TurnContext ->> BotAdapter: SendActivitiesThroughAdapter() calls Adapter.SendActivitiesAsync()
@@ -79,5 +91,17 @@
 
         BFS -->> Bot: 200 OK
         Bot -->> BFS: 200 OK
+
+        deactivate TurnContext
+        deactivate Bot
+        deactivate ActivityHandler
+        deactivate Middleware
+        deactivate BotAdapter
+        deactivate BotFrameworkAdapter
+        deactivate BotFrameworkHttpAdapter
+        deactivate Adapter
+        deactivate WebServer
+        deactivate BFS
+        deactivate Channel
         
 ```
