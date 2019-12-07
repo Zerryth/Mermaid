@@ -56,9 +56,6 @@
             else is MessageReaction
                 ActivityHandler ->> Bot: OnMessageReactionActivityAsync()
             
-            else is Message
-                ActivityHandler ->> Bot: OnMessageAsync()
-            
             else is Event
                 ActivityHandler ->> Bot: OnEventActivityAsync()
             
