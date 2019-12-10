@@ -53,6 +53,8 @@
                 ActivityHandlerBase ->> ActivityHandler: onUnrecognizedActivityType()
         end
 
+        ActivityHandler ->> ActivityHandler: handle()
+
         alt is Message
             ActivityHandler ->> Bot: onMessage()
             activate Bot
@@ -70,9 +72,15 @@
                 ActivityHandler ->> Bot: onUnrecognizedActivityType()
         end
 
-        Bot ->> TurnContext: sendActivity()
+        Bot ->> TurnContext: sendActivity() into sendActivities()
         activate TurnContext
-        TurnContext ->> BotFrameworkAdapter: sendActivities()
+
+        TurnContext ->> Middleware: emit()
+        loop if uncalled _onSendActivites Middleware
+            Middleware ->> Middleware: emitNext()
+        end
+
+        Middleware ->> BotFrameworkAdapter: sendActivities()
         
         alt replying to another activity
             BotFrameworkAdapter ->> BFS: replyToActivity()
