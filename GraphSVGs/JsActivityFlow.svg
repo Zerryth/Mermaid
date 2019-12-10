@@ -1,0 +1,494 @@
+<svg id="mermaid-1576019677365" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" style="max-width:2050px;" viewBox="-50 -10 2050 1789.046875"><style>
+
+
+
+#mermaid-1576019677365 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1576019677365 .label text {
+  fill: #333; }
+
+#mermaid-1576019677365 .node rect,
+#mermaid-1576019677365 .node circle,
+#mermaid-1576019677365 .node ellipse,
+#mermaid-1576019677365 .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1576019677365 .node .label {
+  text-align: center; }
+
+#mermaid-1576019677365 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1576019677365 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1576019677365 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1576019677365 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1576019677365 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1576019677365 .cluster text {
+  fill: #333; }
+
+#mermaid-1576019677365 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1576019677365 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1576019677365 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1576019677365 .actor-line {
+  stroke: grey; }
+
+#mermaid-1576019677365 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1576019677365 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1576019677365 #arrowhead {
+  fill: #333; }
+
+#mermaid-1576019677365 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1576019677365 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1576019677365 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1576019677365 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1576019677365 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1576019677365 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1576019677365 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1576019677365 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1576019677365 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1576019677365 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1576019677365 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1576019677365 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1576019677365 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1576019677365 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1576019677365 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1576019677365 .section2 {
+  fill: #fff400; }
+
+#mermaid-1576019677365 .section1,
+#mermaid-1576019677365 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1576019677365 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1576019677365 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1576019677365 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1576019677365 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1576019677365 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1576019677365 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+#mermaid-1576019677365   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1576019677365 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1576019677365 .task {
+  stroke-width: 2; }
+
+#mermaid-1576019677365 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1576019677365 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1576019677365 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1576019677365 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1576019677365 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1576019677365 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1576019677365 .taskText0,
+#mermaid-1576019677365 .taskText1,
+#mermaid-1576019677365 .taskText2,
+#mermaid-1576019677365 .taskText3 {
+  fill: white; }
+
+#mermaid-1576019677365 .task0,
+#mermaid-1576019677365 .task1,
+#mermaid-1576019677365 .task2,
+#mermaid-1576019677365 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1576019677365 .taskTextOutside0,
+#mermaid-1576019677365 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1576019677365 .taskTextOutside1,
+#mermaid-1576019677365 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1576019677365 .active0,
+#mermaid-1576019677365 .active1,
+#mermaid-1576019677365 .active2,
+#mermaid-1576019677365 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1576019677365 .activeText0,
+#mermaid-1576019677365 .activeText1,
+#mermaid-1576019677365 .activeText2,
+#mermaid-1576019677365 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1576019677365 .done0,
+#mermaid-1576019677365 .done1,
+#mermaid-1576019677365 .done2,
+#mermaid-1576019677365 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1576019677365 .doneText0,
+#mermaid-1576019677365 .doneText1,
+#mermaid-1576019677365 .doneText2,
+#mermaid-1576019677365 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1576019677365 .crit0,
+#mermaid-1576019677365 .crit1,
+#mermaid-1576019677365 .crit2,
+#mermaid-1576019677365 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1576019677365 .activeCrit0,
+#mermaid-1576019677365 .activeCrit1,
+#mermaid-1576019677365 .activeCrit2,
+#mermaid-1576019677365 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1576019677365 .doneCrit0,
+#mermaid-1576019677365 .doneCrit1,
+#mermaid-1576019677365 .doneCrit2,
+#mermaid-1576019677365 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1576019677365 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1576019677365 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1576019677365 .doneCritText0,
+#mermaid-1576019677365 .doneCritText1,
+#mermaid-1576019677365 .doneCritText2,
+#mermaid-1576019677365 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1576019677365 .activeCritText0,
+#mermaid-1576019677365 .activeCritText1,
+#mermaid-1576019677365 .activeCritText2,
+#mermaid-1576019677365 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1576019677365 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1576019677365   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1576019677365 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1576019677365 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1576019677365 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1576019677365 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1576019677365 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 .commit-id,
+#mermaid-1576019677365 .commit-msg,
+#mermaid-1576019677365 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1576019677365 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1576019677365 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1576019677365 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1576019677365 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1576019677365 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1576019677365 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1576019677365 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1576019677365   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1576019677365 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1576019677365 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1576019677365 {
+    color: rgba(0, 0, 0, 0.65);
+    font: ;
+  }</style><g></g><g><line id="actor10" x1="75" y1="5" x2="75" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">Channel</tspan></text></g><g><line id="actor11" x1="275" y1="5" x2="275" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">Bot Framework Service</tspan></text></g><g><line id="actor12" x1="475" y1="5" x2="475" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="400" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">Web Server</tspan></text></g><g><line id="actor13" x1="675" y1="5" x2="675" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="600" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">BotFrameworkAdapter</tspan></text></g><g><line id="actor14" x1="875" y1="5" x2="875" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="800" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">BotAdapter</tspan></text></g><g><line id="actor15" x1="1075" y1="5" x2="1075" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1000" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Middleware</tspan></text></g><g><line id="actor16" x1="1275" y1="5" x2="1275" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">TurnContext</tspan></text></g><g><line id="actor17" x1="1475" y1="5" x2="1475" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1400" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1475" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1475" dy="0">ActivityHandler</tspan></text></g><g><line id="actor18" x1="1675" y1="5" x2="1675" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1600" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1675" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1675" dy="0">ActivityHandlerBase</tspan></text></g><g><line id="actor19" x1="1875" y1="5" x2="1875" y2="1778.046875" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1800" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1875" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1875" dy="0">Bot</tspan></text></g><defs><marker id="arrowhead" refX="5" refY="2" markerWidth="6" markerHeight="4" orient="auto"><path d="M 0,0 V 4 L6,2 Z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="16" refY="4"><path fill="black" stroke="#000000" stroke-width="1px" d="M 9,2 V 6 L16,4 Z" style="stroke-dasharray: 0, 0;"></path><path fill="none" stroke="#000000" stroke-width="1px" d="M 0,1 L 6,7 M 6,1 L 0,7" style="stroke-dasharray: 0, 0;"></path></marker></defs><defs><marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto"><circle cx="15" cy="15" r="6"></circle></marker></defs><g><rect x="400" y="75" fill="#EDF2AE" stroke="#666" width="150" height="36.015625" rx="0" ry="0" class="note"></rect><text x="396" y="99" class="noteText"><tspan x="416">Restify or Express</tspan></text></g><g><rect x="70" y="113.015625" fill="#EDF2AE" stroke="#666" width="10" height="1580.03125" rx="0" ry="0" class="activation0"></rect></g><g><text x="177.5" y="139.015625" class="messageText" style="text-anchor: middle;">HTTP POST</text><line x1="80" y1="146.015625" x2="275" y2="146.015625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="270" y="148.015625" fill="#EDF2AE" stroke="#666" width="10" height="1545.03125" rx="0" ry="0" class="activation0"></rect></g><g><rect x="100" y="156.015625" fill="#EDF2AE" stroke="#666" width="150" height="36.015625" rx="0" ry="0" class="note"></rect><text x="96" y="180.015625" class="noteText"><tspan x="116">JSON payload of Activity info</tspan></text></g><g><text x="377.5" y="220.03125" class="messageText" style="text-anchor: middle;">HTTP POST</text><line x1="280" y1="227.03125" x2="475" y2="227.03125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="470" y="229.03125" fill="#EDF2AE" stroke="#666" width="10" height="1464.015625" rx="0" ry="0" class="activation0"></rect></g><g><rect x="300" y="237.03125" fill="#EDF2AE" stroke="#666" width="150" height="36.015625" rx="0" ry="0" class="note"></rect><text x="296" y="261.03125" class="noteText"><tspan x="316">JSON payload of Activity info</tspan></text></g><g><text x="577.5" y="301.046875" class="messageText" style="text-anchor: middle;">post()</text><line x1="480" y1="308.046875" x2="675" y2="308.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="670" y="310.046875" fill="#EDF2AE" stroke="#666" width="10" height="1383" rx="0" ry="0" class="activation0"></rect></g><g><text x="777.5" y="336.046875" class="messageText" style="text-anchor: middle;">processActivity()</text><line x1="680" y1="343.046875" x2="875" y2="343.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="870" y="345.046875" fill="#EDF2AE" stroke="#666" width="10" height="1348" rx="0" ry="0" class="activation0"></rect></g><g><text x="977.5" y="371.046875" class="messageText" style="text-anchor: middle;">runMiddleware()</text><line x1="880" y1="378.046875" x2="1075" y2="378.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1070" y="380.046875" fill="#EDF2AE" stroke="#666" width="10" height="1313" rx="0" ry="0" class="activation0"></rect></g><g><text x="1080" y="431.046875" class="messageText" style="text-anchor: middle;">run(), which recursively calls runNext()</text><path d="M 1080,438.046875 C 1140,428.046875 1140,468.046875 1080,458.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></path></g><g><line x1="946.828125" y1="388.046875" x2="1213.171875" y2="388.046875" class="loopLine"></line><line x1="1213.171875" y1="388.046875" x2="1213.171875" y2="478.046875" class="loopLine"></line><line x1="946.828125" y1="478.046875" x2="1213.171875" y2="478.046875" class="loopLine"></line><line x1="946.828125" y1="388.046875" x2="946.828125" y2="478.046875" class="loopLine"></line><polygon points="946.828125,388.046875 996.828125,388.046875 996.828125,401.046875 988.428125,408.046875 946.828125,408.046875" class="labelBox"></polygon><text x="954.328125" y="403.046875" class="labelText"><tspan x="954.328125">loop</tspan></text><text x="1080" y="403.046875" class="loopText" style="text-anchor: middle;"><tspan x="1080">[ If uncalled Middleware ]</tspan></text></g><g><text x="1277.5" y="506.046875" class="messageText" style="text-anchor: middle;">run()</text><line x1="1080" y1="513.046875" x2="1475" y2="513.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1470" y="515.046875" fill="#EDF2AE" stroke="#666" width="10" height="1178" rx="0" ry="0" class="activation0"></rect></g><g><text x="1577.5" y="541.046875" class="messageText" style="text-anchor: middle;">run()</text><line x1="1480" y1="548.046875" x2="1675" y2="548.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1670" y="550.046875" fill="#EDF2AE" stroke="#666" width="10" height="1143" rx="0" ry="0" class="activation0"></rect></g><g><text x="1680" y="576.046875" class="messageText" style="text-anchor: middle;">onTurnActivity()</text><path d="M 1680,583.046875 C 1740,573.046875 1740,613.046875 1680,603.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></path></g><g><text x="1575" y="666.046875" class="messageText" style="text-anchor: middle;">onMessageActivity()</text><line x1="1670" y1="673.046875" x2="1480" y2="673.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1575" y="721.046875" class="messageText" style="text-anchor: middle;">onConversationUpdateActivity()</text><line x1="1670" y1="728.046875" x2="1480" y2="728.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1575" y="776.046875" class="messageText" style="text-anchor: middle;">onMessageReactionActivity()</text><line x1="1670" y1="783.046875" x2="1480" y2="783.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1575" y="831.046875" class="messageText" style="text-anchor: middle;">onEventActivity()</text><line x1="1670" y1="838.046875" x2="1480" y2="838.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1575" y="886.046875" class="messageText" style="text-anchor: middle;">onUnrecognizedActivityType()</text><line x1="1670" y1="893.046875" x2="1480" y2="893.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><line x1="1460" y1="623.046875" x2="1690" y2="623.046875" class="loopLine"></line><line x1="1690" y1="623.046875" x2="1690" y2="903.046875" class="loopLine"></line><line x1="1460" y1="903.046875" x2="1690" y2="903.046875" class="loopLine"></line><line x1="1460" y1="623.046875" x2="1460" y2="903.046875" class="loopLine"></line><line x1="1460" y1="683.046875" x2="1690" y2="683.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><line x1="1460" y1="738.046875" x2="1690" y2="738.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><line x1="1460" y1="793.046875" x2="1690" y2="793.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><line x1="1460" y1="848.046875" x2="1690" y2="848.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><polygon points="1460,623.046875 1510,623.046875 1510,636.046875 1501.6,643.046875 1460,643.046875" class="labelBox"></polygon><text x="1467.5" y="638.046875" class="labelText"><tspan x="1467.5">alt</tspan></text><text x="1575" y="638.046875" class="loopText" style="text-anchor: middle;"><tspan x="1575">[ is Message ]</tspan></text><text x="1575" y="698.046875" class="loopText" style="text-anchor: middle;"><tspan x="1575">[ is ConversationUpdate ]</tspan></text><text x="1575" y="753.046875" class="loopText" style="text-anchor: middle;"><tspan x="1575">[ is MessageReaction ]</tspan></text><text x="1575" y="808.046875" class="loopText" style="text-anchor: middle;"><tspan x="1575">[ is Event ]</tspan></text><text x="1575" y="863.046875" class="loopText" style="text-anchor: middle;"><tspan x="1575">[ is Unreognized Activity Type ]</tspan></text></g><g><text x="1480" y="931.046875" class="messageText" style="text-anchor: middle;">handle()</text><path d="M 1480,938.046875 C 1540,928.046875 1540,968.046875 1480,958.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></path></g><g><text x="1677.5" y="1021.046875" class="messageText" style="text-anchor: middle;">onMessage()</text><line x1="1480" y1="1028.046875" x2="1875" y2="1028.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1870" y="1030.046875" fill="#EDF2AE" stroke="#666" width="10" height="663" rx="0" ry="0" class="activation0"></rect></g><g><text x="1675" y="1076.046875" class="messageText" style="text-anchor: middle;">onConversationUpdateActivity()</text><line x1="1480" y1="1083.046875" x2="1870" y2="1083.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1675" y="1131.046875" class="messageText" style="text-anchor: middle;">onMessageReactionActivity()</text><line x1="1480" y1="1138.046875" x2="1870" y2="1138.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1675" y="1186.046875" class="messageText" style="text-anchor: middle;">onEventActivity()</text><line x1="1480" y1="1193.046875" x2="1870" y2="1193.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1675" y="1241.046875" class="messageText" style="text-anchor: middle;">onUnrecognizedActivityType()</text><line x1="1480" y1="1248.046875" x2="1870" y2="1248.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><line x1="1460" y1="978.046875" x2="1890" y2="978.046875" class="loopLine"></line><line x1="1890" y1="978.046875" x2="1890" y2="1258.046875" class="loopLine"></line><line x1="1460" y1="1258.046875" x2="1890" y2="1258.046875" class="loopLine"></line><line x1="1460" y1="978.046875" x2="1460" y2="1258.046875" class="loopLine"></line><line x1="1460" y1="1038.046875" x2="1890" y2="1038.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><line x1="1460" y1="1093.046875" x2="1890" y2="1093.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><line x1="1460" y1="1148.046875" x2="1890" y2="1148.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><line x1="1460" y1="1203.046875" x2="1890" y2="1203.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><polygon points="1460,978.046875 1510,978.046875 1510,991.046875 1501.6,998.046875 1460,998.046875" class="labelBox"></polygon><text x="1467.5" y="993.046875" class="labelText"><tspan x="1467.5">alt</tspan></text><text x="1675" y="993.046875" class="loopText" style="text-anchor: middle;"><tspan x="1675">[ is Message ]</tspan></text><text x="1675" y="1053.046875" class="loopText" style="text-anchor: middle;"><tspan x="1675">[ is ConversationUpdate ]</tspan></text><text x="1675" y="1108.046875" class="loopText" style="text-anchor: middle;"><tspan x="1675">[ is MessageReaction ]</tspan></text><text x="1675" y="1163.046875" class="loopText" style="text-anchor: middle;"><tspan x="1675">[ is Event ]</tspan></text><text x="1675" y="1218.046875" class="loopText" style="text-anchor: middle;"><tspan x="1675">[ is Unreognized Activity Type ]</tspan></text></g><g><text x="1572.5" y="1286.046875" class="messageText" style="text-anchor: middle;">sendActivity() into sendActivities()</text><line x1="1870" y1="1293.046875" x2="1275" y2="1293.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1270" y="1295.046875" fill="#EDF2AE" stroke="#666" width="10" height="398" rx="0" ry="0" class="activation0"></rect></g><g><text x="1175" y="1321.046875" class="messageText" style="text-anchor: middle;">emit()</text><line x1="1270" y1="1328.046875" x2="1080" y2="1328.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="1080" y="1381.046875" class="messageText" style="text-anchor: middle;">emitNext()</text><path d="M 1080,1388.046875 C 1140,1378.046875 1140,1418.046875 1080,1408.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></path></g><g><line x1="970" y1="1338.046875" x2="1190" y2="1338.046875" class="loopLine"></line><line x1="1190" y1="1338.046875" x2="1190" y2="1428.046875" class="loopLine"></line><line x1="970" y1="1428.046875" x2="1190" y2="1428.046875" class="loopLine"></line><line x1="970" y1="1338.046875" x2="970" y2="1428.046875" class="loopLine"></line><polygon points="970,1338.046875 1020,1338.046875 1020,1351.046875 1011.6,1358.046875 970,1358.046875" class="labelBox"></polygon><text x="977.5" y="1353.046875" class="labelText"><tspan x="977.5">loop</tspan></text><text x="1080" y="1353.046875" class="loopText" style="text-anchor: middle;"><tspan x="1080">[ if uncalled _onSendActivites Middleware ]</tspan></text></g><g><text x="875" y="1456.046875" class="messageText" style="text-anchor: middle;">sendActivities()</text><line x1="1070" y1="1463.046875" x2="680" y2="1463.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="475" y="1516.046875" class="messageText" style="text-anchor: middle;">replyToActivity()</text><line x1="670" y1="1523.046875" x2="280" y2="1523.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="475" y="1571.046875" class="messageText" style="text-anchor: middle;">sendToConversation()</text><line x1="670" y1="1578.046875" x2="280" y2="1578.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><line x1="260" y1="1473.046875" x2="690" y2="1473.046875" class="loopLine"></line><line x1="690" y1="1473.046875" x2="690" y2="1588.046875" class="loopLine"></line><line x1="260" y1="1588.046875" x2="690" y2="1588.046875" class="loopLine"></line><line x1="260" y1="1473.046875" x2="260" y2="1588.046875" class="loopLine"></line><line x1="260" y1="1533.046875" x2="690" y2="1533.046875" class="loopLine" style="stroke-dasharray: 3, 3;"></line><polygon points="260,1473.046875 310,1473.046875 310,1486.046875 301.6,1493.046875 260,1493.046875" class="labelBox"></polygon><text x="267.5" y="1488.046875" class="labelText"><tspan x="267.5">alt</tspan></text><text x="475" y="1488.046875" class="loopText" style="text-anchor: middle;"><tspan x="475">[ replying to another activity ]</tspan></text><text x="475" y="1548.046875" class="loopText" style="text-anchor: middle;"><tspan x="475">[ replying to end of conversation ]</tspan></text></g><g><text x="175" y="1616.046875" class="messageText" style="text-anchor: middle;">sendOperationRequest()</text><line x1="270" y1="1623.046875" x2="80" y2="1623.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="975" y="1651.046875" class="messageText" style="text-anchor: middle;">200 OK</text><line x1="80" y1="1658.046875" x2="1870" y2="1658.046875" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="975" y="1686.046875" class="messageText" style="text-anchor: middle;">200 OK</text><line x1="1870" y1="1693.046875" x2="80" y2="1693.046875" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="0" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">Channel</tspan></text></g><g><rect x="200" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">Bot Framework Service</tspan></text></g><g><rect x="400" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">Web Server</tspan></text></g><g><rect x="600" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">BotFrameworkAdapter</tspan></text></g><g><rect x="800" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">BotAdapter</tspan></text></g><g><rect x="1000" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Middleware</tspan></text></g><g><rect x="1200" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">TurnContext</tspan></text></g><g><rect x="1400" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1475" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1475" dy="0">ActivityHandler</tspan></text></g><g><rect x="1600" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1675" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1675" dy="0">ActivityHandlerBase</tspan></text></g><g><rect x="1800" y="1713.046875" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1875" y="1745.546875" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1875" dy="0">Bot</tspan></text></g></svg>

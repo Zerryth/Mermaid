@@ -1,7 +1,11 @@
 ## Activity Flow
 ### *Modeled after the C# EchoBot example code in ['How bots work'](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&tabs=csharp#bot-logic) documentation.*
 
+#### C#:
 ![Activity Flow Diagram](../../GraphSVGs/ActivityFlow2.svg "Activity Flow C# EchoBot")
+
+#### JS:
+![Activity Flow Diagram](../../GraphSVGs/JsActivityFlow.svg "Activity Flow JS EchoBot")
 
 ___
 
