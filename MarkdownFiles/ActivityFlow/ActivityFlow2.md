@@ -7,45 +7,49 @@
         participant BFS as Bot Framework Service
         participant WebServer as Web Server
         Note over WebServer: ASP.NET BotController
+        participant Connector
         participant Adapter as AdapterWithErrorHandler
         participant BotFrameworkHttpAdapter
         participant BotFrameworkAdapter
         participant BotAdapter
+        Note over Adapter, BotAdapter: Adapter
         participant Middleware
         participant TurnContext
         participant ActivityHandler
         participant Bot
 
+        Note left of Channel: User Message, "Hi"
+        Note left of Channel: Inbound Message
         activate Channel
-
         Channel ->> BFS: HTTP POST
         activate BFS
-        Note right of Channel: JSON payload of Activity info
+        Note right of Channel: JSON payload of Activity
 
         BFS ->> WebServer: HTTP POST
         activate WebServer
-        Note right of BFS: JSON Payload of Activity info
+        Note right of BFS: JSON Payload of Activity
 
         WebServer ->> Adapter: PostAsync()
         activate Adapter
-        rect rgba(0, 0, 255, .1)
-            Adapter ->> BotFrameworkHttpAdapter: ProcessAsync()
-            activate BotFrameworkHttpAdapter
-            BotFrameworkHttpAdapter ->> BotFrameworkAdapter: ProcessAsync()
-            activate BotFrameworkAdapter
-            BotFrameworkAdapter ->> BotAdapter : ProcessActivityAsync()
-            activate BotAdapter
+        
+        Adapter ->> BotFrameworkHttpAdapter: ProcessAsync()
+        activate BotFrameworkHttpAdapter
+        BotFrameworkHttpAdapter ->> BotFrameworkAdapter: ProcessAsync()
+        Note right of BotFrameworkHttpAdapter: Deserialize Activity
+        activate BotFrameworkAdapter
+        BotFrameworkAdapter ->> BotAdapter : ProcessActivityAsync()
+        Note right of BotFrameworkAdapter: Create TurnContext
+        Note right of BotFrameworkAdapter: Call Middleware
+        activate BotAdapter
             BotAdapter ->> Middleware: RunPipeline()
             activate Middleware
-        end
-        Note over Adapter, BotAdapter: Adapter
-        loop If uncalled Middleware
+        loop Uncalled Middleware
             Middleware ->> Middleware: OnTurnAsync()
         end
 
         Middleware ->> ActivityHandler: OnTurnAsync()
         activate ActivityHandler
-        Note over Middleware, Bot: Call Turn Handler of Bot registered in Adapter's .ProcessAysnc() call
+        Note over Middleware, ActivityHandler: Call Bot's Turn Handler
         alt is Message
                 ActivityHandler ->> Bot: OnMessageAsync()
                 activate Bot
@@ -63,6 +67,8 @@
                 ActivityHandler ->> Bot: OnUnrecognizedActivityTypeAsync()
         end
 
+        Note right of Bot: Bot Message "Echo: Hi"
+        Note right of Bot: Outbound Message
         Bot ->> TurnContext: SendActivityAsync()
         activate TurnContext
 
@@ -72,22 +78,25 @@
                 TurnContext ->> Middleware: SendActivitiesThroughCallbackPipeline()
         end
 
-        loop If uncalled Middleware
+        loop Uncalled Middleware
             Middleware ->> Middleware: Call next callback in Send Activities List in TurnContext
         end
 
         Middleware ->> BotAdapter: SendActivitiesThroughAdapter(): 
         BotAdapter ->> BotFrameworkAdapter: SendActivitiesAsync()
         alt has ReplyToId
-            BotFrameworkAdapter ->> BFS: ReplyToActivityAsync() 
+            BotFrameworkAdapter ->> Connector: ReplyToActivityAsync() 
+            activate Connector
         else no ReplyToId
-            BotFrameworkAdapter ->> BFS: SendToConversationAsync()
+            BotFrameworkAdapter ->> Connector: SendToConversationAsync()
         end
 
-        BFS ->> Channel: ReplyToActivityWithHttpMessagesAsync()
+        Connector ->> BFS: ReplyToActivityWithHttpMessagesAsync()
 
-        Channel -->> Bot: 200 OK
-        Bot -->> Channel: 200 OK
+        BFS ->> Channel: HTTP POST
+
+        Channel -->> Bot: 200 OK to Outbound Message
+        Bot -->> Channel: 200 OK to Inbound Message
 
         deactivate TurnContext
         deactivate Bot
@@ -98,6 +107,7 @@
         deactivate BotFrameworkHttpAdapter
         deactivate Adapter
         deactivate WebServer
+        deactivate Connector
         deactivate BFS
         deactivate Channel
         

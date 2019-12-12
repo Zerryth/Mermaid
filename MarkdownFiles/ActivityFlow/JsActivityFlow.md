@@ -5,12 +5,15 @@
         participant BFS as Bot Framework Service
         participant WebServer as Web Server
         Note over WebServer: Restify or Express
+        participant Connector
         participant BotFrameworkAdapter
         participant BotAdapter
+        Note over BotFrameworkAdapter, BotAdapter: Adapter
         participant Middleware
         participant TurnContext
         participant ActivityHandler
         participant ActivityHandlerBase
+        Note over ActivityHandler, ActivityHandlerBase: ActivityHandler
         participant Bot
 
         activate Channel
@@ -24,6 +27,7 @@
         WebServer ->> BotFrameworkAdapter: post()
         activate BotFrameworkAdapter
         BotFrameworkAdapter ->> BotAdapter: processActivity()
+        Note right of BotFrameworkAdapter: Deserialize Activity
         activate BotAdapter
         BotAdapter ->> Middleware: runMiddleware()
         activate Middleware
@@ -34,6 +38,7 @@
 
         Middleware ->> ActivityHandler: run()
         activate ActivityHandler
+        Note over ActivityHandler, ActivityHandlerBase: Call bot's turn handler
         ActivityHandler ->> ActivityHandlerBase: run()
         activate ActivityHandlerBase
         ActivityHandlerBase ->> ActivityHandlerBase: onTurnActivity()
@@ -76,20 +81,23 @@
         activate TurnContext
 
         TurnContext ->> Middleware: emit()
-        loop if uncalled _onSendActivites Middleware
+        loop ______ _onSendActivites Middleware
             Middleware ->> Middleware: emitNext()
         end
 
         Middleware ->> BotFrameworkAdapter: sendActivities()
         
+        
         alt replying to another activity
-            BotFrameworkAdapter ->> BFS: replyToActivity()
-
+            BotFrameworkAdapter ->> Connector: replyToActivity()
+            activate Connector
+    
             else replying to end of conversation
-                BotFrameworkAdapter ->> BFS: sendToConversation()
+                BotFrameworkAdapter ->> Connector: sendToConversation()
         end
 
-        BFS ->> Channel: sendOperationRequest()
+        Connector ->> BFS: sendOperationRequest() 
+        BFS ->> Channel: HTTP POST
 
         Channel -->> Bot: 200 OK
         Bot -->> Channel: 200 OK
@@ -102,6 +110,7 @@
         deactivate Middleware
         deactivate BotAdapter
         deactivate BotFrameworkAdapter
+        deactivate Connector
         deactivate WebServer
         deactivate BFS
         deactivate Channel
