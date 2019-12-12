@@ -7,6 +7,9 @@
 #### JS:
 ![Activity Flow Diagram](../../GraphSVGs/JSActivity.svg "Activity Flow JS EchoBot")
 
+#### Generalized:
+![Activity Flow Diagram](../../GraphSVGs/GeneralActivityFlow.svg "Generalized Activity Flow")
+
 ___
 
 C#
