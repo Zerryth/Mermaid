@@ -39,9 +39,9 @@ You're using a retail store bot that sells yoga pants, that has a "wishlist" fea
 
 *OAuth Flow with Yoga Pants Bot:*
 - The user tells the bot to send the wishlist out via email to their contacts. 
-- Bot realizes it needs an access token in order to access the email, an external service, so it sends the user to the authorization server. In our samples, the bots use AAD as the Authz server. 
+- Bot realizes it needs an access token in order to access the email, an external service, so it sends the user to the authorization server. In our samples, the bots use AAD as the authorization server. 
 - At AAD, the user can authorize the user to use (a subset) of the external service's functions on their behalf.
-    - Once user authorizes bot, (if using authorization code grant type) AAD sends an authorization code to the bot (does this Authz code get handled in our bot or all encompassed within ABS?? find out)
+    - Once user authorizes bot, (if using authorization code grant type) AAD sends an authorization code to the bot (does this authorization code get handled in our bot or all encompassed within ABS?? find out)
     - Bot can send authorization code to the token endpoint of AAD to get a token
 - If the code is valid, AAD sends the bot an access token
 - Bot can now access Outlook to email contacts, using token in its requests to the external service
@@ -58,9 +58,9 @@ This diagrams the concepts introduced in the [Add authentication to your bot via
 
 * AAD is an Identity Provider, used as the Authorization Server to which:
     * User authenticates identity to
-    * If authenticated, then Authz server provides Bot with Token
-* External Services separately sepcify which Authz Servers they trust to issue Tokens
-* Bot can use Token obtained from Authz Server in its requests to access External Services' APIs
+    * If authenticated, then auth server provides Bot with Token
+* External Services separately sepcify which auth servers they trust to issue Tokens
+* Bot can use Token obtained from auth server in its requests to access External Services' APIs
 
 #### Detailed View
 
