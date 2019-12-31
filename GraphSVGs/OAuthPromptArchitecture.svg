@@ -1,0 +1,494 @@
+<svg id="mermaid-1577828967836" width="2927.451171875" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="-10 -10 1958.30078125 1524.3125"><style>
+
+
+
+#mermaid-1577828967836 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1577828967836 .label text {
+  fill: #333; }
+
+#mermaid-1577828967836 .node rect,
+#mermaid-1577828967836 .node circle,
+#mermaid-1577828967836 .node ellipse,
+#mermaid-1577828967836 .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1577828967836 .node .label {
+  text-align: center; }
+
+#mermaid-1577828967836 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1577828967836 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1577828967836 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1577828967836 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1577828967836 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1577828967836 .cluster text {
+  fill: #333; }
+
+#mermaid-1577828967836 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1577828967836 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1577828967836 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1577828967836 .actor-line {
+  stroke: grey; }
+
+#mermaid-1577828967836 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1577828967836 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1577828967836 #arrowhead {
+  fill: #333; }
+
+#mermaid-1577828967836 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1577828967836 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1577828967836 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1577828967836 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1577828967836 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1577828967836 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1577828967836 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1577828967836 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1577828967836 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1577828967836 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1577828967836 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1577828967836 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1577828967836 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1577828967836 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1577828967836 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1577828967836 .section2 {
+  fill: #fff400; }
+
+#mermaid-1577828967836 .section1,
+#mermaid-1577828967836 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1577828967836 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1577828967836 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1577828967836 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1577828967836 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1577828967836 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1577828967836 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+#mermaid-1577828967836   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1577828967836 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1577828967836 .task {
+  stroke-width: 2; }
+
+#mermaid-1577828967836 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1577828967836 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1577828967836 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1577828967836 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1577828967836 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1577828967836 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1577828967836 .taskText0,
+#mermaid-1577828967836 .taskText1,
+#mermaid-1577828967836 .taskText2,
+#mermaid-1577828967836 .taskText3 {
+  fill: white; }
+
+#mermaid-1577828967836 .task0,
+#mermaid-1577828967836 .task1,
+#mermaid-1577828967836 .task2,
+#mermaid-1577828967836 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1577828967836 .taskTextOutside0,
+#mermaid-1577828967836 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1577828967836 .taskTextOutside1,
+#mermaid-1577828967836 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1577828967836 .active0,
+#mermaid-1577828967836 .active1,
+#mermaid-1577828967836 .active2,
+#mermaid-1577828967836 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1577828967836 .activeText0,
+#mermaid-1577828967836 .activeText1,
+#mermaid-1577828967836 .activeText2,
+#mermaid-1577828967836 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1577828967836 .done0,
+#mermaid-1577828967836 .done1,
+#mermaid-1577828967836 .done2,
+#mermaid-1577828967836 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1577828967836 .doneText0,
+#mermaid-1577828967836 .doneText1,
+#mermaid-1577828967836 .doneText2,
+#mermaid-1577828967836 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1577828967836 .crit0,
+#mermaid-1577828967836 .crit1,
+#mermaid-1577828967836 .crit2,
+#mermaid-1577828967836 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1577828967836 .activeCrit0,
+#mermaid-1577828967836 .activeCrit1,
+#mermaid-1577828967836 .activeCrit2,
+#mermaid-1577828967836 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1577828967836 .doneCrit0,
+#mermaid-1577828967836 .doneCrit1,
+#mermaid-1577828967836 .doneCrit2,
+#mermaid-1577828967836 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1577828967836 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1577828967836 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1577828967836 .doneCritText0,
+#mermaid-1577828967836 .doneCritText1,
+#mermaid-1577828967836 .doneCritText2,
+#mermaid-1577828967836 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1577828967836 .activeCritText0,
+#mermaid-1577828967836 .activeCritText1,
+#mermaid-1577828967836 .activeCritText2,
+#mermaid-1577828967836 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1577828967836 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1577828967836   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1577828967836 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1577828967836 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1577828967836 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1577828967836 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1577828967836 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 .commit-id,
+#mermaid-1577828967836 .commit-msg,
+#mermaid-1577828967836 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1577828967836 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1577828967836 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1577828967836 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1577828967836 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1577828967836 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1577828967836 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1577828967836 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1577828967836   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1577828967836 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1577828967836 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1577828967836 {
+    color: rgba(0, 0, 0, 0.65);
+    font: ;
+  }</style><g></g><defs><marker id="extensionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 1,7 L18,13 V 1 Z"></path></marker></defs><defs><marker id="extensionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 1,1 V 13 L18,7 Z"></path></marker></defs><defs><marker id="compositionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="compositionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 5,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><g id="classId0" class="classGroup" transform="translate(1125.97265625,251.84375 )"><rect x="0" y="0" width="217.515625" height="191.84375"></rect><text y="15" x="0"><tspan class="title" x="76.6640625">OAuthPrompt</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="217.515625"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- PersistedOptions</tspan><tspan x="5" dy="10">- PersistedState</tspan><tspan x="5" dy="10">- PersistedExpires</tspan><tspan x="5" dy="10">- _magicCodeRegex</tspan><tspan x="5" dy="10">- _settings</tspan><tspan x="5" dy="10">- _validator</tspan></text><line x1="0" y1="89.03125" y2="89.03125" x2="217.515625"></line><text x="5" y="104.03125" fill="white" class="classText"><tspan x="5">+ BeginDialogAsync(dc, options)</tspan><tspan x="5" dy="10">+ ContinueDialogAsync(dc)</tspan><tspan x="5" dy="10">+ GetUserTokenAsync(turnContext)</tspan><tspan x="5" dy="10">+ SignOutUserAsync(turnContext)</tspan><tspan x="5" dy="10">- IsTokenResponseEvent(turnContext)</tspan><tspan x="5" dy="10">- IsTeamsVerificationInvoke(turnContext)</tspan><tspan x="5" dy="10">- ChannelSupportsOAuthCard(channelId)</tspan><tspan x="5" dy="10">- SendOAuthCardAsync(turnContext, prompt)</tspan><tspan x="5" dy="10">- RecognizeTokenAsync(turnContext)</tspan></text></g><g id="classId1" class="classGroup" transform="translate(1333.078125,0 )"><rect x="0" y="0" width="234.46875" height="201.84375"></rect><text y="15" x="0"><tspan x="79.0703125">«abstract»</tspan><tspan class="title" dy="10" x="79.0625">Dialog</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="234.46875"></line><text x="5" y="42.015625" fill="white" class="classText"><tspan x="5">+ static EndOfTurn</tspan><tspan x="5" dy="10">- _telemetryClient</tspan><tspan x="5" dy="10">- id</tspan><tspan x="5" dy="10">+ Id</tspan><tspan x="5" dy="10">+ TelemetryClient</tspan></text><line x1="0" y1="89.03125" y2="89.03125" x2="234.46875"></line><text x="5" y="104.03125" fill="white" class="classText"><tspan x="5">+ BeginDialogAsync(dc, options)</tspan><tspan x="5" dy="10">+ ContinueDialogAsync(dc)</tspan><tspan x="5" dy="10">+ ResumeDialogAsync(dc, reason, result)</tspan><tspan x="5" dy="10">+ RepromptDialogAsync(turnContext, instance)</tspan><tspan x="5" dy="10">+ EndDialogAsync(turnContext, instance, reason)</tspan><tspan x="5" dy="10">+ OnDialogEventAsync(dc, e)</tspan><tspan x="5" dy="10"># OnPreBubbleEventAsync(dc, e)</tspan><tspan x="5" dy="10"># OnPostBubbleEventAsync(dc, e)</tspan><tspan x="5" dy="10"># OnComputeId()</tspan><tspan x="5" dy="10"># RegisterSourceLocation(path, lineNumber)</tspan></text></g><g id="classId2" class="classGroup" transform="translate(1767.80078125,906.984375 )"><rect x="0" y="0" width="119.46875" height="83.640625"></rect><text y="15" x="0"><tspan class="title" x="9.3046875">OAuthPromptSettings</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="119.46875"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">+ OAuthAppCredentials</tspan><tspan x="5" dy="10">+ ConnectionName</tspan><tspan x="5" dy="10">+ Title</tspan><tspan x="5" dy="10">+ Text</tspan><tspan x="5" dy="10">+ Timeout</tspan></text><line x1="0" y1="79.03125" y2="79.03125" x2="119.46875"></line><text x="5" y="94.03125" fill="white" class="classText"></text></g><g id="classId3" class="classGroup" transform="translate(1288.3125,1040.625 )"><rect x="0" y="0" width="218.65625" height="201.84375"></rect><text y="15" x="0"><tspan class="title" x="73.1171875">AppCredentials</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="218.65625"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- TrustedHostNames</tspan><tspan x="5" dy="10">- authenticator</tspan><tspan x="5" dy="10">+ MicrosoftAppId</tspan><tspan x="5" dy="10">+ ChannelAuthTenant</tspan><tspan x="5" dy="10">+ OAuthEndpoint</tspan><tspan x="5" dy="10">+ OAuthScope</tspan><tspan x="5" dy="10"># AuthTenant</tspan><tspan x="5" dy="10"># CustomHttpClient</tspan><tspan x="5" dy="10"># Logger</tspan></text><line x1="0" y1="119.03125" y2="119.03125" x2="218.65625"></line><text x="5" y="134.03125" fill="white" class="classText"><tspan x="5">+ TrustServiceUrl(serviceUrl, expirationTime)</tspan><tspan x="5" dy="10">+ IsTrustedServiceUrl(serviceUrl)</tspan><tspan x="5" dy="10">+ ProcessHttpRequestAsync(request)</tspan><tspan x="5" dy="10">+ GetTokenAsync(forceRefresh)</tspan><tspan x="5" dy="10"># BuildAuthenticator()</tspan><tspan x="5" dy="10">- IsTrustedUrl(uri)</tspan><tspan x="5" dy="10">- ShouldSetToken(request)</tspan></text></g><g id="classId4" class="classGroup" transform="translate(1276.65625,1292.46875 )"><rect x="0" y="0" width="241.96875" height="211.84375"></rect><text y="15" x="0"><tspan class="title" x="77.5625">AdalAuthenticator</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="241.96875"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- MsalTemporarilyUnavailabile</tspan><tspan x="5" dy="10">- tokenRefreshSemaphore</tspan><tspan x="5" dy="10">- SemaphoreTimeout</tspan><tspan x="5" dy="10">- currentRetryPolicy</tspan><tspan x="5" dy="10">- authContext</tspan><tspan x="5" dy="10">- clientCredential</tspan><tspan x="5" dy="10">- clientCertificate</tspan><tspan x="5" dy="10">- authConfig</tspan><tspan x="5" dy="10">- logger</tspan></text><line x1="0" y1="119.03125" y2="119.03125" x2="241.96875"></line><text x="5" y="134.03125" fill="white" class="classText"><tspan x="5">+ GetTokenAsync(forceRefresh)</tspan><tspan x="5" dy="10">- AcquireTokenAsync(forceRefresh)</tspan><tspan x="5" dy="10">- ReleaseSemaphore()</tspan><tspan x="5" dy="10">- HandleAdalException(ex, currentRetryCount)</tspan><tspan x="5" dy="10">- IsAdalServiceUnavailable(ex)</tspan><tspan x="5" dy="10">- ComputeAdalRetry(ex)</tspan><tspan x="5" dy="10">- Initialize(configurationOAuth, customHttpClient)</tspan><tspan x="5" dy="10">- UseCertificate()</tspan></text></g><g id="classId5" class="classGroup" transform="translate(1393.48828125,292.8515625 )"><rect x="0" y="0" width="544.8125" height="109.828125"></rect><text y="15" x="0"><tspan x="199.5859375">«Interface»</tspan><tspan class="title" dy="10" x="199.5859375">IBotTelemetryClient</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="544.8125"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="544.8125"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ TrackAvailability(name, timeStamp, duration, runLocation, success, message, properties, metrics)</tspan><tspan x="5" dy="10">+ TrackDependency(dependencyTypeName, target, dependencyName, data, startTime, duration, resultCode, success)</tspan><tspan x="5" dy="10">+ TrackEvent(eventName, properties, metrics)</tspan><tspan x="5" dy="10">+ TrackException(exception, properties, metrics)</tspan><tspan x="5" dy="10">+ TrackTrace(message, severityLevel, properties)</tspan><tspan x="5" dy="10">+ Flush()</tspan></text></g><g id="classId6" class="classGroup" transform="translate(348.8125,735.140625 )"><rect x="0" y="0" width="126.125" height="121.84375"></rect><text y="15" x="0"><tspan class="title" x="34.2265625">OAuthClient</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="126.125"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">+ BaseUri</tspan><tspan x="5" dy="10">+ SerializationSettings</tspan><tspan x="5" dy="10">+ DeserializationSettings</tspan><tspan x="5" dy="10">+ Credentials</tspan><tspan x="5" dy="10">+ BotSignIn</tspan><tspan x="5" dy="10">+ UserToken</tspan></text><line x1="0" y1="89.03125" y2="89.03125" x2="126.125"></line><text x="5" y="104.03125" fill="white" class="classText"><tspan x="5">Initialize()</tspan><tspan x="5" dy="10">CustomInitialize()</tspan></text></g><g id="classId7" class="classGroup" transform="translate(325.2578125,913.890625 )"><rect x="0" y="0" width="173.234375" height="69.828125"></rect><text y="15" x="0"><tspan x="5">«abstract»</tspan><tspan class="title" dy="10" x="5">ServiceClientCredentials</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="173.234375"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="173.234375"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ InitializeServiceClient(client)</tspan><tspan x="5" dy="10">+ ProcessHttpRequest(request)</tspan></text></g><g id="classId8" class="classGroup" transform="translate(1196.9765625,578.40625 )"><rect x="0" y="0" width="126.125" height="103.640625"></rect><text y="15" x="0"><tspan x="7.1328125">«Interface»</tspan><tspan class="title" dy="10" x="7.1328125">IOAuthClient</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="126.125"></line><text x="5" y="42.015625" fill="white" class="classText"><tspan x="5">+ BaseUri</tspan><tspan x="5" dy="10">+ SerializationSettings</tspan><tspan x="5" dy="10">+ DeserializationSettings</tspan><tspan x="5" dy="10">+ Credentials</tspan><tspan x="5" dy="10">+ BotSignIn</tspan><tspan x="5" dy="10">+ UserToken</tspan></text><line x1="0" y1="99.03125" y2="99.03125" x2="126.125"></line><text x="5" y="114.03125" fill="white" class="classText"></text></g><g id="classId9" class="classGroup" transform="translate(740.51953125,766.1484375 )"><rect x="0" y="0" width="488.03125" height="59.828125"></rect><text y="15" x="0"><tspan x="195.03125">«Interface»</tspan><tspan class="title" dy="10" x="195.03125">IBotSignIn</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="488.03125"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="488.03125"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ GetSignInUrlWithHttpMessagesAsync(state, codeChallenge, emulatorUrl, finalRedirect, customHeaders)</tspan></text></g><g id="classId10" class="classGroup" transform="translate(1278.55078125,751.1484375 )"><rect x="0" y="0" width="513.984375" height="89.828125"></rect><text y="15" x="0"><tspan x="205.2890625">«Interface»</tspan><tspan class="title" dy="10" x="205.2890625">IUserToken</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="513.984375"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="513.984375"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ GetTokenWithHttpMessagesAsync(userId, connectionName, channelId, code, customHeaders)</tspan><tspan x="5" dy="10">+ GetAadTokensWithHttpMessagesAsync(userId, connectionName, aadResourceUrls, channelId, customHeaders)</tspan><tspan x="5" dy="10">+ SignOutWithHttpMessagesAsync(userId, connectionName, channelId, customHeaders)</tspan><tspan x="5" dy="10">+ GetTokenStatusWithHttpMessagesAsync(userId, channelId)</tspan></text></g><g id="classId11" class="classGroup" transform="translate(166.09375,575.3125 )"><rect x="0" y="0" width="478.5625" height="109.828125"></rect><text y="15" x="0"><tspan x="153.609375">«Interface»</tspan><tspan class="title" dy="10" x="153.609375">ICredentialTokenProvider</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="478.5625"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="478.5625"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">+ GetUserTokenAsync(turnContext, oAuthAppCredentials, connectionName, magicCode)</tspan><tspan x="5" dy="10">+ GetOauthSignInLinkAsync(turnContext, oAuthAppCredentials, connectionName)</tspan><tspan x="5" dy="10">+ GetOauthSignInLinkAsync(turnContext, oAuthAppCredentials, connectionName, userId, finalRedirect)</tspan><tspan x="5" dy="10">+ SignOutUserAsync(turnContext, oAuthAppCredentials, connectionName, userId)</tspan><tspan x="5" dy="10">+ GetTokenStatusAsync(context, oAuthAppCredentials, userId, includeFilter)</tspan><tspan x="5" dy="10">+ GetAadTokenAsync(context, oAuthAppCredentials, connectionName, resourceUrls, userId)</tspan></text></g><g id="classId12" class="classGroup" transform="translate(16.9296875,493.6875 )"><rect x="0" y="0" width="102.234375" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">IUserTokenProvider</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="102.234375"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="102.234375"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classId13" class="classGroup" transform="translate(266.421875,493.6875 )"><rect x="0" y="0" width="63.390625" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">BotAdapter</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="63.390625"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="63.390625"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classId14" class="classGroup" transform="translate(0,614.4140625 )"><rect x="0" y="0" width="116.09375" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">BotFrameworkAdapter</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="116.09375"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="116.09375"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classId15" class="classGroup" transform="translate(1228.640625,493.6875 )"><rect x="0" y="0" width="62.796875" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">IDisposable</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="62.796875"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="62.796875"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classId16" class="classGroup" transform="translate(694.65625,614.4140625 )"><rect x="0" y="0" width="73.078125" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">ServiceClient</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="73.078125"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="73.078125"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><path d="M119.1640625,521.5129644833326L139.58854166666666,526.3128870694437C160.01302083333334,531.112809655555,200.86197916666666,540.7126548277776,229.81979492537553,549.6792440805553C258.77761068408444,558.6458333333334,275.84428386816893,566.9791666666666,284.3776204602111,571.1458333333334L292.91095705225337,575.3125" id="edge0" class="relation" marker-start="url(#extensionStart)"></path><path d="M329.8125,516.9486622205227L353.4739583333333,522.5093018504356C377.1354166666667,528.0699414803485,424.4583333333333,539.1912207401742,444.6574134609118,548.9185270367537C464.8564935884902,558.6458333333334,457.93173717698045,566.9791666666666,454.4693589712256,571.1458333333334L451.0069807654707,575.3125" id="edge1" class="relation" marker-end="url(#extensionEnd)"></path><g class="classLabel"><rect class="box" x="326.78125" y="525.234375" width="179.8125" height="17.015625"></rect><text class="label" x="416.6183094052726" y="537.3487498687815" fill="red" text-anchor="middle">implements if compatible type pattern</text></g><path d="M1125.97265625,361.80685084173365L987.9967447916666,379.6202923681114C850.0208333333334,397.4337338944891,574.0690104166666,433.06061694724457,436.0930989583333,455.04072514028894C298.1171875,477.0208333333333,298.1171875,485.3541666666667,298.1171875,489.5208333333333L298.1171875,493.6875" id="edge2" class="relation" marker-start="url(#aggregationStart)"></path><g class="classLabel"><rect class="box" x="647.078125" y="404.734375" width="106.0625" height="17.015625"></rect><text class="label" x="699.6478137296326" y="416.84770959172005" fill="red" text-anchor="middle">uses as token provider</text></g><path d="M266.421875,514.8882753262391L231.69270833333334,520.7923127718659C196.96354166666666,526.6963502174927,127.50520833333333,538.5044251087464,92.77604166666667,555.0920563043732C58.046875,571.6796875,58.046875,593.046875,58.046875,603.73046875L58.046875,614.4140625" id="edge3" class="relation" marker-start="url(#extensionStart)"></path><path d="M58.046875,646.0390625L58.046875,656.72265625C58.046875,667.40625,58.046875,688.7734375,106.5078125,711.2250460573526C154.96875,733.6766546147052,251.890625,757.2126842294105,300.3515625,768.9806990367632L348.8125,780.7487138441157" id="edge4" class="relation" marker-start="url(#aggregationStart)"></path><g class="classLabel"><rect class="box" x="93.59375" y="725.78125" width="158.140625" height="17.015625"></rect><text class="label" x="172.28406440322607" y="737.8814200774273" fill="red" text-anchor="middle">creates OAuthClient to get tokens</text></g><path d="M1260.0390625,525.3125L1260.0390625,529.4791666666666C1260.0390625,533.6458333333334,1260.0390625,541.9791666666666,1260.0390625,550.828125C1260.0390625,559.6770833333334,1260.0390625,569.0416666666666,1260.0390625,573.7239583333334L1260.0390625,578.40625" id="edge5" class="relation" marker-start="url(#extensionStart)"></path><path d="M1196.9765625,648.5187915830722L1161.5696614583333,658.7890971525602C1126.1627604166667,669.0594027220482,1055.3489583333333,689.600013861024,1019.9420572916666,709.2049548471787C984.53515625,728.8098958333334,984.53515625,747.4791666666666,984.53515625,756.8138020833334L984.53515625,766.1484375" id="edge6" class="relation" marker-start="url(#compositionStart)"></path><path d="M1323.1015625,648.5187915830722L1358.5084635416667,658.7890971525602C1393.9153645833333,669.0594027220482,1464.7291666666667,689.600013861024,1500.1360677083333,706.7049548471787C1535.54296875,723.8098958333334,1535.54296875,737.4791666666666,1535.54296875,744.3138020833334L1535.54296875,751.1484375" id="edge7" class="relation" marker-start="url(#compositionStart)"></path><path d="M731.1953125,646.0390625L731.1953125,656.72265625C731.1953125,667.40625,731.1953125,688.7734375,688.4856770833334,710.9492283070425C645.7760416666666,733.1250191140851,560.3567708333334,756.1094132281702,517.6471354166666,767.6016102852127L474.9375,779.0938073422553" id="edge8" class="relation" marker-start="url(#extensionStart)"></path><path d="M1196.9765625,641.3259097275993L1131.8131510416667,652.7950289396662C1066.6497395833333,664.2641481517329,936.3229166666666,687.2023865758665,815.9830729166666,710.7004547416723C695.6432291666666,734.198522907478,585.2903645833334,758.2564208149561,530.1139322916666,770.2853697686952L474.9375,782.3143187224342" id="edge9" class="relation" marker-start="url(#extensionStart)"></path><path d="M1567.546875,169.39869669454058L1583.9381510416667,178.97287224545047C1600.3294270833333,188.5470477963604,1633.1119791666667,207.6953988981802,1649.5032552083333,228.27087653242344C1665.89453125,248.84635416666666,1665.89453125,270.8489583333333,1665.89453125,281.8502604166667L1665.89453125,292.8515625" id="edge10" class="relation" marker-start="url(#aggregationStart)"></path><g class="classLabel"><rect class="box" x="1594.078125" y="202.65625" width="102.40625" height="17.015625"></rect><text class="label" x="1645.2192433286182" y="214.76727495182627" fill="red" text-anchor="middle">tracks telemetry with</text></g><path d="M411.875,856.984375L411.875,861.1510416666666C411.875,865.3177083333334,411.875,873.6510416666666,411.875,883.1354166666666C411.875,892.6197916666666,411.875,903.2552083333334,411.875,908.5729166666666L411.875,913.890625" id="edge11" class="relation" marker-start="url(#compositionStart)"></path><path d="M411.875,983.71875L411.875,989.0364583333334C411.875,994.3541666666666,411.875,1004.9895833333334,557.9479166666666,1028.9666718346305C704.0208333333334,1052.9437603359277,996.1666666666666,1090.262520671855,1142.2395833333333,1108.9219008398188L1288.3125,1127.5812810077828" id="edge12" class="relation" marker-start="url(#extensionStart)"></path><path d="M1397.640625,1242.46875L1397.640625,1246.6354166666667C1397.640625,1250.8020833333333,1397.640625,1259.1354166666667,1397.640625,1267.46875C1397.640625,1275.8020833333333,1397.640625,1284.1354166666667,1397.640625,1288.3020833333333L1397.640625,1292.46875" id="edge13" class="relation" marker-start="url(#compositionStart)"></path><g class="classLabel"><rect class="box" x="1343.875" y="1255.359375" width="107.671875" height="17.015625"></rect><text class="label" x="1397.640625" y="1267.46875" fill="red" text-anchor="middle">obtains tokens through</text></g><path d="M1827.53515625,990.625L1827.53515625,994.7916666666666C1827.53515625,998.9583333333334,1827.53515625,1007.2916666666666,1774.107421875,1027.1080334352162C1720.6796875,1046.9244002037656,1613.82421875,1078.223800407531,1560.396484375,1093.8735005094138L1506.96875,1109.5232006112965" id="edge14" class="relation" marker-start="url(#aggregationStart)"></path><g class="classLabel"><rect class="box" x="1669.359375" y="1046.953125" width="20.53125" height="17.015625"></rect><text class="label" x="1679.2479250493461" y="1059.0603192096924" fill="red" text-anchor="middle">has</text></g><path d="M1343.48828125,369.9503325195377L1424.1627604166667,386.4065270996148C1504.8372395833333,402.8627216796918,1666.1861979166667,435.7751108398459,1746.8606770833333,459.0333887532563C1827.53515625,482.2916666666667,1827.53515625,495.8958333333333,1827.53515625,509.5C1827.53515625,523.1041666666666,1827.53515625,536.7083333333334,1827.53515625,556.8294270833334C1827.53515625,576.9505208333334,1827.53515625,603.5885416666666,1827.53515625,630.2265625C1827.53515625,656.8645833333334,1827.53515625,683.5026041666666,1827.53515625,711.1419270833334C1827.53515625,738.78125,1827.53515625,767.421875,1827.53515625,796.0625C1827.53515625,824.703125,1827.53515625,853.34375,1827.53515625,871.8307291666666C1827.53515625,890.3177083333334,1827.53515625,898.6510416666666,1827.53515625,902.8177083333334L1827.53515625,906.984375" id="edge15" class="relation" marker-start="url(#compositionStart)"></path><g class="classLabel"><rect class="box" x="1762.5" y="451.015625" width="75.609375" height="17.015625"></rect><text class="label" x="1800.2384102019423" y="463.1194372246361" fill="red" text-anchor="middle">configured with</text></g><path d="M1333.078125,169.39869669454058L1316.6868489583333,178.97287224545047C1300.2955729166667,188.5470477963604,1267.5130208333333,207.6953988981802,1251.1217447916667,221.43624111575676C1234.73046875,235.17708333333334,1234.73046875,243.51041666666666,1234.73046875,247.67708333333334L1234.73046875,251.84375" id="edge16" class="relation" marker-start="url(#extensionStart)"></path></svg>

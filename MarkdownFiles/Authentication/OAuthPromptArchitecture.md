@@ -9,6 +9,13 @@
             - _validator
             + BeginDialogAsync(dc, options)
             + ContinueDialogAsync(dc)
+            + GetUserTokenAsync(turnContext)
+            + SignOutUserAsync(turnContext)
+            - IsTokenResponseEvent(turnContext)
+            - IsTeamsVerificationInvoke(turnContext)
+            - ChannelSupportsOAuthCard(channelId)
+            - SendOAuthCardAsync(turnContext, prompt)
+            - RecognizeTokenAsync(turnContext)
         }
 
         class Dialog {
@@ -137,7 +144,7 @@
         }
         <<Interface>> ICredentialTokenProvider
 
-        IUserTokenProvider <|-- ICredentialTokenProvider : implements
+        IUserTokenProvider <|-- ICredentialTokenProvider
         BotAdapter --|> ICredentialTokenProvider : implements if compatible type pattern
         OAuthPrompt o-- BotAdapter : uses as token provider
 
