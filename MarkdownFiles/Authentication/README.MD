@@ -68,6 +68,7 @@ This diagrams the concepts introduced in the [Add authentication to your bot via
 
 * *Created automatically when creating a Web App Bot in Azure Portal
 * ** Is "bot" just the "Bot Channels Registration" or does "bot" encompass more (App Service, Bot Channels Registration, cognitive keys, etc.)?
+* *** Provider can be AAD, GitHub, Uber, FB, etc.
 
 ___
 ## Detailed Authorization Flow in Bot Framework
