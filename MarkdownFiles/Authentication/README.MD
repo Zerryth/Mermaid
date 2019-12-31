@@ -80,6 +80,16 @@ ___
 ___
 ### `OAuthPrompt`
 
+- In order to access an External Resource, the Bot must send the User (aka the "owner" of the protected resource at the External Service) to the Authorization Server or Identity Provider (in our samples we use AAD)
+- Once user is at AAD, the user must:
+    - Authenticate their identity (they are who they say they are)
+    - Authorize the Bot to access the External Service (delegating limited power, not the user's entire power, in the form of approving certain scopes) on the User's behalf
+        - In the process of designing the Bot, you already specified *what scopes (permissions)* the bot would need to perform whatever function that Bot was built to do, which are the scopes that the User is prompted to authorize
+        - See [Add authentication to your bot via Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp) for more detail on scopes
+- Once authenticated and authorized, AAD sends Bot the Token needed to access External Resource
+
+Bot Framework's `OAuthPrompt` provides a way to send the User to AAD in order to obtain a Token. Bot developers do not have to manage Token lifecycles, storage, nor proper redirects in the OAuth flow.
+
 #### `OAuthPrompt.BeginDialogAsync()` Flow
 
 ![OAuthPromptBeginDialogFlow](../../GraphSVGs/OAuthPromptBeginDialogFlow.svg "OAuthPrompt.BeginDialogFlow()")
@@ -107,3 +117,5 @@ ___
 - Sequence Diagram for OAuth Prompt
     - Would need to include BF Dialog mechanics in this diagram
 - Identity vs. Claims
+- Don't think we need a diagram for this, but in our docs "somewhere" we should mention the difference between authentication and authorization
+- The diagrams above were done only looking at C#--some of the higher level ones are applicable to any language, but the detailed sequence diagrams would need to be created especially for JS or create one that is "generalized" to be language-agnostic
