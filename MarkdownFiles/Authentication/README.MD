@@ -70,7 +70,7 @@ Illustrating example in [Authentication docs](https://docs.microsoft.com/en-us/a
 * This part confuses me in the docs, because as far as I'm aware, External Service doesn't issue Tokens itself, that's the Authorization Server's job (which in this example is the "BF Token Service" as I understand it):
     > The user signs-in to this page for the external service. Once complete, the external service completes the OAuth protocol exchange with the Bot Framework Token Service, resulting in the external service sending the Bot Framework Token Service the user token. The Bot Framework Token Service securely stores this token and sends an activity to the bot with this token.
 
-    * If it's true that the External Service makes Tokens itself, then the diagram would look like:
+    * If the quote from docs above is true that the External Service makes Tokens itself, then the diagram would look like:
 
 ![Authentication Docs Example -- External Service Sends Token](../../GraphSVGs/AuthenticationDocExample_ExternalServiceSendsToken.svg "Authentication Docs Example -- External Service Sends Token")
 
