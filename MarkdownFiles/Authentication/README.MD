@@ -26,10 +26,10 @@ When a user wants the bot to access the external service, the bot sends the user
 
 ![HighLevelViewOfOAuthFlowInBotFramework](../../GraphSVGs/HighLevelViewOfOAuthFlowInBotFramework.svg "High Level View of OAuth Flow in Bot Framework")
 
-Note to self: maybe illustrate authorization code grant type flow?
+- Note to self: maybe illustrate authorization code grant type flow?
+    - ^ Ok. Right now I added a [sequence diagram](#another-example-scenario-described-in-authentication-docs) of an example that I found in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs that go into the OAuth pattern of token acquisition in more detail.
 
-^ Ok. Right now I added a [sequence diagram](#another-example-scenario-described-in-authentication-docs) of an example that I found in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs that go into the OAuth pattern of token acquisition in more detail.
-
+- Also need clarification. In docs it references "Bot Framework Token Service" -- is this the same entity or different from the IdP (e.g. AAD, GitHub, Uber, etc.)?
 ___
 
 ### An Example
