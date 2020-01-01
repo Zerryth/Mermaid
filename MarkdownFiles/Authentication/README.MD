@@ -69,6 +69,7 @@ Note: I'll add the activation vertical bars onto diagram, once I know the partic
 ![Authentication Docs Example -- BFTS Sends Token](../../GraphSVGs/AuthenticationDocExample_BftsSendsToken.svg "Authentication Docs Example -- BFTS Sends Token")
 
 * Does the Token Return to BF Channel Service upon creation of Token or does it Return directly from Token Service to Bot?
+* Also, does the User sign into the External Service directly? Or just the Authorization Server that the External Service trusts? (I believed it to be the latter, just from my reading on OAuth concepts in general, outside BF...)
 * This part confuses me in the docs, because as far as I'm aware, External Service doesn't issue Tokens itself, that's the Authorization Server's job (which in this example is the "BF Token Service" as I understand it):
     > The user signs-in to this page for the external service. Once complete, the external service completes the OAuth protocol exchange with the Bot Framework Token Service, resulting in the external service sending the Bot Framework Token Service the user token. The Bot Framework Token Service securely stores this token and sends an activity to the bot with this token.
 
