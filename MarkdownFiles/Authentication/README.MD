@@ -64,6 +64,8 @@ Illustrating example in [Authentication docs](https://docs.microsoft.com/en-us/a
 
 #### Detailed View
 
+Note: I'll add the activation vertical bars onto diagram, once I know the participants are calling in the proper order
+
 ![Authentication Docs Example -- BFTS Sends Token](../../GraphSVGs/AuthenticationDocExample_BftsSendsToken.svg "Authentication Docs Example -- BFTS Sends Token")
 
 * Does the Token Return to BF Channel Service upon creation of Token or does it Return directly from Token Service to Bot?
