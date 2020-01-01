@@ -20,6 +20,7 @@ participant User
 participant BFCS as BF Channel Service
 participant BFTS as BF Token Service
 participant TokenStorage as Token Storage
+Note over BFCS, TokenStorage: Part of Azure Bot Service
 participant Bot
 participant ExternalService as External Service
 
@@ -66,6 +67,7 @@ participant User
 participant BFCS as BF Channel Service
 participant BFTS as BF Token Service
 participant TokenStorage as Token Storage
+Note over BFCS, TokenStorage: Part of Azure Bot Service
 participant Bot
 participant ExternalService as External Service
 
