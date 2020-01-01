@@ -77,7 +77,9 @@ Note: I'll add the activation vertical bars onto diagram, once I know the partic
 
 ![Authentication Docs Example -- External Service Sends Token](../../GraphSVGs/AuthenticationDocExample_ExternalServiceSendsToken.svg "Authentication Docs Example -- External Service Sends Token")
 
-
+* Ok, I'm pretty convinced our [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) documentation is incorrect
+* See [video on OAuth 2.0 concepts](https://www.youtube.com/watch?v=CPbvxxslDTU)
+* I also have been reading [OAuth 2.0 in Action](https://www.manning.com/books/oauth-2-in-action), which also says you sign into the Authorization Server, *not* the Protected Resource (External Service)
 ___
 
 ### [Add authentication to your bot via Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp)
