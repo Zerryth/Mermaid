@@ -28,9 +28,7 @@ When a user wants the bot to access the external service, the bot sends the user
 
 Note to self: maybe illustrate authorization code grant type flow?
 
-^ Ok. Right now I added a sequence diagram of an example that I found in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs that go into the OAuth pattern of token acquisition in more detail 
-
-[check](#Another%20Example%2C%20scenario%20described%20in%20%5BAuthentication%5D%28https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbot-service%2Fbot-builder-concept-authentication%3Fview%3Dazure-bot-service-4.0%29%20docs)
+^ Ok. Right now I added a [sequence diagram](https://github.com/Zerryth/Mermaid/blob/master/MarkdownFiles/Authentication/README.MD#another-example-scenario-described-in-authentication-docs) of an example that I found in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs that go into the OAuth pattern of token acquisition in more detail.
 ___
 
 ### An Example
