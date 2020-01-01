@@ -1,49 +1,49 @@
-<svg id="mermaid-1577831689443" width="1362.458251953125" xmlns="http://www.w3.org/2000/svg" height="421.34375" viewBox="0 0 1362.458251953125 421.34375"><style>
+<svg id="mermaid-1577859828187" width="1458.7083740234375" xmlns="http://www.w3.org/2000/svg" height="421.34375" viewBox="0 0 1458.7083740234375 421.34375"><style>
 
 
 
-#mermaid-1577831689443 .label {
+#mermaid-1577859828187 .label {
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family);
   color: #333; }
 
-#mermaid-1577831689443 .label text {
+#mermaid-1577859828187 .label text {
   fill: #333; }
 
-#mermaid-1577831689443 .node rect,
-#mermaid-1577831689443 .node circle,
-#mermaid-1577831689443 .node ellipse,
-#mermaid-1577831689443 .node polygon {
+#mermaid-1577859828187 .node rect,
+#mermaid-1577859828187 .node circle,
+#mermaid-1577859828187 .node ellipse,
+#mermaid-1577859828187 .node polygon {
   fill: #ECECFF;
   stroke: #9370DB;
   stroke-width: 1px; }
 
-#mermaid-1577831689443 .node .label {
+#mermaid-1577859828187 .node .label {
   text-align: center; }
 
-#mermaid-1577831689443 .node.clickable {
+#mermaid-1577859828187 .node.clickable {
   cursor: pointer; }
 
-#mermaid-1577831689443 .arrowheadPath {
+#mermaid-1577859828187 .arrowheadPath {
   fill: #333333; }
 
-#mermaid-1577831689443 .edgePath .path {
+#mermaid-1577859828187 .edgePath .path {
   stroke: #333333;
   stroke-width: 1.5px; }
 
-#mermaid-1577831689443 .edgeLabel {
+#mermaid-1577859828187 .edgeLabel {
   background-color: #e8e8e8;
   text-align: center; }
 
-#mermaid-1577831689443 .cluster rect {
+#mermaid-1577859828187 .cluster rect {
   fill: #ffffde;
   stroke: #aaaa33;
   stroke-width: 1px; }
 
-#mermaid-1577831689443 .cluster text {
+#mermaid-1577859828187 .cluster text {
   fill: #333; }
 
-#mermaid-1577831689443 div.mermaidTooltip {
+#mermaid-1577859828187 div.mermaidTooltip {
   position: absolute;
   text-align: center;
   max-width: 200px;
@@ -57,117 +57,117 @@
   pointer-events: none;
   z-index: 100; }
 
-#mermaid-1577831689443 .actor {
+#mermaid-1577859828187 .actor {
   stroke: #CCCCFF;
   fill: #ECECFF; }
 
-#mermaid-1577831689443 text.actor {
+#mermaid-1577859828187 text.actor {
   fill: black;
   stroke: none; }
 
-#mermaid-1577831689443 .actor-line {
+#mermaid-1577859828187 .actor-line {
   stroke: grey; }
 
-#mermaid-1577831689443 .messageLine0 {
+#mermaid-1577859828187 .messageLine0 {
   stroke-width: 1.5;
   stroke-dasharray: '2 2';
   stroke: #333; }
 
-#mermaid-1577831689443 .messageLine1 {
+#mermaid-1577859828187 .messageLine1 {
   stroke-width: 1.5;
   stroke-dasharray: '2 2';
   stroke: #333; }
 
-#mermaid-1577831689443 #arrowhead {
+#mermaid-1577859828187 #arrowhead {
   fill: #333; }
 
-#mermaid-1577831689443 .sequenceNumber {
+#mermaid-1577859828187 .sequenceNumber {
   fill: white; }
 
-#mermaid-1577831689443 #sequencenumber {
+#mermaid-1577859828187 #sequencenumber {
   fill: #333; }
 
-#mermaid-1577831689443 #crosshead path {
+#mermaid-1577859828187 #crosshead path {
   fill: #333 !important;
   stroke: #333 !important; }
 
-#mermaid-1577831689443 .messageText {
+#mermaid-1577859828187 .messageText {
   fill: #333;
   stroke: none; }
 
-#mermaid-1577831689443 .labelBox {
+#mermaid-1577859828187 .labelBox {
   stroke: #CCCCFF;
   fill: #ECECFF; }
 
-#mermaid-1577831689443 .labelText {
+#mermaid-1577859828187 .labelText {
   fill: black;
   stroke: none; }
 
-#mermaid-1577831689443 .loopText {
+#mermaid-1577859828187 .loopText {
   fill: black;
   stroke: none; }
 
-#mermaid-1577831689443 .loopLine {
+#mermaid-1577859828187 .loopLine {
   stroke-width: 2;
   stroke-dasharray: '2 2';
   stroke: #CCCCFF; }
 
-#mermaid-1577831689443 .note {
+#mermaid-1577859828187 .note {
   stroke: #aaaa33;
   fill: #fff5ad; }
 
-#mermaid-1577831689443 .noteText {
+#mermaid-1577859828187 .noteText {
   fill: black;
   stroke: none;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family);
   font-size: 14px; }
 
-#mermaid-1577831689443 .activation0 {
+#mermaid-1577859828187 .activation0 {
   fill: #f4f4f4;
   stroke: #666; }
 
-#mermaid-1577831689443 .activation1 {
+#mermaid-1577859828187 .activation1 {
   fill: #f4f4f4;
   stroke: #666; }
 
-#mermaid-1577831689443 .activation2 {
+#mermaid-1577859828187 .activation2 {
   fill: #f4f4f4;
   stroke: #666; }
 
 
-#mermaid-1577831689443 .mermaid-main-font {
+#mermaid-1577859828187 .mermaid-main-font {
   font-family: "trebuchet ms", verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 .section {
+#mermaid-1577859828187 .section {
   stroke: none;
   opacity: 0.2; }
 
-#mermaid-1577831689443 .section0 {
+#mermaid-1577859828187 .section0 {
   fill: rgba(102, 102, 255, 0.49); }
 
-#mermaid-1577831689443 .section2 {
+#mermaid-1577859828187 .section2 {
   fill: #fff400; }
 
-#mermaid-1577831689443 .section1,
-#mermaid-1577831689443 .section3 {
+#mermaid-1577859828187 .section1,
+#mermaid-1577859828187 .section3 {
   fill: white;
   opacity: 0.2; }
 
-#mermaid-1577831689443 .sectionTitle0 {
+#mermaid-1577859828187 .sectionTitle0 {
   fill: #333; }
 
-#mermaid-1577831689443 .sectionTitle1 {
+#mermaid-1577859828187 .sectionTitle1 {
   fill: #333; }
 
-#mermaid-1577831689443 .sectionTitle2 {
+#mermaid-1577859828187 .sectionTitle2 {
   fill: #333; }
 
-#mermaid-1577831689443 .sectionTitle3 {
+#mermaid-1577859828187 .sectionTitle3 {
   fill: #333; }
 
-#mermaid-1577831689443 .sectionTitle {
+#mermaid-1577859828187 .sectionTitle {
   text-anchor: start;
   font-size: 11px;
   text-height: 14px;
@@ -175,309 +175,309 @@
   font-family: var(--mermaid-font-family); }
 
 
-#mermaid-1577831689443 .grid .tick {
+#mermaid-1577859828187 .grid .tick {
   stroke: lightgrey;
   opacity: 0.3;
   shape-rendering: crispEdges; }
-#mermaid-1577831689443   .grid .tick text {
+#mermaid-1577859828187   .grid .tick text {
     font-family: 'trebuchet ms', verdana, arial;
     font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 .grid path {
+#mermaid-1577859828187 .grid path {
   stroke-width: 0; }
 
 
-#mermaid-1577831689443 .today {
+#mermaid-1577859828187 .today {
   fill: none;
   stroke: red;
   stroke-width: 2px; }
 
 
 
-#mermaid-1577831689443 .task {
+#mermaid-1577859828187 .task {
   stroke-width: 2; }
 
-#mermaid-1577831689443 .taskText {
+#mermaid-1577859828187 .taskText {
   text-anchor: middle;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 .taskText:not([font-size]) {
+#mermaid-1577859828187 .taskText:not([font-size]) {
   font-size: 11px; }
 
-#mermaid-1577831689443 .taskTextOutsideRight {
+#mermaid-1577859828187 .taskTextOutsideRight {
   fill: black;
   text-anchor: start;
   font-size: 11px;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 .taskTextOutsideLeft {
+#mermaid-1577859828187 .taskTextOutsideLeft {
   fill: black;
   text-anchor: end;
   font-size: 11px; }
 
 
-#mermaid-1577831689443 .task.clickable {
+#mermaid-1577859828187 .task.clickable {
   cursor: pointer; }
 
-#mermaid-1577831689443 .taskText.clickable {
+#mermaid-1577859828187 .taskText.clickable {
   cursor: pointer;
   fill: #003163 !important;
   font-weight: bold; }
 
-#mermaid-1577831689443 .taskTextOutsideLeft.clickable {
+#mermaid-1577859828187 .taskTextOutsideLeft.clickable {
   cursor: pointer;
   fill: #003163 !important;
   font-weight: bold; }
 
-#mermaid-1577831689443 .taskTextOutsideRight.clickable {
+#mermaid-1577859828187 .taskTextOutsideRight.clickable {
   cursor: pointer;
   fill: #003163 !important;
   font-weight: bold; }
 
 
-#mermaid-1577831689443 .taskText0,
-#mermaid-1577831689443 .taskText1,
-#mermaid-1577831689443 .taskText2,
-#mermaid-1577831689443 .taskText3 {
+#mermaid-1577859828187 .taskText0,
+#mermaid-1577859828187 .taskText1,
+#mermaid-1577859828187 .taskText2,
+#mermaid-1577859828187 .taskText3 {
   fill: white; }
 
-#mermaid-1577831689443 .task0,
-#mermaid-1577831689443 .task1,
-#mermaid-1577831689443 .task2,
-#mermaid-1577831689443 .task3 {
+#mermaid-1577859828187 .task0,
+#mermaid-1577859828187 .task1,
+#mermaid-1577859828187 .task2,
+#mermaid-1577859828187 .task3 {
   fill: #8a90dd;
   stroke: #534fbc; }
 
-#mermaid-1577831689443 .taskTextOutside0,
-#mermaid-1577831689443 .taskTextOutside2 {
+#mermaid-1577859828187 .taskTextOutside0,
+#mermaid-1577859828187 .taskTextOutside2 {
   fill: black; }
 
-#mermaid-1577831689443 .taskTextOutside1,
-#mermaid-1577831689443 .taskTextOutside3 {
+#mermaid-1577859828187 .taskTextOutside1,
+#mermaid-1577859828187 .taskTextOutside3 {
   fill: black; }
 
 
-#mermaid-1577831689443 .active0,
-#mermaid-1577831689443 .active1,
-#mermaid-1577831689443 .active2,
-#mermaid-1577831689443 .active3 {
+#mermaid-1577859828187 .active0,
+#mermaid-1577859828187 .active1,
+#mermaid-1577859828187 .active2,
+#mermaid-1577859828187 .active3 {
   fill: #bfc7ff;
   stroke: #534fbc; }
 
-#mermaid-1577831689443 .activeText0,
-#mermaid-1577831689443 .activeText1,
-#mermaid-1577831689443 .activeText2,
-#mermaid-1577831689443 .activeText3 {
+#mermaid-1577859828187 .activeText0,
+#mermaid-1577859828187 .activeText1,
+#mermaid-1577859828187 .activeText2,
+#mermaid-1577859828187 .activeText3 {
   fill: black !important; }
 
 
-#mermaid-1577831689443 .done0,
-#mermaid-1577831689443 .done1,
-#mermaid-1577831689443 .done2,
-#mermaid-1577831689443 .done3 {
+#mermaid-1577859828187 .done0,
+#mermaid-1577859828187 .done1,
+#mermaid-1577859828187 .done2,
+#mermaid-1577859828187 .done3 {
   stroke: grey;
   fill: lightgrey;
   stroke-width: 2; }
 
-#mermaid-1577831689443 .doneText0,
-#mermaid-1577831689443 .doneText1,
-#mermaid-1577831689443 .doneText2,
-#mermaid-1577831689443 .doneText3 {
+#mermaid-1577859828187 .doneText0,
+#mermaid-1577859828187 .doneText1,
+#mermaid-1577859828187 .doneText2,
+#mermaid-1577859828187 .doneText3 {
   fill: black !important; }
 
 
-#mermaid-1577831689443 .crit0,
-#mermaid-1577831689443 .crit1,
-#mermaid-1577831689443 .crit2,
-#mermaid-1577831689443 .crit3 {
+#mermaid-1577859828187 .crit0,
+#mermaid-1577859828187 .crit1,
+#mermaid-1577859828187 .crit2,
+#mermaid-1577859828187 .crit3 {
   stroke: #ff8888;
   fill: red;
   stroke-width: 2; }
 
-#mermaid-1577831689443 .activeCrit0,
-#mermaid-1577831689443 .activeCrit1,
-#mermaid-1577831689443 .activeCrit2,
-#mermaid-1577831689443 .activeCrit3 {
+#mermaid-1577859828187 .activeCrit0,
+#mermaid-1577859828187 .activeCrit1,
+#mermaid-1577859828187 .activeCrit2,
+#mermaid-1577859828187 .activeCrit3 {
   stroke: #ff8888;
   fill: #bfc7ff;
   stroke-width: 2; }
 
-#mermaid-1577831689443 .doneCrit0,
-#mermaid-1577831689443 .doneCrit1,
-#mermaid-1577831689443 .doneCrit2,
-#mermaid-1577831689443 .doneCrit3 {
+#mermaid-1577859828187 .doneCrit0,
+#mermaid-1577859828187 .doneCrit1,
+#mermaid-1577859828187 .doneCrit2,
+#mermaid-1577859828187 .doneCrit3 {
   stroke: #ff8888;
   fill: lightgrey;
   stroke-width: 2;
   cursor: pointer;
   shape-rendering: crispEdges; }
 
-#mermaid-1577831689443 .milestone {
+#mermaid-1577859828187 .milestone {
   transform: rotate(45deg) scale(0.8, 0.8); }
 
-#mermaid-1577831689443 .milestoneText {
+#mermaid-1577859828187 .milestoneText {
   font-style: italic; }
 
-#mermaid-1577831689443 .doneCritText0,
-#mermaid-1577831689443 .doneCritText1,
-#mermaid-1577831689443 .doneCritText2,
-#mermaid-1577831689443 .doneCritText3 {
+#mermaid-1577859828187 .doneCritText0,
+#mermaid-1577859828187 .doneCritText1,
+#mermaid-1577859828187 .doneCritText2,
+#mermaid-1577859828187 .doneCritText3 {
   fill: black !important; }
 
-#mermaid-1577831689443 .activeCritText0,
-#mermaid-1577831689443 .activeCritText1,
-#mermaid-1577831689443 .activeCritText2,
-#mermaid-1577831689443 .activeCritText3 {
+#mermaid-1577859828187 .activeCritText0,
+#mermaid-1577859828187 .activeCritText1,
+#mermaid-1577859828187 .activeCritText2,
+#mermaid-1577859828187 .activeCritText3 {
   fill: black !important; }
 
-#mermaid-1577831689443 .titleText {
+#mermaid-1577859828187 .titleText {
   text-anchor: middle;
   font-size: 18px;
   fill: black;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 g.classGroup text {
+#mermaid-1577859828187 g.classGroup text {
   fill: #9370DB;
   stroke: none;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family);
   font-size: 10px; }
-#mermaid-1577831689443   g.classGroup text .title {
+#mermaid-1577859828187   g.classGroup text .title {
     font-weight: bolder; }
 
-#mermaid-1577831689443 g.classGroup rect {
+#mermaid-1577859828187 g.classGroup rect {
   fill: #ECECFF;
   stroke: #9370DB; }
 
-#mermaid-1577831689443 g.classGroup line {
+#mermaid-1577859828187 g.classGroup line {
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 .classLabel .box {
+#mermaid-1577859828187 .classLabel .box {
   stroke: none;
   stroke-width: 0;
   fill: #ECECFF;
   opacity: 0.5; }
 
-#mermaid-1577831689443 .classLabel .label {
+#mermaid-1577859828187 .classLabel .label {
   fill: #9370DB;
   font-size: 10px; }
 
-#mermaid-1577831689443 .relation {
+#mermaid-1577859828187 .relation {
   stroke: #9370DB;
   stroke-width: 1;
   fill: none; }
 
-#mermaid-1577831689443 #compositionStart {
+#mermaid-1577859828187 #compositionStart {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 #compositionEnd {
+#mermaid-1577859828187 #compositionEnd {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 #aggregationStart {
+#mermaid-1577859828187 #aggregationStart {
   fill: #ECECFF;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 #aggregationEnd {
+#mermaid-1577859828187 #aggregationEnd {
   fill: #ECECFF;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 #dependencyStart {
+#mermaid-1577859828187 #dependencyStart {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 #dependencyEnd {
+#mermaid-1577859828187 #dependencyEnd {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 #extensionStart {
+#mermaid-1577859828187 #extensionStart {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 #extensionEnd {
+#mermaid-1577859828187 #extensionEnd {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 .commit-id,
-#mermaid-1577831689443 .commit-msg,
-#mermaid-1577831689443 .branch-label {
+#mermaid-1577859828187 .commit-id,
+#mermaid-1577859828187 .commit-msg,
+#mermaid-1577859828187 .branch-label {
   fill: lightgrey;
   color: lightgrey;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 .pieTitleText {
+#mermaid-1577859828187 .pieTitleText {
   text-anchor: middle;
   font-size: 25px;
   fill: black;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 .slice {
+#mermaid-1577859828187 .slice {
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 g.stateGroup text {
+#mermaid-1577859828187 g.stateGroup text {
   fill: #9370DB;
   stroke: none;
   font-size: 10px;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577831689443 g.stateGroup text {
+#mermaid-1577859828187 g.stateGroup text {
   fill: #9370DB;
   stroke: none;
   font-size: 10px; }
 
-#mermaid-1577831689443 g.stateGroup .state-title {
+#mermaid-1577859828187 g.stateGroup .state-title {
   font-weight: bolder;
   fill: black; }
 
-#mermaid-1577831689443 g.stateGroup rect {
+#mermaid-1577859828187 g.stateGroup rect {
   fill: #ECECFF;
   stroke: #9370DB; }
 
-#mermaid-1577831689443 g.stateGroup line {
+#mermaid-1577859828187 g.stateGroup line {
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577831689443 .transition {
+#mermaid-1577859828187 .transition {
   stroke: #9370DB;
   stroke-width: 1;
   fill: none; }
 
-#mermaid-1577831689443 .stateGroup .composit {
+#mermaid-1577859828187 .stateGroup .composit {
   fill: white;
   border-bottom: 1px; }
 
-#mermaid-1577831689443 .state-note {
+#mermaid-1577859828187 .state-note {
   stroke: #aaaa33;
   fill: #fff5ad; }
-#mermaid-1577831689443   .state-note text {
+#mermaid-1577859828187   .state-note text {
     fill: black;
     stroke: none;
     font-size: 10px; }
 
-#mermaid-1577831689443 .stateLabel .box {
+#mermaid-1577859828187 .stateLabel .box {
   stroke: none;
   stroke-width: 0;
   fill: #ECECFF;
   opacity: 0.5; }
 
-#mermaid-1577831689443 .stateLabel text {
+#mermaid-1577859828187 .stateLabel text {
   fill: black;
   font-size: 10px;
   font-weight: bold;
@@ -488,7 +488,7 @@
   --mermaid-font-family: '"trebuchet ms", verdana, arial';
   --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
 
-:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1577831689443 {
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1577859828187 {
     color: rgba(0, 0, 0, 0.65);
     font: ;
-  }</style><g transform="translate(0, 0)"><g class="output"><g class="clusters"><g class="cluster" id="subGraph1" transform="translate(775.6770782470703,76.4375)" style="opacity: 1;"><rect width="1157.5625" height="136.875" x="-578.78125" y="-68.4375"></rect><g class="label" transform="translate(0, -54.4375)" id="mermaid-1577831689443Text"><g transform="translate(-96.8984375,-13.125)"><foreignObject width="193.80859375" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Bot to External Resource</div></foreignObject></g></g></g><g class="cluster" id="subGraph0" transform="translate(248.59635162353516,296.609375)" style="opacity: 1;"><rect width="481.1927032470703" height="116.25" x="-240.59635162353516" y="-58.125"></rect><g class="label" transform="translate(0, -44.125)" id="mermaid-1577831689443Text"><g transform="translate(-87.5546875,-13.125)"><foreignObject width="175.1171875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Channel-to-Bot Access</div></foreignObject></g></g></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M135.8333333333333,297.109375L171.8958282470703,296.609375L196.8958282470703,296.609375L228.8177032470703,297.109375" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead595)" style="fill:none"></path><defs><marker id="arrowhead595" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 0 0 L 0 0 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M458.2708282470703,297.109375L489.1927032470703,296.609375L792.5911407470703,296.609375L1095.9895782470703,296.609375" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead596)" style="fill:none"></path><defs><marker id="arrowhead596" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 0 0 L 0 0 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M458.1961512285546,70.19439596296858L489.1927032470703,66.125L792.5911407470703,66.125L1141.7786407470703,66.125" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead597)" style="fill:none"></path><defs><marker id="arrowhead597" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 0 0 L 0 0 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M458.1961512285546,96.18060403703142L489.1927032470703,99.25L792.5911407470703,99.25L1107.0666029826264,246.9763351803674" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead598)" style="fill:none"></path><defs><marker id="arrowhead598" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(792.5911407470703,296.609375)" style="opacity: 1;"><g transform="translate(-120.515625,-13.125)" class="label"><foreignObject width="241.03515625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Secures Channel-To-Bot Access</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(792.5911407470703,99.25)" style="opacity: 1;"><g transform="translate(-278.3984375,-13.125)" class="label"><foreignObject width="556.796875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">OAuth Connection with AAD's client ID, client secret, tenant ID, scopes</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="ExternalService" transform="translate(1212.7239532470703,66.125)" style="opacity: 1;"><rect rx="0" ry="0" x="-70.9453125" y="-23.125" width="141.890625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-60.9453125,-13.125)"><foreignObject width="121.89453125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">ExternalService</div></foreignObject></g></g></g><g class="node" id="AAD2" transform="translate(343.0442657470703,82.6875)" style="opacity: 1;"><polygon points="11.5625,0 230.734375,0 242.296875,-23.125 230.734375,-46.25 11.5625,-46.25 0,-23.125" transform="translate(-121.1484375,23.125)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-99.5859375,-13.125)"><foreignObject width="199.1796875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">AAD App Registration 2***</div></foreignObject></g></g></g><g class="node" id="AAD1" transform="translate(343.0442657470703,296.609375)" style="opacity: 1;"><polygon points="11.5625,0 217.890625,0 229.453125,-23.125 217.890625,-46.25 11.5625,-46.25 0,-23.125" transform="translate(-114.7265625,23.125)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-93.1640625,-13.125)"><foreignObject width="186.328125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">AAD App Registration 1*</div></foreignObject></g></g></g><g class="node" id="Channel" transform="translate(89.94791412353516,296.609375)" style="opacity: 1;"><polygon points="-15.416666666666666,0 75.35416666666667,0 98.47916666666667,-46.25 7.708333333333333,-46.25" transform="translate(-41.53125,23.125)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-31.53125,-13.125)"><foreignObject width="63.06640625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Channel</div></foreignObject></g></g></g><g class="node" id="BotChannelsRegistration" transform="translate(1212.7239532470703,296.609375)" style="opacity: 1;"><circle x="-116.734375" y="-23.125" r="116.734375" class="label-container"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-106.734375,-13.125)"><foreignObject width="213.4765625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Bot Channels Registration**</div></foreignObject></g></g></g></g></g></g></svg>
+  }</style><g transform="translate(0, 0)"><g class="output"><g class="clusters"><g class="cluster" id="subGraph1" transform="translate(775.6770782470703,76.4375)" style="opacity: 1;"><rect width="1157.5625" height="136.875" x="-578.78125" y="-68.4375"></rect><g class="label" transform="translate(0, -54.4375)" id="mermaid-1577859828187Text"><g transform="translate(-96.8984375,-13.125)"><foreignObject width="193.80859375" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Bot to External Resource</div></foreignObject></g></g></g><g class="cluster" id="subGraph0" transform="translate(248.59635162353516,296.609375)" style="opacity: 1;"><rect width="481.1927032470703" height="116.25" x="-240.59635162353516" y="-58.125"></rect><g class="label" transform="translate(0, -44.125)" id="mermaid-1577859828187Text"><g transform="translate(-87.5546875,-13.125)"><foreignObject width="175.1171875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Channel-to-Bot Access</div></foreignObject></g></g></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M135.8333333333333,297.109375L171.8958282470703,296.609375L196.8958282470703,296.609375L228.8177032470703,297.109375" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead668)" style="fill:none"></path><defs><marker id="arrowhead668" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 0 0 L 0 0 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M458.2708282470703,297.109375L489.1927032470703,296.609375L792.5911407470703,296.609375L1095.9895782470703,296.609375" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead669)" style="fill:none"></path><defs><marker id="arrowhead669" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 0 0 L 0 0 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M458.1961512285546,70.19439596296858L489.1927032470703,66.125L792.5911407470703,66.125L1141.7786407470703,66.125" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead670)" style="fill:none"></path><defs><marker id="arrowhead670" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 0 0 L 0 0 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M458.1961512285546,96.18060403703142L489.1927032470703,99.25L792.5911407470703,99.25L1107.0666029826264,246.9763351803674" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead671)" style="fill:none"></path><defs><marker id="arrowhead671" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1329.4583282470703,296.609375L1354.4583282470703,296.609375L1379.4583282470703,296.609375L1404.4583282470703,296.609375" marker-end="url(https://mermaidjs.github.io/mermaid-live-editor/#arrowhead672)" style="fill:none"></path><defs><marker id="arrowhead672" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 0 0 L 0 0 z" style="fill: #333"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(792.5911407470703,296.609375)" style="opacity: 1;"><g transform="translate(-120.515625,-13.125)" class="label"><foreignObject width="241.03515625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Secures Channel-To-Bot Access</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(792.5911407470703,99.25)" style="opacity: 1;"><g transform="translate(-278.3984375,-13.125)" class="label"><foreignObject width="556.796875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">OAuth Connection with AAD's client ID, client secret, tenant ID, scopes</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="ExternalService" transform="translate(1212.7239532470703,66.125)" style="opacity: 1;"><rect rx="0" ry="0" x="-70.9453125" y="-23.125" width="141.890625" height="46.25" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-60.9453125,-13.125)"><foreignObject width="121.89453125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">ExternalService</div></foreignObject></g></g></g><g class="node" id="AAD2" transform="translate(343.0442657470703,82.6875)" style="opacity: 1;"><polygon points="11.5625,0 230.734375,0 242.296875,-23.125 230.734375,-46.25 11.5625,-46.25 0,-23.125" transform="translate(-121.1484375,23.125)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-99.5859375,-13.125)"><foreignObject width="199.1796875" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">AAD App Registration 2***</div></foreignObject></g></g></g><g class="node" id="AAD1" transform="translate(343.0442657470703,296.609375)" style="opacity: 1;"><polygon points="11.5625,0 217.890625,0 229.453125,-23.125 217.890625,-46.25 11.5625,-46.25 0,-23.125" transform="translate(-114.7265625,23.125)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-93.1640625,-13.125)"><foreignObject width="186.328125" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">AAD App Registration 1*</div></foreignObject></g></g></g><g class="node" id="Channel" transform="translate(89.94791412353516,296.609375)" style="opacity: 1;"><polygon points="-15.416666666666666,0 75.35416666666667,0 98.47916666666667,-46.25 7.708333333333333,-46.25" transform="translate(-41.53125,23.125)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-31.53125,-13.125)"><foreignObject width="63.06640625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Channel</div></foreignObject></g></g></g><g class="node" id="BotChannelsRegistration" transform="translate(1212.7239532470703,296.609375)" style="opacity: 1;"><circle x="-116.734375" y="-23.125" r="116.734375" class="label-container"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-106.734375,-13.125)"><foreignObject width="213.4765625" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Bot Channels Registration**</div></foreignObject></g></g></g><g class="node" id="Bot" transform="translate(1427.5833282470703,296.609375)" style="opacity: 1;"><circle x="-23.125" y="-23.125" r="23.125" class="label-container"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-13.125,-13.125)"><foreignObject width="26.25" height="26.25"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Bot</div></foreignObject></g></g></g></g></g></g></svg>

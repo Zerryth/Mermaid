@@ -11,4 +11,6 @@
     end
     AAD2 -- OAuth Connection with AAD's client ID, client secret, tenant ID, scopes--> BotChannelsRegistration
 
+    BotChannelsRegistration --- Bot((Bot))
+
 ```
