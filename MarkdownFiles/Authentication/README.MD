@@ -27,6 +27,10 @@ When a user wants the bot to access the external service, the bot sends the user
 ![HighLevelViewOfOAuthFlowInBotFramework](../../GraphSVGs/HighLevelViewOfOAuthFlowInBotFramework.svg "High Level View of OAuth Flow in Bot Framework")
 
 Note to self: maybe illustrate authorization code grant type flow?
+
+^ Ok. Right now I added a sequence diagram of an example that I found in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs that go into the OAuth pattern of token acquisition in more detail 
+
+[check](#Another%20Example%2C%20scenario%20described%20in%20%5BAuthentication%5D%28https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fbot-service%2Fbot-builder-concept-authentication%3Fview%3Dazure-bot-service-4.0%29%20docs)
 ___
 
 ### An Example
@@ -45,6 +49,32 @@ You're using a retail store bot that sells yoga pants, that has a "wishlist" fea
     - Bot can send authorization code to the token endpoint of AAD to get a token
 - If the code is valid, AAD sends the bot an access token
 - Bot can now access Outlook to email contacts, using token in its requests to the external service
+
+___
+### Another Example, scenario described in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs
+
+**Needs review!** (I'm unsure of the pattern of who actually creates the Token)
+
+Illustrating example in [Authentication docs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0#about-the-bot-framework-token-service) describing the "Bot Framework Token Service"
+
+> For example, a bot that can check a user's recent emails, using the Microsoft Graph API, will require an Azure Active Directory user token. At design time, the bot developer would register an Azure Active Directory application with the Bot Framework Token Service (via the Azure Portal), and then configure an OAuth connection setting ( named GraphConnection) for the bot.
+
+#### Goal
+
+![Authentication Docs Example -- Goal](../../GraphSVGs/AuthenticationDocExample_Goal.svg "Authentication Docs Example -- Goal")
+
+#### Detailed View
+
+![Authentication Docs Example -- BFTS Sends Token](../../GraphSVGs/AuthenticationDocExample_BftsSendsToken.svg "Authentication Docs Example -- BFTS Sends Token")
+
+* Does the Token Return to BF Channel Service upon creation of Token or does it Return directly from Token Service to Bot?
+* This part confuses me in the docs, because as far as I'm aware, External Service doesn't issue Tokens itself, that's the Authorization Server's job (which in this example is the "BF Token Service" as I understand it):
+    > The user signs-in to this page for the external service. Once complete, the external service completes the OAuth protocol exchange with the Bot Framework Token Service, resulting in the external service sending the Bot Framework Token Service the user token. The Bot Framework Token Service securely stores this token and sends an activity to the bot with this token.
+
+    * If it's true that the External Service makes Tokens itself, then the diagram would look like:
+
+![Authentication Docs Example -- External Service Sends Token](../../GraphSVGs/AuthenticationDocExample_ExternalServiceSendsToken.svg "Authentication Docs Example -- External Service Sends Token")
+
 
 ___
 
