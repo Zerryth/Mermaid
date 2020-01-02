@@ -28,16 +28,16 @@ participant ExternalService as External Service
 User ->> BFCS: Message Activity "Please check my email"
 BFCS ->> Bot: Receives Msg Activity & Determines intent is to check email
 Bot ->> BFTS: Do we have Token already?
-Note over BFCS, Bot: For the given userId for the OAuth connecting called GraphConnection
+Note over BFCS, Bot: For the given userId for the OAuth connection setting called GraphConnection
 alt No Token
     BFTS -->> Bot: Return [Token] NotFound result
-    Note over BFTS, Bot: Like 1st time user interacts w/Bot
+    Note over BFTS, Bot: Such as 1st time user interacts w/Bot
     Bot ->> BFCS: Creates OAuthCard, asks user to sign in
     BFCS ->> BFTS: Create Valid OAuth sign-in URL for request
     BFTS -->> BFCS: Valid sign-in URL added to OAuthCard
     BFCS ->> User: Send Message with OAuthCard that has Sign-In Button
     User ->> BFCS: User clicks Sign-In button
-    BFCS ->> ExternalService: Opens Browser & calls External Service to open Sign-In page
+    BFCS ->> ExternalService: Opens browser/pop-up & calls External Service to open Sign-In page
     ExternalService -->> User: Serves Sign-In page
     User ->> BFCS: User signs in
     BFCS ->> BFTS: User signs in
@@ -96,4 +96,53 @@ end
 
 Bot ->> ExternalService: Makes request with Token to External Service
 Note over Bot, ExternalService: Calls "check email" API
+```
+
+Using my knowledge of OAuth 2.0 in general though, and not following word-for-word what the docs say, I think the OAuth flow actually looks like this:
+
+```mermaid
+sequenceDiagram
+
+participant User
+participant BFCS as BF Channel Service
+participant IdPAuth as IdP Auth Endpoint
+participant IdPToken as IdP Token Endpoint
+participant TokenStorage as Token Storage
+Note over IdPAuth, IdPToken: Identity Provider
+Note over IdPAuth, IdPToken: e.g. AAD, GitHub, Facebook, etc.
+Note over BFCS, TokenStorage: Setup within Azure Bot Service
+participant Bot
+participant ExternalService as External Service
+
+
+User ->> BFCS: Message Activity "Please check my email"
+BFCS ->> Bot: Receives Msg Activity & Determines intent is to check email
+Bot ->> TokenStorage: Do we have Token already?
+Note over BFCS, Bot: For the given userId for the OAuth connection setting called GraphConnection
+alt No Token
+    TokenStorage -->> Bot: Return [Token] NotFound result
+    Note over TokenStorage, Bot: Such as 1st time user interacts w/Bot
+    Bot ->> BFCS: Creates OAuthCard, asks user to sign in
+    BFCS ->> IdPAuth: Create Valid OAuth sign-in URL for request
+    IdPAuth -->> BFCS: Valid sign-in URL added to OAuthCard
+    BFCS ->> User: Send Message with OAuthCard that has Sign-In Button
+    User ->> BFCS: User clicks Sign-In button
+    BFCS ->> IdPAuth: Redirects User to Sign-In to authenticate
+    IdPAuth -->> User: Serves Sign-In page/pop-up
+    User ->> BFCS: User signs in
+    BFCS ->> IdPAuth: User signs in
+    IdPAuth -->> BFCS: Authorization code
+    BFCS ->> IdPToken: Uses Authorization code to obtain Token
+    IdPToken ->> IdPToken: Creates Token
+    IdPToken ->> TokenStorage: Securely stores Token
+    IdPToken ->> BFCS: Returns Token
+    BFCS ->> Bot: Returns Token
+else Has Token
+    TokenStorage -->> BFCS: Returns stored Token
+    BFCS -->> Bot: Returns stored Token
+end
+
+Bot ->> ExternalService: Makes request with Token to External Service
+Note over Bot, ExternalService: Calls "check email" API
+
 ```
