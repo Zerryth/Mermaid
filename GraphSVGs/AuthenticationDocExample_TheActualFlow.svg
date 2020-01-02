@@ -1,49 +1,49 @@
-<svg id="mermaid-1577932481938" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" style="max-width:1450px;" viewBox="-50 -10 1450 1292.09375"><style>
+<svg id="mermaid-1577994545778" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" style="max-width:1450px;" viewBox="-50 -10 1450 1268.109375"><style>
 
 
 
-#mermaid-1577932481938 .label {
+#mermaid-1577994545778 .label {
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family);
   color: #333; }
 
-#mermaid-1577932481938 .label text {
+#mermaid-1577994545778 .label text {
   fill: #333; }
 
-#mermaid-1577932481938 .node rect,
-#mermaid-1577932481938 .node circle,
-#mermaid-1577932481938 .node ellipse,
-#mermaid-1577932481938 .node polygon {
+#mermaid-1577994545778 .node rect,
+#mermaid-1577994545778 .node circle,
+#mermaid-1577994545778 .node ellipse,
+#mermaid-1577994545778 .node polygon {
   fill: #ECECFF;
   stroke: #9370DB;
   stroke-width: 1px; }
 
-#mermaid-1577932481938 .node .label {
+#mermaid-1577994545778 .node .label {
   text-align: center; }
 
-#mermaid-1577932481938 .node.clickable {
+#mermaid-1577994545778 .node.clickable {
   cursor: pointer; }
 
-#mermaid-1577932481938 .arrowheadPath {
+#mermaid-1577994545778 .arrowheadPath {
   fill: #333333; }
 
-#mermaid-1577932481938 .edgePath .path {
+#mermaid-1577994545778 .edgePath .path {
   stroke: #333333;
   stroke-width: 1.5px; }
 
-#mermaid-1577932481938 .edgeLabel {
+#mermaid-1577994545778 .edgeLabel {
   background-color: #e8e8e8;
   text-align: center; }
 
-#mermaid-1577932481938 .cluster rect {
+#mermaid-1577994545778 .cluster rect {
   fill: #ffffde;
   stroke: #aaaa33;
   stroke-width: 1px; }
 
-#mermaid-1577932481938 .cluster text {
+#mermaid-1577994545778 .cluster text {
   fill: #333; }
 
-#mermaid-1577932481938 div.mermaidTooltip {
+#mermaid-1577994545778 div.mermaidTooltip {
   position: absolute;
   text-align: center;
   max-width: 200px;
@@ -57,117 +57,117 @@
   pointer-events: none;
   z-index: 100; }
 
-#mermaid-1577932481938 .actor {
+#mermaid-1577994545778 .actor {
   stroke: #CCCCFF;
   fill: #ECECFF; }
 
-#mermaid-1577932481938 text.actor {
+#mermaid-1577994545778 text.actor {
   fill: black;
   stroke: none; }
 
-#mermaid-1577932481938 .actor-line {
+#mermaid-1577994545778 .actor-line {
   stroke: grey; }
 
-#mermaid-1577932481938 .messageLine0 {
+#mermaid-1577994545778 .messageLine0 {
   stroke-width: 1.5;
   stroke-dasharray: '2 2';
   stroke: #333; }
 
-#mermaid-1577932481938 .messageLine1 {
+#mermaid-1577994545778 .messageLine1 {
   stroke-width: 1.5;
   stroke-dasharray: '2 2';
   stroke: #333; }
 
-#mermaid-1577932481938 #arrowhead {
+#mermaid-1577994545778 #arrowhead {
   fill: #333; }
 
-#mermaid-1577932481938 .sequenceNumber {
+#mermaid-1577994545778 .sequenceNumber {
   fill: white; }
 
-#mermaid-1577932481938 #sequencenumber {
+#mermaid-1577994545778 #sequencenumber {
   fill: #333; }
 
-#mermaid-1577932481938 #crosshead path {
+#mermaid-1577994545778 #crosshead path {
   fill: #333 !important;
   stroke: #333 !important; }
 
-#mermaid-1577932481938 .messageText {
+#mermaid-1577994545778 .messageText {
   fill: #333;
   stroke: none; }
 
-#mermaid-1577932481938 .labelBox {
+#mermaid-1577994545778 .labelBox {
   stroke: #CCCCFF;
   fill: #ECECFF; }
 
-#mermaid-1577932481938 .labelText {
+#mermaid-1577994545778 .labelText {
   fill: black;
   stroke: none; }
 
-#mermaid-1577932481938 .loopText {
+#mermaid-1577994545778 .loopText {
   fill: black;
   stroke: none; }
 
-#mermaid-1577932481938 .loopLine {
+#mermaid-1577994545778 .loopLine {
   stroke-width: 2;
   stroke-dasharray: '2 2';
   stroke: #CCCCFF; }
 
-#mermaid-1577932481938 .note {
+#mermaid-1577994545778 .note {
   stroke: #aaaa33;
   fill: #fff5ad; }
 
-#mermaid-1577932481938 .noteText {
+#mermaid-1577994545778 .noteText {
   fill: black;
   stroke: none;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family);
   font-size: 14px; }
 
-#mermaid-1577932481938 .activation0 {
+#mermaid-1577994545778 .activation0 {
   fill: #f4f4f4;
   stroke: #666; }
 
-#mermaid-1577932481938 .activation1 {
+#mermaid-1577994545778 .activation1 {
   fill: #f4f4f4;
   stroke: #666; }
 
-#mermaid-1577932481938 .activation2 {
+#mermaid-1577994545778 .activation2 {
   fill: #f4f4f4;
   stroke: #666; }
 
 
-#mermaid-1577932481938 .mermaid-main-font {
+#mermaid-1577994545778 .mermaid-main-font {
   font-family: "trebuchet ms", verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 .section {
+#mermaid-1577994545778 .section {
   stroke: none;
   opacity: 0.2; }
 
-#mermaid-1577932481938 .section0 {
+#mermaid-1577994545778 .section0 {
   fill: rgba(102, 102, 255, 0.49); }
 
-#mermaid-1577932481938 .section2 {
+#mermaid-1577994545778 .section2 {
   fill: #fff400; }
 
-#mermaid-1577932481938 .section1,
-#mermaid-1577932481938 .section3 {
+#mermaid-1577994545778 .section1,
+#mermaid-1577994545778 .section3 {
   fill: white;
   opacity: 0.2; }
 
-#mermaid-1577932481938 .sectionTitle0 {
+#mermaid-1577994545778 .sectionTitle0 {
   fill: #333; }
 
-#mermaid-1577932481938 .sectionTitle1 {
+#mermaid-1577994545778 .sectionTitle1 {
   fill: #333; }
 
-#mermaid-1577932481938 .sectionTitle2 {
+#mermaid-1577994545778 .sectionTitle2 {
   fill: #333; }
 
-#mermaid-1577932481938 .sectionTitle3 {
+#mermaid-1577994545778 .sectionTitle3 {
   fill: #333; }
 
-#mermaid-1577932481938 .sectionTitle {
+#mermaid-1577994545778 .sectionTitle {
   text-anchor: start;
   font-size: 11px;
   text-height: 14px;
@@ -175,309 +175,309 @@
   font-family: var(--mermaid-font-family); }
 
 
-#mermaid-1577932481938 .grid .tick {
+#mermaid-1577994545778 .grid .tick {
   stroke: lightgrey;
   opacity: 0.3;
   shape-rendering: crispEdges; }
-#mermaid-1577932481938   .grid .tick text {
+#mermaid-1577994545778   .grid .tick text {
     font-family: 'trebuchet ms', verdana, arial;
     font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 .grid path {
+#mermaid-1577994545778 .grid path {
   stroke-width: 0; }
 
 
-#mermaid-1577932481938 .today {
+#mermaid-1577994545778 .today {
   fill: none;
   stroke: red;
   stroke-width: 2px; }
 
 
 
-#mermaid-1577932481938 .task {
+#mermaid-1577994545778 .task {
   stroke-width: 2; }
 
-#mermaid-1577932481938 .taskText {
+#mermaid-1577994545778 .taskText {
   text-anchor: middle;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 .taskText:not([font-size]) {
+#mermaid-1577994545778 .taskText:not([font-size]) {
   font-size: 11px; }
 
-#mermaid-1577932481938 .taskTextOutsideRight {
+#mermaid-1577994545778 .taskTextOutsideRight {
   fill: black;
   text-anchor: start;
   font-size: 11px;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 .taskTextOutsideLeft {
+#mermaid-1577994545778 .taskTextOutsideLeft {
   fill: black;
   text-anchor: end;
   font-size: 11px; }
 
 
-#mermaid-1577932481938 .task.clickable {
+#mermaid-1577994545778 .task.clickable {
   cursor: pointer; }
 
-#mermaid-1577932481938 .taskText.clickable {
+#mermaid-1577994545778 .taskText.clickable {
   cursor: pointer;
   fill: #003163 !important;
   font-weight: bold; }
 
-#mermaid-1577932481938 .taskTextOutsideLeft.clickable {
+#mermaid-1577994545778 .taskTextOutsideLeft.clickable {
   cursor: pointer;
   fill: #003163 !important;
   font-weight: bold; }
 
-#mermaid-1577932481938 .taskTextOutsideRight.clickable {
+#mermaid-1577994545778 .taskTextOutsideRight.clickable {
   cursor: pointer;
   fill: #003163 !important;
   font-weight: bold; }
 
 
-#mermaid-1577932481938 .taskText0,
-#mermaid-1577932481938 .taskText1,
-#mermaid-1577932481938 .taskText2,
-#mermaid-1577932481938 .taskText3 {
+#mermaid-1577994545778 .taskText0,
+#mermaid-1577994545778 .taskText1,
+#mermaid-1577994545778 .taskText2,
+#mermaid-1577994545778 .taskText3 {
   fill: white; }
 
-#mermaid-1577932481938 .task0,
-#mermaid-1577932481938 .task1,
-#mermaid-1577932481938 .task2,
-#mermaid-1577932481938 .task3 {
+#mermaid-1577994545778 .task0,
+#mermaid-1577994545778 .task1,
+#mermaid-1577994545778 .task2,
+#mermaid-1577994545778 .task3 {
   fill: #8a90dd;
   stroke: #534fbc; }
 
-#mermaid-1577932481938 .taskTextOutside0,
-#mermaid-1577932481938 .taskTextOutside2 {
+#mermaid-1577994545778 .taskTextOutside0,
+#mermaid-1577994545778 .taskTextOutside2 {
   fill: black; }
 
-#mermaid-1577932481938 .taskTextOutside1,
-#mermaid-1577932481938 .taskTextOutside3 {
+#mermaid-1577994545778 .taskTextOutside1,
+#mermaid-1577994545778 .taskTextOutside3 {
   fill: black; }
 
 
-#mermaid-1577932481938 .active0,
-#mermaid-1577932481938 .active1,
-#mermaid-1577932481938 .active2,
-#mermaid-1577932481938 .active3 {
+#mermaid-1577994545778 .active0,
+#mermaid-1577994545778 .active1,
+#mermaid-1577994545778 .active2,
+#mermaid-1577994545778 .active3 {
   fill: #bfc7ff;
   stroke: #534fbc; }
 
-#mermaid-1577932481938 .activeText0,
-#mermaid-1577932481938 .activeText1,
-#mermaid-1577932481938 .activeText2,
-#mermaid-1577932481938 .activeText3 {
+#mermaid-1577994545778 .activeText0,
+#mermaid-1577994545778 .activeText1,
+#mermaid-1577994545778 .activeText2,
+#mermaid-1577994545778 .activeText3 {
   fill: black !important; }
 
 
-#mermaid-1577932481938 .done0,
-#mermaid-1577932481938 .done1,
-#mermaid-1577932481938 .done2,
-#mermaid-1577932481938 .done3 {
+#mermaid-1577994545778 .done0,
+#mermaid-1577994545778 .done1,
+#mermaid-1577994545778 .done2,
+#mermaid-1577994545778 .done3 {
   stroke: grey;
   fill: lightgrey;
   stroke-width: 2; }
 
-#mermaid-1577932481938 .doneText0,
-#mermaid-1577932481938 .doneText1,
-#mermaid-1577932481938 .doneText2,
-#mermaid-1577932481938 .doneText3 {
+#mermaid-1577994545778 .doneText0,
+#mermaid-1577994545778 .doneText1,
+#mermaid-1577994545778 .doneText2,
+#mermaid-1577994545778 .doneText3 {
   fill: black !important; }
 
 
-#mermaid-1577932481938 .crit0,
-#mermaid-1577932481938 .crit1,
-#mermaid-1577932481938 .crit2,
-#mermaid-1577932481938 .crit3 {
+#mermaid-1577994545778 .crit0,
+#mermaid-1577994545778 .crit1,
+#mermaid-1577994545778 .crit2,
+#mermaid-1577994545778 .crit3 {
   stroke: #ff8888;
   fill: red;
   stroke-width: 2; }
 
-#mermaid-1577932481938 .activeCrit0,
-#mermaid-1577932481938 .activeCrit1,
-#mermaid-1577932481938 .activeCrit2,
-#mermaid-1577932481938 .activeCrit3 {
+#mermaid-1577994545778 .activeCrit0,
+#mermaid-1577994545778 .activeCrit1,
+#mermaid-1577994545778 .activeCrit2,
+#mermaid-1577994545778 .activeCrit3 {
   stroke: #ff8888;
   fill: #bfc7ff;
   stroke-width: 2; }
 
-#mermaid-1577932481938 .doneCrit0,
-#mermaid-1577932481938 .doneCrit1,
-#mermaid-1577932481938 .doneCrit2,
-#mermaid-1577932481938 .doneCrit3 {
+#mermaid-1577994545778 .doneCrit0,
+#mermaid-1577994545778 .doneCrit1,
+#mermaid-1577994545778 .doneCrit2,
+#mermaid-1577994545778 .doneCrit3 {
   stroke: #ff8888;
   fill: lightgrey;
   stroke-width: 2;
   cursor: pointer;
   shape-rendering: crispEdges; }
 
-#mermaid-1577932481938 .milestone {
+#mermaid-1577994545778 .milestone {
   transform: rotate(45deg) scale(0.8, 0.8); }
 
-#mermaid-1577932481938 .milestoneText {
+#mermaid-1577994545778 .milestoneText {
   font-style: italic; }
 
-#mermaid-1577932481938 .doneCritText0,
-#mermaid-1577932481938 .doneCritText1,
-#mermaid-1577932481938 .doneCritText2,
-#mermaid-1577932481938 .doneCritText3 {
+#mermaid-1577994545778 .doneCritText0,
+#mermaid-1577994545778 .doneCritText1,
+#mermaid-1577994545778 .doneCritText2,
+#mermaid-1577994545778 .doneCritText3 {
   fill: black !important; }
 
-#mermaid-1577932481938 .activeCritText0,
-#mermaid-1577932481938 .activeCritText1,
-#mermaid-1577932481938 .activeCritText2,
-#mermaid-1577932481938 .activeCritText3 {
+#mermaid-1577994545778 .activeCritText0,
+#mermaid-1577994545778 .activeCritText1,
+#mermaid-1577994545778 .activeCritText2,
+#mermaid-1577994545778 .activeCritText3 {
   fill: black !important; }
 
-#mermaid-1577932481938 .titleText {
+#mermaid-1577994545778 .titleText {
   text-anchor: middle;
   font-size: 18px;
   fill: black;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 g.classGroup text {
+#mermaid-1577994545778 g.classGroup text {
   fill: #9370DB;
   stroke: none;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family);
   font-size: 10px; }
-#mermaid-1577932481938   g.classGroup text .title {
+#mermaid-1577994545778   g.classGroup text .title {
     font-weight: bolder; }
 
-#mermaid-1577932481938 g.classGroup rect {
+#mermaid-1577994545778 g.classGroup rect {
   fill: #ECECFF;
   stroke: #9370DB; }
 
-#mermaid-1577932481938 g.classGroup line {
+#mermaid-1577994545778 g.classGroup line {
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 .classLabel .box {
+#mermaid-1577994545778 .classLabel .box {
   stroke: none;
   stroke-width: 0;
   fill: #ECECFF;
   opacity: 0.5; }
 
-#mermaid-1577932481938 .classLabel .label {
+#mermaid-1577994545778 .classLabel .label {
   fill: #9370DB;
   font-size: 10px; }
 
-#mermaid-1577932481938 .relation {
+#mermaid-1577994545778 .relation {
   stroke: #9370DB;
   stroke-width: 1;
   fill: none; }
 
-#mermaid-1577932481938 #compositionStart {
+#mermaid-1577994545778 #compositionStart {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 #compositionEnd {
+#mermaid-1577994545778 #compositionEnd {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 #aggregationStart {
+#mermaid-1577994545778 #aggregationStart {
   fill: #ECECFF;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 #aggregationEnd {
+#mermaid-1577994545778 #aggregationEnd {
   fill: #ECECFF;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 #dependencyStart {
+#mermaid-1577994545778 #dependencyStart {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 #dependencyEnd {
+#mermaid-1577994545778 #dependencyEnd {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 #extensionStart {
+#mermaid-1577994545778 #extensionStart {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 #extensionEnd {
+#mermaid-1577994545778 #extensionEnd {
   fill: #9370DB;
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 .commit-id,
-#mermaid-1577932481938 .commit-msg,
-#mermaid-1577932481938 .branch-label {
+#mermaid-1577994545778 .commit-id,
+#mermaid-1577994545778 .commit-msg,
+#mermaid-1577994545778 .branch-label {
   fill: lightgrey;
   color: lightgrey;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 .pieTitleText {
+#mermaid-1577994545778 .pieTitleText {
   text-anchor: middle;
   font-size: 25px;
   fill: black;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 .slice {
+#mermaid-1577994545778 .slice {
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 g.stateGroup text {
+#mermaid-1577994545778 g.stateGroup text {
   fill: #9370DB;
   stroke: none;
   font-size: 10px;
   font-family: 'trebuchet ms', verdana, arial;
   font-family: var(--mermaid-font-family); }
 
-#mermaid-1577932481938 g.stateGroup text {
+#mermaid-1577994545778 g.stateGroup text {
   fill: #9370DB;
   stroke: none;
   font-size: 10px; }
 
-#mermaid-1577932481938 g.stateGroup .state-title {
+#mermaid-1577994545778 g.stateGroup .state-title {
   font-weight: bolder;
   fill: black; }
 
-#mermaid-1577932481938 g.stateGroup rect {
+#mermaid-1577994545778 g.stateGroup rect {
   fill: #ECECFF;
   stroke: #9370DB; }
 
-#mermaid-1577932481938 g.stateGroup line {
+#mermaid-1577994545778 g.stateGroup line {
   stroke: #9370DB;
   stroke-width: 1; }
 
-#mermaid-1577932481938 .transition {
+#mermaid-1577994545778 .transition {
   stroke: #9370DB;
   stroke-width: 1;
   fill: none; }
 
-#mermaid-1577932481938 .stateGroup .composit {
+#mermaid-1577994545778 .stateGroup .composit {
   fill: white;
   border-bottom: 1px; }
 
-#mermaid-1577932481938 .state-note {
+#mermaid-1577994545778 .state-note {
   stroke: #aaaa33;
   fill: #fff5ad; }
-#mermaid-1577932481938   .state-note text {
+#mermaid-1577994545778   .state-note text {
     fill: black;
     stroke: none;
     font-size: 10px; }
 
-#mermaid-1577932481938 .stateLabel .box {
+#mermaid-1577994545778 .stateLabel .box {
   stroke: none;
   stroke-width: 0;
   fill: #ECECFF;
   opacity: 0.5; }
 
-#mermaid-1577932481938 .stateLabel text {
+#mermaid-1577994545778 .stateLabel text {
   fill: black;
   font-size: 10px;
   font-weight: bold;
@@ -488,7 +488,7 @@
   --mermaid-font-family: '"trebuchet ms", verdana, arial';
   --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
 
-:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1577932481938 {
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1577994545778 {
     color: rgba(0, 0, 0, 0.65);
     font: ;
-  }</style><g></g><g><line id="actor46" x1="75" y1="5" x2="75" y2="1281.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">User</tspan></text></g><g><line id="actor47" x1="275" y1="5" x2="275" y2="1281.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">BF Channel Service</tspan></text></g><g><line id="actor48" x1="475" y1="5" x2="475" y2="1281.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="400" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">IdP Auth Endpoint</tspan></text></g><g><line id="actor49" x1="675" y1="5" x2="675" y2="1281.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="600" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">IdP Token Endpoint</tspan></text></g><g><line id="actor50" x1="875" y1="5" x2="875" y2="1281.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="800" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">Token Storage</tspan></text></g><g><line id="actor51" x1="1075" y1="5" x2="1075" y2="1281.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1000" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Bot</tspan></text></g><g><line id="actor52" x1="1275" y1="5" x2="1275" y2="1281.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">External Service</tspan></text></g><defs><marker id="arrowhead" refX="5" refY="2" markerWidth="6" markerHeight="4" orient="auto"><path d="M 0,0 V 4 L6,2 Z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="16" refY="4"><path fill="black" stroke="#000000" stroke-width="1px" d="M 9,2 V 6 L16,4 Z" style="stroke-dasharray: 0, 0;"></path><path fill="none" stroke="#000000" stroke-width="1px" d="M 0,1 L 6,7 M 6,1 L 0,7" style="stroke-dasharray: 0, 0;"></path></marker></defs><defs><marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto"><circle cx="15" cy="15" r="6"></circle></marker></defs><g><rect x="450" y="75" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="446" y="99" class="noteText"><tspan x="466">Identity Provider</tspan></text></g><g><rect x="450" y="121.015625" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="446" y="145.015625" class="noteText"><tspan x="466">e.g. AAD, GitHub, Facebook, etc.</tspan></text></g><g><rect x="250" y="167.03125" fill="#EDF2AE" stroke="#666" width="650" height="36.015625" rx="0" ry="0" class="note"></rect><text x="246" y="191.03125" class="noteText"><tspan x="266">Setup within Azure Bot Service</tspan></text></g><g><text x="175" y="231.046875" class="messageText" style="text-anchor: middle;">Message Activity "Please check my email"</text><line x1="75" y1="238.046875" x2="275" y2="238.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="675" y="266.046875" class="messageText" style="text-anchor: middle;">Receives Msg Activity &amp; Determines intent is to check email</text><line x1="275" y1="273.046875" x2="1075" y2="273.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="975" y="301.046875" class="messageText" style="text-anchor: middle;">Do we have Token already?</text><line x1="1075" y1="308.046875" x2="875" y2="308.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="250" y="318.046875" fill="#EDF2AE" stroke="#666" width="850" height="36.015625" rx="0" ry="0" class="note"></rect><text x="246" y="342.046875" class="noteText"><tspan x="266">For the given userId for the OAuth connection setting called GraphConnection</tspan></text></g><g><text x="975" y="407.0625" class="messageText" style="text-anchor: middle;">Return [Token] NotFound result</text><line x1="875" y1="414.0625" x2="1075" y2="414.0625" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="850" y="424.0625" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="846" y="448.0625" class="noteText"><tspan x="866">Such as 1st time user interacts w/Bot</tspan></text></g><g><text x="675" y="488.078125" class="messageText" style="text-anchor: middle;">Creates OAuthCard, asks user to sign in</text><line x1="1075" y1="495.078125" x2="275" y2="495.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="523.078125" class="messageText" style="text-anchor: middle;">Create Valid OAuth sign-in URL for request</text><line x1="275" y1="530.078125" x2="475" y2="530.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="558.078125" class="messageText" style="text-anchor: middle;">Valid sign-in URL added to OAuthCard</text><line x1="475" y1="565.078125" x2="275" y2="565.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="175" y="593.078125" class="messageText" style="text-anchor: middle;">Send Message with OAuthCard that has Sign-In Button</text><line x1="275" y1="600.078125" x2="75" y2="600.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="175" y="628.078125" class="messageText" style="text-anchor: middle;">User clicks Sign-In button</text><line x1="75" y1="635.078125" x2="275" y2="635.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="663.078125" class="messageText" style="text-anchor: middle;">Redirects User to Sign-In to authenticate</text><line x1="275" y1="670.078125" x2="475" y2="670.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="275" y="698.078125" class="messageText" style="text-anchor: middle;">Serves Sign-In page/pop-up</text><line x1="475" y1="705.078125" x2="75" y2="705.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="175" y="733.078125" class="messageText" style="text-anchor: middle;">User signs in</text><line x1="75" y1="740.078125" x2="275" y2="740.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="768.078125" class="messageText" style="text-anchor: middle;">User signs in</text><line x1="275" y1="775.078125" x2="475" y2="775.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="803.078125" class="messageText" style="text-anchor: middle;">Authorization code</text><line x1="475" y1="810.078125" x2="275" y2="810.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="475" y="838.078125" class="messageText" style="text-anchor: middle;">Uses Authorization code to obtain Token</text><line x1="275" y1="845.078125" x2="675" y2="845.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="675" y="873.078125" class="messageText" style="text-anchor: middle;">Creates Token</text><path d="M 675,880.078125 C 735,870.078125 735,910.078125 675,900.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></path></g><g><text x="775" y="938.078125" class="messageText" style="text-anchor: middle;">Securely stores Token</text><line x1="675" y1="945.078125" x2="875" y2="945.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="475" y="973.078125" class="messageText" style="text-anchor: middle;">Returns Token</text><line x1="675" y1="980.078125" x2="275" y2="980.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="675" y="1008.078125" class="messageText" style="text-anchor: middle;">Returns Token</text><line x1="275" y1="1015.078125" x2="1075" y2="1015.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="575" y="1063.078125" class="messageText" style="text-anchor: middle;">Returns stored Token</text><line x1="875" y1="1070.078125" x2="275" y2="1070.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="675" y="1098.078125" class="messageText" style="text-anchor: middle;">Returns stored Token</text><line x1="275" y1="1105.078125" x2="1075" y2="1105.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><line x1="65" y1="364.0625" x2="1110" y2="364.0625" class="loopLine"></line><line x1="1110" y1="364.0625" x2="1110" y2="1115.078125" class="loopLine"></line><line x1="65" y1="1115.078125" x2="1110" y2="1115.078125" class="loopLine"></line><line x1="65" y1="364.0625" x2="65" y2="1115.078125" class="loopLine"></line><line x1="65" y1="1025.078125" x2="1110" y2="1025.078125" class="loopLine" style="stroke-dasharray: 3, 3;"></line><polygon points="65,364.0625 115,364.0625 115,377.0625 106.6,384.0625 65,384.0625" class="labelBox"></polygon><text x="72.5" y="379.0625" class="labelText"><tspan x="72.5">alt</tspan></text><text x="587.5" y="379.0625" class="loopText" style="text-anchor: middle;"><tspan x="587.5">[ No Token ]</tspan></text><text x="587.5" y="1040.078125" class="loopText" style="text-anchor: middle;"><tspan x="587.5">[ Has Token ]</tspan></text></g><g><text x="1175" y="1143.078125" class="messageText" style="text-anchor: middle;">Makes request with Token to External Service</text><line x1="1075" y1="1150.078125" x2="1275" y2="1150.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1050" y="1160.078125" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="1046" y="1184.078125" class="noteText"><tspan x="1066">Calls "check email" API</tspan></text></g><g><rect x="0" y="1216.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="1248.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">User</tspan></text></g><g><rect x="200" y="1216.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="1248.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">BF Channel Service</tspan></text></g><g><rect x="400" y="1216.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="1248.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">IdP Auth Endpoint</tspan></text></g><g><rect x="600" y="1216.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="1248.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">IdP Token Endpoint</tspan></text></g><g><rect x="800" y="1216.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="1248.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">Token Storage</tspan></text></g><g><rect x="1000" y="1216.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="1248.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Bot</tspan></text></g><g><rect x="1200" y="1216.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="1248.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">External Service</tspan></text></g></svg>
+  }</style><g></g><g><line id="actor53" x1="75" y1="5" x2="75" y2="1257.109375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">User</tspan></text></g><g><line id="actor54" x1="275" y1="5" x2="275" y2="1257.109375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">BF Channel Service</tspan></text></g><g><line id="actor55" x1="475" y1="5" x2="475" y2="1257.109375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="400" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">BF Token Service</tspan></text></g><g><line id="actor56" x1="675" y1="5" x2="675" y2="1257.109375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="600" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">IdP Auth Endpoint</tspan></text></g><g><line id="actor57" x1="875" y1="5" x2="875" y2="1257.109375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="800" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">IdP Token Endpoint</tspan></text></g><g><line id="actor58" x1="1075" y1="5" x2="1075" y2="1257.109375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1000" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Bot</tspan></text></g><g><line id="actor59" x1="1275" y1="5" x2="1275" y2="1257.109375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">External Service</tspan></text></g><defs><marker id="arrowhead" refX="5" refY="2" markerWidth="6" markerHeight="4" orient="auto"><path d="M 0,0 V 4 L6,2 Z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="16" refY="4"><path fill="black" stroke="#000000" stroke-width="1px" d="M 9,2 V 6 L16,4 Z" style="stroke-dasharray: 0, 0;"></path><path fill="none" stroke="#000000" stroke-width="1px" d="M 0,1 L 6,7 M 6,1 L 0,7" style="stroke-dasharray: 0, 0;"></path></marker></defs><defs><marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto"><circle cx="15" cy="15" r="6"></circle></marker></defs><g><rect x="650" y="75" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="646" y="99" class="noteText"><tspan x="666">Identity Provider</tspan></text></g><g><rect x="650" y="121.015625" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="646" y="145.015625" class="noteText"><tspan x="666">e.g. AAD, GitHub, Facebook, etc.</tspan></text></g><g><rect x="250" y="167.03125" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="246" y="191.03125" class="noteText"><tspan x="266">Setup within Azure Bot Service</tspan></text></g><g><text x="175" y="231.046875" class="messageText" style="text-anchor: middle;">Message Activity "Please check my email"</text><line x1="75" y1="238.046875" x2="275" y2="238.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="675" y="266.046875" class="messageText" style="text-anchor: middle;">Receives Msg Activity &amp; Determines intent is to check email</text><line x1="275" y1="273.046875" x2="1075" y2="273.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="775" y="301.046875" class="messageText" style="text-anchor: middle;">Do we have Token already? (https://api.botframework.com/api/usertoken/GetToken)</text><line x1="1075" y1="308.046875" x2="475" y2="308.046875" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="250" y="318.046875" fill="#EDF2AE" stroke="#666" width="850" height="36.015625" rx="0" ry="0" class="note"></rect><text x="246" y="342.046875" class="noteText"><tspan x="266">For the given userId for the OAuth connection setting called GraphConnection</tspan></text></g><g><text x="775" y="407.0625" class="messageText" style="text-anchor: middle;">Return [Token] NotFound result</text><line x1="475" y1="414.0625" x2="1075" y2="414.0625" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="450" y="424.0625" fill="#EDF2AE" stroke="#666" width="650" height="36.015625" rx="0" ry="0" class="note"></rect><text x="446" y="448.0625" class="noteText"><tspan x="466">Such as 1st time user interacts w/Bot</tspan></text></g><g><text x="675" y="488.078125" class="messageText" style="text-anchor: middle;">Creates OAuthCard, asks user to sign in</text><line x1="1075" y1="495.078125" x2="275" y2="495.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="523.078125" class="messageText" style="text-anchor: middle;">Create Valid OAuth sign-in URL for request</text><line x1="275" y1="530.078125" x2="475" y2="530.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="558.078125" class="messageText" style="text-anchor: middle;">Valid sign-in URL added to OAuthCard</text><line x1="475" y1="565.078125" x2="275" y2="565.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="175" y="593.078125" class="messageText" style="text-anchor: middle;">Send Message with OAuthCard that has Sign-In Button</text><line x1="275" y1="600.078125" x2="75" y2="600.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="175" y="628.078125" class="messageText" style="text-anchor: middle;">User clicks Sign-In button</text><line x1="75" y1="635.078125" x2="275" y2="635.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="475" y="663.078125" class="messageText" style="text-anchor: middle;">Calls External IdP to load Sign-In page/pop-up</text><line x1="275" y1="670.078125" x2="675" y2="670.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="698.078125" class="messageText" style="text-anchor: middle;">Serves Sign-In page/pop-up</text><line x1="675" y1="705.078125" x2="75" y2="705.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="375" y="733.078125" class="messageText" style="text-anchor: middle;">User signs in &amp; authorizes Bot</text><line x1="75" y1="740.078125" x2="675" y2="740.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="575" y="768.078125" class="messageText" style="text-anchor: middle;">Returns authorization code</text><line x1="675" y1="775.078125" x2="475" y2="775.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="450" y="785.078125" fill="#EDF2AE" stroke="#666" width="450" height="36.015625" rx="0" ry="0" class="note"></rect><text x="446" y="809.078125" class="noteText"><tspan x="466">https://token.botframework.com/.auth/web/redirect</tspan></text></g><g><text x="675" y="849.09375" class="messageText" style="text-anchor: middle;">Uses authorization code to obtain Token</text><line x1="475" y1="856.09375" x2="875" y2="856.09375" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="675" y="884.09375" class="messageText" style="text-anchor: middle;">Returns Token</text><line x1="875" y1="891.09375" x2="475" y2="891.09375" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="475" y="919.09375" class="messageText" style="text-anchor: middle;">Securely stores Token</text><path d="M 475,926.09375 C 535,916.09375 535,956.09375 475,946.09375" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></path></g><g><text x="775" y="984.09375" class="messageText" style="text-anchor: middle;">Returns Token</text><line x1="475" y1="991.09375" x2="1075" y2="991.09375" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="375" y="1039.09375" class="messageText" style="text-anchor: middle;">Returns stored Token</text><line x1="475" y1="1046.09375" x2="275" y2="1046.09375" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="675" y="1074.09375" class="messageText" style="text-anchor: middle;">Returns stored Token</text><line x1="275" y1="1081.09375" x2="1075" y2="1081.09375" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><line x1="65" y1="364.0625" x2="1110" y2="364.0625" class="loopLine"></line><line x1="1110" y1="364.0625" x2="1110" y2="1091.09375" class="loopLine"></line><line x1="65" y1="1091.09375" x2="1110" y2="1091.09375" class="loopLine"></line><line x1="65" y1="364.0625" x2="65" y2="1091.09375" class="loopLine"></line><line x1="65" y1="1001.09375" x2="1110" y2="1001.09375" class="loopLine" style="stroke-dasharray: 3, 3;"></line><polygon points="65,364.0625 115,364.0625 115,377.0625 106.6,384.0625 65,384.0625" class="labelBox"></polygon><text x="72.5" y="379.0625" class="labelText"><tspan x="72.5">alt</tspan></text><text x="587.5" y="379.0625" class="loopText" style="text-anchor: middle;"><tspan x="587.5">[ No Token ]</tspan></text><text x="587.5" y="1016.09375" class="loopText" style="text-anchor: middle;"><tspan x="587.5">[ Has Token ]</tspan></text></g><g><text x="1175" y="1119.09375" class="messageText" style="text-anchor: middle;">Makes request with Token to External Service</text><line x1="1075" y1="1126.09375" x2="1275" y2="1126.09375" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1050" y="1136.09375" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="1046" y="1160.09375" class="noteText"><tspan x="1066">Calls "check email" API</tspan></text></g><g><rect x="0" y="1192.109375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="1224.609375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">User</tspan></text></g><g><rect x="200" y="1192.109375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="1224.609375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">BF Channel Service</tspan></text></g><g><rect x="400" y="1192.109375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="1224.609375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">BF Token Service</tspan></text></g><g><rect x="600" y="1192.109375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="1224.609375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">IdP Auth Endpoint</tspan></text></g><g><rect x="800" y="1192.109375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="1224.609375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">IdP Token Endpoint</tspan></text></g><g><rect x="1000" y="1192.109375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="1224.609375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Bot</tspan></text></g><g><rect x="1200" y="1192.109375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="1224.609375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">External Service</tspan></text></g></svg>
