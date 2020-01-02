@@ -29,7 +29,6 @@ When a user wants the bot to access the external service, the bot sends the user
 - Note to self: maybe illustrate authorization code grant type flow?
     - ^ Ok. Right now I added a [sequence diagram](#another-example-scenario-described-in-authentication-docs) of an example that I found in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs that go into the OAuth pattern of token acquisition in more detail.
 
-- Also need clarification. In docs it references "Bot Framework Token Service" -- is this the same entity or different from the IdP (e.g. AAD, GitHub, Uber, etc.)?
 ___
 
 ### An Example
@@ -52,7 +51,7 @@ You're using a retail store bot that sells yoga pants, that has a "wishlist" fea
 ___
 ### Another Example, scenario described in [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) docs
 
-**Needs review!** (I'm unsure of the pattern of who actually creates the Token)
+**Needs review!** 
 
 Illustrating example in [Authentication docs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0#about-the-bot-framework-token-service) describing the "Bot Framework Token Service"
 
