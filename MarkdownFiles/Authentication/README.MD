@@ -65,6 +65,15 @@ Illustrating example in [Authentication docs](https://docs.microsoft.com/en-us/a
 
 Note: I'll add the activation vertical bars onto diagram, once I know the participants are calling in the proper order
 
+Using my knowledge of OAuth 2.0 in general though, and not following word-for-word what the docs say, I think the OAuth flow actually looks like this:
+
+![AuthenticationDocExample_TheActualFlow](../../GraphSVGs/AuthenticationDocExample_TheActualFlow.svg "AuthenticationDocExample - The Actual Flow")
+
+* Consider: removing Bot Framework Channel participant and only illustrate the interaction
+
+<details>
+    <summary>Sequence diagrams following the Authentication docs verbatim</summary>
+
 ![Authentication Docs Example -- BFTS Sends Token](../../GraphSVGs/AuthenticationDocExample_BftsSendsToken.svg "Authentication Docs Example -- BFTS Sends Token")
 
 * Does the Token Return to BF Channel Service upon creation of Token or does it Return directly from Token Service to Bot?
@@ -79,10 +88,8 @@ Note: I'll add the activation vertical bars onto diagram, once I know the partic
 * Ok, I'm pretty convinced our [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) documentation is incorrect
 * See [video on OAuth 2.0 concepts](https://www.youtube.com/watch?v=CPbvxxslDTU)
 * I also have been reading [OAuth 2.0 in Action](https://www.manning.com/books/oauth-2-in-action), which also says you sign into the Authorization Server, *not* the Protected Resource (External Service)
+</details>
 
-Using my knowledge of OAuth 2.0 in general though, and not following word-for-word what the docs say, I think the OAuth flow actually looks like this:
-
-![AuthenticationDocExample_TheActualFlow](../../GraphSVGs/AuthenticationDocExample_TheActualFlow.svg "AuthenticationDocExample - The Actual Flow")
 ___
 
 ### [Add authentication to your bot via Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp)
