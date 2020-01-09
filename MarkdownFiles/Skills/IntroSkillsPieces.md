@@ -7,6 +7,6 @@ SkillConsumer -- can consume --- Skill3((Skill 3))
 
 Skill1 -- Describes interface with --- Manifest>"Skill Manifest: JSON that describes a skill's: activites, parameters, endpoints"]
 
-Manifest -- Describes manifest schema with --- ManifestSchema[/Skill Manifest Schema: JSON that describes schema of SKill Manifest\]
+Manifest -- Describes manifest schema with --- ManifestSchema[/Skill Manifest Schema: JSON that describes schema of Skill Manifest\]
 
 ```
