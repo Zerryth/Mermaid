@@ -3,7 +3,7 @@
 ## Intro to Skills Pieces
 
 ### Consuming Skills
-![MultipleBotsConsumeSkills](../../GraphSVGs/MultipleBotsConsumeSkills.svg "Multiple Bots Consume Skills")
+![MultipleBotsConsumeSkills](../../GraphSVGs/MultipleBotsConsumeSkills2.svg "Multiple Bots Consume Skills")
 
 * A *root bot* can consume many *skills*
 * A *skill* can be consumed by many *bots*
