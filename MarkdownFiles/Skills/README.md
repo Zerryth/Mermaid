@@ -18,3 +18,36 @@
 ### Parent to Child Flow Overview
 
 ![ParentToChildFlowOverview](../../GraphSVGs/ParentToChildFlowOverview.svg "Parent To Child Flow Overview")
+
+___
+
+## Diagram Sketched Drafts
+
+Need to see if I can convert these to Mermaid diagrams or if I would need to use some other graphing source.
+
+### Skill Client
+
+*Skill client* sends Activities to a Skill. The Activity could be from the *user* or the *skill consumer*.
+!["ClientSendsActivity"](../../SketchedDrafts/Skills/ClientSendsActivity.jpg)
+
+The *skill client* replaces the original user-root conversation reference with the root-skill converation reference.
+!["ClientConvoRef"](../../SketchedDrafts/Skills/ClientConvoRef.jpg "Client Conversation Reference")
+
+The *skill client* adds the bot-to-bot auth Token.
+!["ClientBotToBotAuth"](../../SketchedDrafts/Skills/ClientBotToBotAuth.jpg "Client Bot-to-Bot Auth")
+
+___
+
+### Skill Handler
+
+The *skill consumer* uses a *skill handler* to receive Activites from a *skill*.
+!["HandlerReceivesActivity"](../../SketchedDrafts/Skills/HandlerReceivesActivity.jpg "Handler Receives Activities")
+
+The *skill handler* retrieves the original conversation reference (user-root).
+!["HandlerConvoRef"](../../SketchedDrafts/Skills/HandlerConvoRef.jpg "Handler Retrieves Original Convo Ref")
+
+Handles ReplyToActivity and SendToConversation channel service API methods.
+!["Handler_ReplyToAndSendTo"](../../SketchedDrafts/Skills/Handler_ReplyToAndSendTo.jpg "Handler - SendToConversation and ReplyToActivity API methods")
+
+Enforces authentication and claims validation.
+!["HandlerAuthAndClaimsValidation"](../../SketchedDrafts/Skills/HandlerAuthAndClaimsValidation.jpg "Handler Enforces Authentication and Claims Validation")
