@@ -104,7 +104,7 @@ sequenceDiagram
                                 ChannelValidationClass ->> JwtTokenExtractor: getIdentity() to get ClaimsIdentity
                                 activate ChannelValidationClass
                                 activate JwtTokenExtractor
-                                    Note over ChannelValidationClass, OpenIdMetadata: Verify that token was issued by a valid issuer
+                                    Note over JwtTokenExtractor, CredentialProvider: Verify that token was issued by a valid issuer
                                     JwtTokenExtractor ->> JwtTokenExtractor: hasAllowedIssuer()
 
                                     JwtTokenExtractor ->> JwtTokenExtractor: validateToken()
