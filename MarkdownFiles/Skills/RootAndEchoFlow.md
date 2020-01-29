@@ -1,3 +1,7 @@
+# Outbound from RootBot to EchoSkillBot
+
+A look into RootBot's logic as it sends forwards a User's message to a Skill.
+
 ```mermaid
     sequenceDiagram
         participant User
@@ -47,7 +51,8 @@
         ActiveSkill -->> Root: return undefined
         deactivate ActiveSkill
         deactivate Root
-
+        
+        Note over ActiveSkill, Memory: RootBot's sends Message to User in response to User's "skill" Message
         Root ->> TurnContext: sendActivity('Got it, connecting you to the skill...')
         activate Root
         activate TurnContext

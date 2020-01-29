@@ -82,7 +82,7 @@
             Middleware ->> Middleware: Call next callback in Send Activities List in TurnContext
         end
 
-        Middleware ->> BotAdapter: SendActivitiesThroughAdapter(): 
+        Middleware ->> BotAdapter: SendActivitiesThroughAdapter() 
         BotAdapter ->> BotFrameworkAdapter: SendActivitiesAsync()
         alt has ReplyToId
             BotFrameworkAdapter ->> Connector: ReplyToActivityAsync() 

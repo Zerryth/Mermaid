@@ -1,6 +1,6 @@
 ```mermaid
 sequenceDiagram
-        participant Channel as RootBot
+        participant Channel
         participant BFS as Bot Framework Service
         participant WebServer as Web Server
         Note over WebServer: Restify or Express
@@ -133,7 +133,7 @@ sequenceDiagram
                                 activate ChannelValidationClass
                                     Note over ChannelValidationClass: Validate that ClaimsIdentity:
                                     Note over ChannelValidationClass: isAuthenticated
-                                    Note over ChannelValidationClass: has "ver" and "aud" claims
+                                    Note over ChannelValidationClass: has "ver" and "aud" claims *1
 
                                     ChannelValidationClass ->> CredentialProvider: isValidAppId()
                                     activate CredentialProvider
@@ -299,3 +299,6 @@ sequenceDiagram
         deactivate Channel
 
 ```
+
+- *1 doesn't look like in the Emulator Validation path that it checks for the "aud" claim
+    - It does try to assert the others listed in diagram, however

@@ -5,7 +5,7 @@ SkillBot -> RootBot -> User
 
 Note: need to separate alternative (alt) routes, because it looks very confusing when nested
 
-![JS RootBot SkillHandler](../../GraphSVGs/JsSkillHandler.svg "JS RootBot SkillHandler")
+<!-- ![JS RootBot SkillHandler](../../GraphSVGs/JsSkillHandler.svg "JS RootBot SkillHandler") -->
 ____
 Diagram Source:
 ```mermaid
@@ -60,7 +60,7 @@ sequenceDiagram
                         SkillHandler ->> SkillConversationIdFactory: getConversationReference()
                         activate SkillHandler
                             activate SkillConversationIdFactory
-                                SkillConversationIdFactory -->> SkillHandler: return original user-root conversation reference(?)
+                                SkillConversationIdFactory -->> SkillHandler: return original user-consumer conversation reference
                             deactivate SkillConversationIdFactory
                         deactivate SkillHandler
 
@@ -165,12 +165,14 @@ sequenceDiagram
                                                     Adapter ->> Connector: sendToConversations()
                                                     activate Connector
                                                         Connector ->> User: Http POST Message "Echo: 'skill'" *3
-                                                        User -->> Connector: return response with id
+                                                        activate User
+                                                            User -->> Connector: return response with id
+                                                        deactivate User
                                                         Connector -->> Adapter: return response with id
+                                                    deactivate Connector
 
                                                         Adapter -->> TurnContext: return responses *4
                                                         TurnContext -->> SkillHandler: return first response
-                                                    deactivate Connector
                                                 end
                                                 deactivate TurnContext
                                             deactivate TurnContext
@@ -184,6 +186,7 @@ sequenceDiagram
 
                             Adapter -->> SkillHandler: 
                         deactivate Adapter
+                        deactivate Adapter
                         deactivate SkillHandler
 
                         SkillHandler -->> SkillHandler: return { id: UUID }
@@ -194,7 +197,11 @@ sequenceDiagram
                 SkillHandler -->> ChannelServiceRoutes: return { id: UUID }
             deactivate SkillHandler
             deactivate ChannelServiceRoutes
+
+            ChannelServiceRoutes -->> WebServer: return { id: UUID }
         deactivate ChannelServiceRoutes
+
+            WebServer -->> Skill: return { id: UUID }
         deactivate WebServer
     deactivate Skill
 ```
