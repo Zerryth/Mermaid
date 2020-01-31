@@ -48,6 +48,18 @@ The Bot Framework SDK includes more recent work on custom adapters as well, such
     * For example, it could be an HTTP POST request to "api/facebook".
 4. REST HTTP calls directly to the 3rd party service's APIs
     * It *does not* call the Bot Framework Service layer
+
+# Details of communication between Bot Framework Service and Bot
+
+Illustrates few more details on the communication between the Bot Framework Service and the Bot using the `BotFrameworkAdapter`.
+
+![BFServiceAndBotDetails](../../GraphSVGs/BFServiceAndBotDetails.svg "BF Service and Bot Details")
+
+1. Calls from Bot to the Bot Framework Service are industry-standard REST API calls with JSON over HTTPS.
+2. Example showing Bot calling the Bot Framework Service's `ReplyToActivity` endpoint (`POST v3/conversations/{conversationId}/activities/{activityId}`)
+    * Bot can have 1 call in reply to Req. 1 (for example just Sending "Echo: 'hi'" message back) or the bot can have multiple REST calls in response to the Bot Framework Service's Req. 1, as illustrated with the subsequent HTTP calls from the bot.
+3. A `ResourceResponse` that contains an id property which specifies the ID of the Activity that was sent to the bot.
+
 ___
 ## Detailed look into the SDK
 
