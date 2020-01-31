@@ -60,6 +60,18 @@ Illustrates few more details on the communication between the Bot Framework Serv
     * Bot can have 1 call in reply to Req. 1 (for example just Sending "Echo: 'hi'" message back) or the bot can have multiple REST calls in response to the Bot Framework Service's Req. 1, as illustrated with the subsequent HTTP calls from the bot.
 3. A `ResourceResponse` that contains an id property which specifies the ID of the Activity that was sent to the bot.
 
+# Custom Adapters Protocol, Continued
+
+Certain channels communicate with custom adapters, such as Alexa and Slack. It is the custom adapter's job to transform the data received from the Bot into the right data shape or enforce the expected protocol flow of the channel that custom adapter is communitcating with.
+
+For some channels, like Slack, the channel follows the "Russian nesting doll" shape in it's request-response protocol, as illustrated in the [sequence diagram of Activity Flow using the BF Service and BotFrameworkAdapter](https://github.com/Zerryth/Mermaid/tree/master/MarkdownFiles/ActivityFlow#communication-between-a-channel-and-a-bot-thats-using-botframeworkadapter).
+
+Many channels, however, such as for Alexa, Google, etc., actually follow a different protocol pattern, where the HTTP request is followed by by the HTTP response, with the bot's reply within that HTTP response (i.e. not a separate bot request that has the bot's reply, followed by the status code response). To satisfy this common request-reply pattern, some custom adapters will buffer between the customer adapter and bot, until the entirety of the reply to the the channel's original request is ready. See diagram below for clarification.
+
+![AlexaAdapter](../../GraphSVGs/AlexaAdapter.svg)
+
+Above Alexa channel makes a request to the bot, hitting the custom adapter layer between. The custom adapter and bot buffer the response to the Alexa reuqest until X occurs, when the bot's reply is ready to be sent with in the HTTP response.
+
 ___
 ## Detailed look into the SDK
 
