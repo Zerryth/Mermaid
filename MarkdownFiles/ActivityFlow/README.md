@@ -54,10 +54,18 @@ ___
 ### *Modeled after the C# EchoBot example code in ['How bots work'](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0&tabs=csharp#bot-logic) documentation.*
 
 #### C#:
+<details>
+    <summary>C# Activity Flow Sequence Diagram</summary>
+
 ![Activity Flow Diagram](../../GraphSVGs/CsharpActivity.svg "Activity Flow C# EchoBot")
+</details>
 
 #### JS:
+<details>
+    <summary>JS Activity Flow Sequence Diagram</summary>
+
 ![Activity Flow Diagram](../../GraphSVGs/JSActivity.svg "Activity Flow JS EchoBot")
+</details>
 
 #### Generalized:
 ![Activity Flow Diagram](../../GraphSVGs/GeneralActivityFlow2.svg "Generalized Activity Flow")
@@ -67,22 +75,42 @@ ___
 C#
 
 ### `ProcessAsync()` Flow
-![Process Async](../../GraphSVGs/ProcessAsync.svg "Activity Flow C# EchoBot")
+<details>
+    <summary>ProcessAsync()</summary>
+
+![ProcessAsync](../../GraphSVGs/ProcessAsync.svg "ProcessAsync Flow C# EchoBot")
+
+</details>
 
 ___
 
 ### `ProcessActivityAsync()` Flow
+<details>
+    <summary>ProcessActivityAsync()</summary>
+
 ![ProcessActivityAsync](../../GraphSVGs/ProcessActivityAsync.svg "ProcessActivityAsync")
 
+</details>
+
 ___
 ___
+
 ### *Hierarchies that I looked into in order to better understand and learn about the Activity flow*
 
-### EchoBot's Adapter Class Diagram
+<details>
+    <summary>EchoBot's Adapter Hierarchy</summary>
+
 ![EchoBot's Adapter Hierarchy](../../GraphSVGs/EchoAdapterHierarchy.svg "EchoBot's Adapter Hierarchy")
+</details>
 
-### MiddlewareSet Class Diagram
+<details>
+    <summary>MiddlewareSet Class Diagram</summary>
+
 ![MiddlewareSet Class Diagram](../../GraphSVGs/MiddlewareSetClassDiagram.svg "MiddlewareSet Class Diagram")
+</details>
 
-### TurnContext Class Diagram
+<details>
+    <summary>TurnContext Class Diagram</summary>
+
 ![TurnContext Class Diagram](../../GraphSVGs/TurnContext.svg "TurnContext Class Diagram")
+</details>
