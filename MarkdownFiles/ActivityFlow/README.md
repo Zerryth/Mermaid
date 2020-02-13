@@ -94,6 +94,14 @@ ___
 #### Generalized:
 ![Activity Flow Diagram](../../GraphSVGs/GeneralActivityFlow2.svg "Generalized Activity Flow")
 
+Iterating on this detailed diagram of the Activity Flow in the BF SDK, defined buckets help solidify knowledge of how the pieces fit on a higher level (draft):
+![Activity Flow Diagram - Buckets Defined](../../SketchedDrafts/ActivityFlow/ActivityFlowWithDefinedBuckets.png "Activity Flow with Defined Buckets")
+
+1. Bots are essentially websites that are hosted in a Web App exposed over HTTP.
+    - For example, your bot receives POST requests to its `"api/messages"` endpoint.
+
+2. Calls from Bot to the Bot Framework Service are industry-standard REST API calls with JSON over HTTPS. See [Communication between a Channel and a Bot using the BotFrameworkAdapter](https://github.com/Zerryth/Mermaid/tree/master/MarkdownFiles/ActivityFlow#communication-between-a-channel-and-a-bot-thats-using-botframeworkadapter) and [Communication between Bot Framework Service and Bot](https://github.com/Zerryth/Mermaid/tree/master/MarkdownFiles/ActivityFlow#details-of-communication-between-bot-framework-service-and-bot) for more details.
+    - For example, to Reply to Activity the Bot's Connector will `POST v3/conversations/{conversationId}/activities/{activityId}`.
 ___
 
 C#
