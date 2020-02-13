@@ -35,9 +35,7 @@ sequenceDiagram
         BFS ->> WebServer: HTTP POST
         activate WebServer
         Note right of BFS: JSON payload of Activity info
-        WebServer ->> BotFrameworkAdapter: post()
-        activate BotFrameworkAdapter
-        BotFrameworkAdapter ->> BotFrameworkAdapter: processActivity()
+        WebServer ->> BotFrameworkAdapter: processActivity()
         activate BotFrameworkAdapter
             Note right of BotFrameworkAdapter: Deserialize Activity
             Note right of BotFrameworkAdapter: Get Bearer Token from Auth Header

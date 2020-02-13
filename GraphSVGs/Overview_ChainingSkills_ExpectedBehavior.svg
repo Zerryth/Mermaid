@@ -1,0 +1,505 @@
+<svg id="mermaid-1581566267446" width="1155.8697509765625" xmlns="http://www.w3.org/2000/svg" height="83.6875" viewBox="0 0 1155.8697509765625 83.6875"><style>
+
+
+
+#mermaid-1581566267446 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1581566267446 .label text {
+  fill: #333; }
+
+#mermaid-1581566267446 .node rect,
+#mermaid-1581566267446 .node circle,
+#mermaid-1581566267446 .node ellipse,
+#mermaid-1581566267446 .node polygon,
+#mermaid-1581566267446 .node path {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1581566267446 .node .label {
+  text-align: center; }
+
+#mermaid-1581566267446 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1581566267446 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1581566267446 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1581566267446 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1581566267446 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1581566267446 .cluster text {
+  fill: #333; }
+
+#mermaid-1581566267446 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1581566267446 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1581566267446 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1581566267446 .actor-line {
+  stroke: grey; }
+
+#mermaid-1581566267446 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1581566267446 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1581566267446 #arrowhead {
+  fill: #333; }
+
+#mermaid-1581566267446 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1581566267446 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1581566267446 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1581566267446 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1581566267446 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1581566267446 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1581566267446 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1581566267446 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1581566267446 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1581566267446 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1581566267446 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1581566267446 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1581566267446 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1581566267446 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1581566267446 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1581566267446 .section2 {
+  fill: #fff400; }
+
+#mermaid-1581566267446 .section1,
+#mermaid-1581566267446 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1581566267446 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1581566267446 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1581566267446 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1581566267446 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1581566267446 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1581566267446 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.8;
+  shape-rendering: crispEdges; }
+#mermaid-1581566267446   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1581566267446 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1581566267446 .task {
+  stroke-width: 2; }
+
+#mermaid-1581566267446 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1581566267446 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1581566267446 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1581566267446 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1581566267446 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1581566267446 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1581566267446 .taskText0,
+#mermaid-1581566267446 .taskText1,
+#mermaid-1581566267446 .taskText2,
+#mermaid-1581566267446 .taskText3 {
+  fill: white; }
+
+#mermaid-1581566267446 .task0,
+#mermaid-1581566267446 .task1,
+#mermaid-1581566267446 .task2,
+#mermaid-1581566267446 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1581566267446 .taskTextOutside0,
+#mermaid-1581566267446 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1581566267446 .taskTextOutside1,
+#mermaid-1581566267446 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1581566267446 .active0,
+#mermaid-1581566267446 .active1,
+#mermaid-1581566267446 .active2,
+#mermaid-1581566267446 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1581566267446 .activeText0,
+#mermaid-1581566267446 .activeText1,
+#mermaid-1581566267446 .activeText2,
+#mermaid-1581566267446 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1581566267446 .done0,
+#mermaid-1581566267446 .done1,
+#mermaid-1581566267446 .done2,
+#mermaid-1581566267446 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1581566267446 .doneText0,
+#mermaid-1581566267446 .doneText1,
+#mermaid-1581566267446 .doneText2,
+#mermaid-1581566267446 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1581566267446 .crit0,
+#mermaid-1581566267446 .crit1,
+#mermaid-1581566267446 .crit2,
+#mermaid-1581566267446 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1581566267446 .activeCrit0,
+#mermaid-1581566267446 .activeCrit1,
+#mermaid-1581566267446 .activeCrit2,
+#mermaid-1581566267446 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1581566267446 .doneCrit0,
+#mermaid-1581566267446 .doneCrit1,
+#mermaid-1581566267446 .doneCrit2,
+#mermaid-1581566267446 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1581566267446 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1581566267446 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1581566267446 .doneCritText0,
+#mermaid-1581566267446 .doneCritText1,
+#mermaid-1581566267446 .doneCritText2,
+#mermaid-1581566267446 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1581566267446 .activeCritText0,
+#mermaid-1581566267446 .activeCritText1,
+#mermaid-1581566267446 .activeCritText2,
+#mermaid-1581566267446 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1581566267446 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1581566267446   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1581566267446 g.clickable {
+  cursor: pointer; }
+
+#mermaid-1581566267446 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1581566267446 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1581566267446 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1581566267446 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1581566267446 .dashed-line {
+  stroke-dasharray: 3; }
+
+#mermaid-1581566267446 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 .commit-id,
+#mermaid-1581566267446 .commit-msg,
+#mermaid-1581566267446 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1581566267446 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1581566267446 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1581566267446 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1581566267446 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1581566267446 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1581566267446 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1581566267446 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1581566267446 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1581566267446   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1581566267446 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1581566267446 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1581566267446 {
+    color: rgb(0, 0, 0);
+    font: 16px "trebuchet ms", verdana, arial;
+  }</style><g transform="translate(0, 0)"><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M121.8405872935866,36.2459087461601L257.7604217529297,19.96875L386.2916717529297,35.37555251723104" marker-end="url(#arrowhead101)" style="fill:none"></path><defs><marker id="arrowhead101" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M494.2135467529297,35.412172228843865L623.7838592529297,19.96875L753.6533820323708,37.353397118728076" marker-end="url(#arrowhead102)" style="fill:none"></path><defs><marker id="arrowhead102" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M820.7424614734886,37.353397118728076L950.6119842529297,19.96875L1080.4815070323707,37.353397118728076" marker-end="url(#arrowhead103)" style="fill:none"></path><defs><marker id="arrowhead103" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1080.4815070323707,46.334102881271924L950.6119842529297,63.71875L820.7424614734886,46.334102881271924" marker-end="url(#arrowhead104)" style="fill:none"></path><defs><marker id="arrowhead104" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M753.6533820323708,46.334102881271924L623.7838592529297,63.71875L494.2135467529297,48.275327771156135" marker-end="url(#arrowhead105)" style="fill:none"></path><defs><marker id="arrowhead105" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M386.2916717529297,48.31194748276896L257.7604217529297,63.71875L116.07608283874455,47.774917655844185" marker-end="url(#arrowhead106)" style="fill:none"></path><defs><marker id="arrowhead106" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="translate(257.7604217529297,19.96875)" style="opacity: 1;"><g transform="translate(-103.53125,-11.875)" class="label"><foreignObject width="207.0703125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">POST w/User's Message</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(623.7838592529297,19.96875)" style="opacity: 1;"><g transform="translate(-104.5703125,-11.875)" class="label"><foreignObject width="209.140625" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Forward User's Message</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(950.6119842529297,19.96875)" style="opacity: 1;"><g transform="translate(-104.5703125,-11.875)" class="label"><foreignObject width="209.140625" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Forward User's Message</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(950.6119842529297,63.71875)" style="opacity: 1;"><g transform="translate(-79.5390625,-11.875)" class="label"><foreignObject width="159.08203125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Skill2 Sends Reply</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(623.7838592529297,63.71875)" style="opacity: 1;"><g transform="translate(-96.4921875,-11.875)" class="label"><foreignObject width="192.98828125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Forward Skill2's Reply</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(257.7604217529297,63.71875)" style="opacity: 1;"><g transform="translate(-96.4921875,-11.875)" class="label"><foreignObject width="192.98828125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Forward Skill2's Reply</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="Channel" transform="translate(68.61458587646484,41.84375)" style="opacity: 1;"><polygon points="-14.583333333333334,0 84.77083333333333,0 106.64583333333333,-43.75 7.291666666666667,-43.75" transform="translate(-46.03125,21.875)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-36.03125,-11.875)"><foreignObject width="72.0703125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Channel</div></foreignObject></g></g></g><g class="node" id="Consumer" transform="translate(440.2526092529297,41.84375)" style="opacity: 1;"><rect rx="5" ry="5" x="-53.9609375" y="-21.875" width="107.921875" height="43.75" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-43.9609375,-11.875)"><foreignObject width="87.9296875" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Consumer</div></foreignObject></g></g></g><g class="node" id="Skill1" transform="translate(787.1979217529297,41.84375)" style="opacity: 1;"><circle x="-33.84375" y="-21.875" r="33.84375" class="label-container"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-23.84375,-11.875)"><foreignObject width="47.6953125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Skill1</div></foreignObject></g></g></g><g class="node" id="Skill2" transform="translate(1114.0260467529297,41.84375)" style="opacity: 1;"><circle x="-33.84375" y="-21.875" r="33.84375" class="label-container"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-23.84375,-11.875)"><foreignObject width="47.6953125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Skill2</div></foreignObject></g></g></g></g></g></g></svg>
