@@ -104,6 +104,13 @@ Iterating on this detailed diagram of the Activity Flow in the BF SDK, defined b
     - For example, to Reply to Activity the Bot's Connector will `POST v3/conversations/{conversationId}/activities/{activityId}`.
 ___
 
+## Activity Flow Participants
+Block Diagram of participants in the general Activity Flow.
+
+![Higher Level Activity Flow Participants](../../Images/ChannelAzureSdkBot_BlockDiagram.png "Higher Level Activity Flow Participants")
+
+___
+
 C#
 
 ### `ProcessAsync()` Flow
