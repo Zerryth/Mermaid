@@ -92,7 +92,7 @@ ___
 </details>
 
 #### Generalized:
-![Activity Flow Diagram](../../GraphSVGs/GeneralActivityFlow2.svg "Generalized Activity Flow")
+![Activity Flow Diagram](../../GraphSVGs/GeneralActivityFlow.svg "Generalized Activity Flow")
 
 Iterating on this detailed diagram of the Activity Flow in the BF SDK, defined buckets help solidify knowledge of how the pieces fit on a higher level (draft):
 ![Activity Flow Diagram - Buckets Defined](../../SketchedDrafts/ActivityFlow/ActivityFlowWithDefinedBuckets.png "Activity Flow with Defined Buckets")

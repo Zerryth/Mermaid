@@ -2,8 +2,8 @@
     sequenceDiagram
         participant Channel
         participant BFS as Bot Framework Service
-        participant WebServer as Web Server
-        Note over WebServer: C#: ASP.NET
+        participant WebServer as Web Server *1
+        Note over WebServer: CSharp: ASP.NET
         Note over WebServer: JS: Restify or Express
         participant Connector
         participant Adapter 
@@ -32,8 +32,8 @@
         
         Adapter ->> Middleware: run middleware pipeline
         activate Middleware
-        loop Uncalled Middleware
-            Middleware ->> Middleware: call next Middleware
+        loop if registered Middleware
+            Middleware ->> Middleware: Call all registered Middleware in pipeline
         end
 
         Middleware ->> ActivityHandler: onTurn()
@@ -62,9 +62,9 @@
         Bot ->> TurnContext: sendActivity()
         activate TurnContext
 
-        TurnContext ->> Middleware: Send Activities Through Callback Pipeline
+        TurnContext ->> Middleware: SendActivitiesThroughCallbackPipeline()
 
-        loop Uncalled Middleware
+        loop if registered Middleware
             Middleware ->> Middleware: Call Middleware registered on Send Activities
         end
 
@@ -76,7 +76,7 @@
             Adapter ->> Connector: sendToConversation()
         end
 
-        Connector ->> BFS: Reply to Activity With Http Messages
+        Connector ->> BFS: Reply to Activity With Http Messages *2
 
         BFS ->> Channel: HTTP POST
 
@@ -94,3 +94,4 @@
         deactivate Channel
         
 ```
+
