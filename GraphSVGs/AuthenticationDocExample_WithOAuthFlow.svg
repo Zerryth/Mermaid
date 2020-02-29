@@ -1,0 +1,505 @@
+<svg id="mermaid-1582935755905" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" style="max-width:1450px;" viewBox="-50 -10 1450 1132.09375"><style>
+
+
+
+#mermaid-1582935755905 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1582935755905 .label text {
+  fill: #333; }
+
+#mermaid-1582935755905 .node rect,
+#mermaid-1582935755905 .node circle,
+#mermaid-1582935755905 .node ellipse,
+#mermaid-1582935755905 .node polygon,
+#mermaid-1582935755905 .node path {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1582935755905 .node .label {
+  text-align: center; }
+
+#mermaid-1582935755905 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1582935755905 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1582935755905 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1582935755905 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1582935755905 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1582935755905 .cluster text {
+  fill: #333; }
+
+#mermaid-1582935755905 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1582935755905 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1582935755905 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1582935755905 .actor-line {
+  stroke: grey; }
+
+#mermaid-1582935755905 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1582935755905 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1582935755905 #arrowhead {
+  fill: #333; }
+
+#mermaid-1582935755905 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1582935755905 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1582935755905 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1582935755905 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1582935755905 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1582935755905 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1582935755905 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1582935755905 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1582935755905 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1582935755905 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1582935755905 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1582935755905 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1582935755905 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1582935755905 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1582935755905 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1582935755905 .section2 {
+  fill: #fff400; }
+
+#mermaid-1582935755905 .section1,
+#mermaid-1582935755905 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1582935755905 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1582935755905 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1582935755905 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1582935755905 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1582935755905 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1582935755905 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.8;
+  shape-rendering: crispEdges; }
+#mermaid-1582935755905   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1582935755905 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1582935755905 .task {
+  stroke-width: 2; }
+
+#mermaid-1582935755905 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1582935755905 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1582935755905 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1582935755905 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1582935755905 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1582935755905 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1582935755905 .taskText0,
+#mermaid-1582935755905 .taskText1,
+#mermaid-1582935755905 .taskText2,
+#mermaid-1582935755905 .taskText3 {
+  fill: white; }
+
+#mermaid-1582935755905 .task0,
+#mermaid-1582935755905 .task1,
+#mermaid-1582935755905 .task2,
+#mermaid-1582935755905 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1582935755905 .taskTextOutside0,
+#mermaid-1582935755905 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1582935755905 .taskTextOutside1,
+#mermaid-1582935755905 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1582935755905 .active0,
+#mermaid-1582935755905 .active1,
+#mermaid-1582935755905 .active2,
+#mermaid-1582935755905 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1582935755905 .activeText0,
+#mermaid-1582935755905 .activeText1,
+#mermaid-1582935755905 .activeText2,
+#mermaid-1582935755905 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1582935755905 .done0,
+#mermaid-1582935755905 .done1,
+#mermaid-1582935755905 .done2,
+#mermaid-1582935755905 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1582935755905 .doneText0,
+#mermaid-1582935755905 .doneText1,
+#mermaid-1582935755905 .doneText2,
+#mermaid-1582935755905 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1582935755905 .crit0,
+#mermaid-1582935755905 .crit1,
+#mermaid-1582935755905 .crit2,
+#mermaid-1582935755905 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1582935755905 .activeCrit0,
+#mermaid-1582935755905 .activeCrit1,
+#mermaid-1582935755905 .activeCrit2,
+#mermaid-1582935755905 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1582935755905 .doneCrit0,
+#mermaid-1582935755905 .doneCrit1,
+#mermaid-1582935755905 .doneCrit2,
+#mermaid-1582935755905 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1582935755905 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1582935755905 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1582935755905 .doneCritText0,
+#mermaid-1582935755905 .doneCritText1,
+#mermaid-1582935755905 .doneCritText2,
+#mermaid-1582935755905 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1582935755905 .activeCritText0,
+#mermaid-1582935755905 .activeCritText1,
+#mermaid-1582935755905 .activeCritText2,
+#mermaid-1582935755905 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1582935755905 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1582935755905   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1582935755905 g.clickable {
+  cursor: pointer; }
+
+#mermaid-1582935755905 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1582935755905 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1582935755905 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1582935755905 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1582935755905 .dashed-line {
+  stroke-dasharray: 3; }
+
+#mermaid-1582935755905 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 .commit-id,
+#mermaid-1582935755905 .commit-msg,
+#mermaid-1582935755905 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1582935755905 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1582935755905 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1582935755905 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1582935755905 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1582935755905 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1582935755905 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1582935755905 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1582935755905 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1582935755905   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1582935755905 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1582935755905 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1582935755905 {
+    color: rgb(0, 0, 0);
+    font: 16px "trebuchet ms", verdana, arial;
+  }</style><g></g><g><line id="actor8" x1="75" y1="5" x2="75" y2="1121.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">User</tspan></text></g><g><line id="actor9" x1="275" y1="5" x2="275" y2="1121.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">BF Channel Service</tspan></text></g><g><line id="actor10" x1="475" y1="5" x2="475" y2="1121.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="400" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">BF Token Service</tspan></text></g><g><line id="actor11" x1="675" y1="5" x2="675" y2="1121.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="600" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">AS *1 Auth Endpoint</tspan></text></g><g><line id="actor12" x1="875" y1="5" x2="875" y2="1121.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="800" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">AS Token Endpoint</tspan></text></g><g><line id="actor13" x1="1075" y1="5" x2="1075" y2="1121.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1000" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Bot</tspan></text></g><g><line id="actor14" x1="1275" y1="5" x2="1275" y2="1121.09375" class="actor-line" stroke-width="0.5px" stroke="#999"></line><rect x="1200" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">Protected Resource</tspan></text></g><defs><marker id="arrowhead" refX="5" refY="2" markerWidth="6" markerHeight="4" orient="auto"><path d="M 0,0 V 4 L6,2 Z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="16" refY="4"><path fill="black" stroke="#000000" stroke-width="1px" d="M 9,2 V 6 L16,4 Z" style="stroke-dasharray: 0, 0;"></path><path fill="none" stroke="#000000" stroke-width="1px" d="M 0,1 L 6,7 M 6,1 L 0,7" style="stroke-dasharray: 0, 0;"></path></marker></defs><defs><marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto"><circle cx="15" cy="15" r="6"></circle></marker></defs><g><rect x="650" y="75" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="646" y="99" class="noteText"><tspan x="666">Authorization Server</tspan></text></g><g><rect x="650" y="121.015625" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="646" y="145.015625" class="noteText"><tspan x="666">e.g. AAD, GitHub, Facebook, etc.</tspan></text></g><g><text x="175" y="185.03125" class="messageText" style="text-anchor: middle;">Message Activity "Please check my email"</text><line x1="75" y1="192.03125" x2="275" y2="192.03125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="675" y="220.03125" class="messageText" style="text-anchor: middle;">Receives Msg Activity &amp; Determines intent is to check email</text><line x1="275" y1="227.03125" x2="1075" y2="227.03125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="775" y="255.03125" class="messageText" style="text-anchor: middle;">Do we have Token already? (https://api.botframework.com/api/usertoken/GetToken)</text><line x1="1075" y1="262.03125" x2="475" y2="262.03125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="450" y="272.03125" fill="#EDF2AE" stroke="#666" width="650" height="36.015625" rx="0" ry="0" class="note"></rect><text x="446" y="296.03125" class="noteText"><tspan x="466">Token for the given userId for the OAuth connection setting called "GraphConnection"</tspan></text></g><g><text x="775" y="336.046875" class="messageText" style="text-anchor: middle;">Return [Token] NotFound result</text><line x1="475" y1="343.046875" x2="1075" y2="343.046875" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="650" y="353.046875" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="646" y="377.046875" class="noteText"><tspan x="666">Such as 1st time User interacts w/Bot</tspan></text></g><g><text x="675" y="417.0625" class="messageText" style="text-anchor: middle;">Creates OAuthCard, asks User to sign in</text><line x1="1075" y1="424.0625" x2="275" y2="424.0625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="452.0625" class="messageText" style="text-anchor: middle;">Create Valid OAuth sign-in URL for request</text><line x1="275" y1="459.0625" x2="475" y2="459.0625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="487.0625" class="messageText" style="text-anchor: middle;">Valid sign-in URL added to OAuthCard</text><line x1="475" y1="494.0625" x2="275" y2="494.0625" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="175" y="522.0625" class="messageText" style="text-anchor: middle;">Send Message with OAuthCard that has Sign-In Button</text><line x1="275" y1="529.0625" x2="75" y2="529.0625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="175" y="557.0625" class="messageText" style="text-anchor: middle;">User clicks Sign-In button</text><line x1="75" y1="564.0625" x2="275" y2="564.0625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="475" y="592.0625" class="messageText" style="text-anchor: middle;">Calls Authorization Server to load Sign-In page/pop-up</text><line x1="275" y1="599.0625" x2="675" y2="599.0625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="627.0625" class="messageText" style="text-anchor: middle;">Serves Sign-In page/pop-up</text><line x1="675" y1="634.0625" x2="75" y2="634.0625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="375" y="687.0625" class="messageText" style="text-anchor: middle;">User signs in &amp; authorizes Bot</text><line x1="75" y1="694.0625" x2="675" y2="694.0625" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="575" y="722.0625" class="messageText" style="text-anchor: middle;">Returns authorization code</text><line x1="675" y1="729.0625" x2="475" y2="729.0625" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><rect x="450" y="739.0625" fill="#EDF2AE" stroke="#666" width="450" height="36.015625" rx="0" ry="0" class="note"></rect><text x="446" y="763.0625" class="noteText"><tspan x="466">https://token.botframework.com/.auth/web/redirect</tspan></text></g><g><text x="675" y="803.078125" class="messageText" style="text-anchor: middle;">Uses authorization code to obtain Token</text><line x1="475" y1="810.078125" x2="875" y2="810.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><text x="675" y="838.078125" class="messageText" style="text-anchor: middle;">Returns Token</text><line x1="875" y1="845.078125" x2="475" y2="845.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><text x="475" y="873.078125" class="messageText" style="text-anchor: middle;">Securely stores Token</text><path d="M 475,880.078125 C 535,870.078125 535,910.078125 475,900.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></path></g><g><text x="775" y="938.078125" class="messageText" style="text-anchor: middle;">Returns Token</text><line x1="475" y1="945.078125" x2="1075" y2="945.078125" class="messageLine1" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></g><g><line x1="65" y1="644.0625" x2="1085" y2="644.0625" class="loopLine"></line><line x1="1085" y1="644.0625" x2="1085" y2="955.078125" class="loopLine"></line><line x1="65" y1="955.078125" x2="1085" y2="955.078125" class="loopLine"></line><line x1="65" y1="644.0625" x2="65" y2="955.078125" class="loopLine"></line><polygon points="65,644.0625 115,644.0625 115,657.0625 106.6,664.0625 65,664.0625" class="labelBox"></polygon><text x="72.5" y="659.0625" class="labelText"><tspan x="72.5">opt</tspan></text><text x="575" y="659.0625" class="loopText" style="text-anchor: middle;"><tspan x="575">[ Grant Type: Authorization Code *2 ]</tspan></text></g><g><text x="1175" y="983.078125" class="messageText" style="text-anchor: middle;">Makes request with Token to access Protected Resource</text><line x1="1075" y1="990.078125" x2="1275" y2="990.078125" class="messageLine0" stroke-width="2" stroke="black" marker-end="url(#arrowhead)" style="fill: none;"></line></g><g><rect x="1050" y="1000.078125" fill="#EDF2AE" stroke="#666" width="250" height="36.015625" rx="0" ry="0" class="note"></rect><text x="1046" y="1024.078125" class="noteText"><tspan x="1066">Calls "check email" API</tspan></text></g><g><rect x="0" y="1056.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="75" y="1088.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="75" dy="0">User</tspan></text></g><g><rect x="200" y="1056.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="275" y="1088.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="275" dy="0">BF Channel Service</tspan></text></g><g><rect x="400" y="1056.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="475" y="1088.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="475" dy="0">BF Token Service</tspan></text></g><g><rect x="600" y="1056.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="675" y="1088.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="675" dy="0">AS *1 Auth Endpoint</tspan></text></g><g><rect x="800" y="1056.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="875" y="1088.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="875" dy="0">AS Token Endpoint</tspan></text></g><g><rect x="1000" y="1056.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1075" y="1088.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1075" dy="0">Bot</tspan></text></g><g><rect x="1200" y="1056.09375" fill="#eaeaea" stroke="#666" width="150" height="65" rx="3" ry="3" class="actor"></rect><text x="1275" y="1088.59375" dominant-baseline="central" alignment-baseline="central" class="actor" style="text-anchor: middle; font-size: 14px;"><tspan x="1275" dy="0">Protected Resource</tspan></text></g></svg>

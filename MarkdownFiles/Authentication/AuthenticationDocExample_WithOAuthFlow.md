@@ -1,6 +1,6 @@
 ## Authentication Doc Example
 
-### Does not have Token, OAuth Flow
+### Bot does not have Token yet, OAuth flow
 ```mermaid
 sequenceDiagram
 
@@ -18,7 +18,7 @@ participant ProtectedResource as Protected Resource
 User ->> BFCS: Message Activity "Please check my email"
 BFCS ->> Bot: Receives Msg Activity & Determines intent is to check email
 Bot ->> BFTS: Do we have Token already? (https://api.botframework.com/api/usertoken/GetToken)
-Note over BFTS, Bot: For the given userId for the OAuth connection setting called "GraphConnection"
+Note over BFTS, Bot: Token for the given userId for the OAuth connection setting called "GraphConnection"
 BFTS -->> Bot: Return [Token] NotFound result
 Note over ASAuth, ASToken: Such as 1st time User interacts w/Bot
 Bot ->> BFCS: Creates OAuthCard, asks User to sign in
@@ -27,7 +27,7 @@ BFTS -->> BFCS: Valid sign-in URL added to OAuthCard
 BFCS ->> User: Send Message with OAuthCard that has Sign-In Button
 User ->> BFCS: User clicks Sign-In button
 BFCS ->> ASAuth: Calls Authorization Server to load Sign-In page/pop-up
-ASAuth -->> User: Serves Sign-In page/pop-up
+ASAuth ->> User: Serves Sign-In page/pop-up
 
 opt Grant Type: Authorization Code *2
     User ->> ASAuth: User signs in & authorizes Bot
@@ -45,7 +45,7 @@ Note over Bot, ProtectedResource: Calls "check email" API
 
 ```
 1. Authorization Server (AS).
-    * The AS can be within Azure, such as using AAD as our token provider, or outside of Azure as well, like in the case of using Facebook as the AS.
+    * The AS can be within Azure, such as using AAD as our token provider, or outside of Azure as well, like in the case of using GitHub as the AS.
 2. There are many different authorization grants, or OAuth flows, that detail how exactly how to use the identity of the owner of the protected resource in exchange for an access token (e.g. authorization code, client credentials, device code, refresh token, implicit, etc.)
 
 
