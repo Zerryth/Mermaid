@@ -7,7 +7,7 @@ Illustrating example in [Authentication docs](https://docs.microsoft.com/en-us/a
 ```mermaid
 graph LR
 
-User -- "#quot;Please check my email#quot;" --> Bot
+User -- "#quot;Please check my email#quot;" --> Bot(Bot)
 
 ```
 

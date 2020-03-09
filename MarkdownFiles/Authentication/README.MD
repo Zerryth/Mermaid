@@ -41,6 +41,10 @@ Illustrating example in [Authentication docs](https://docs.microsoft.com/en-us/a
 
 ![AuthenticationDocExample_TheActualFlow](../../GraphSVGs/AuthenticationDocExample_WithOAuthFlow.svg "AuthenticationDocExample - OAuth Flow")
 
+1. Authorization Server (AS).
+    * The AS can be within Azure, such as using AAD as our token provider, or outside of Azure as well, like in the case of using GitHub as the AS.
+2. There are many different authorization grants, or OAuth flows, that detail how exactly how to use the identity of the owner of the protected resource in exchange for an access token (e.g. authorization code, client credentials, device code, refresh token, implicit, etc.)
+
 ___
 
 ### [Add authentication to your bot via Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication?view=azure-bot-service-4.0&tabs=csharp)
@@ -93,9 +97,11 @@ Bot Framework's `OAuthPrompt` provides a way to send the User to AAD in order to
 #### `OAuthPrompt.ContinueDialogAsync()` Flow
 
 *Higher Level*
+
 ![HigherLevelOAuthPromptContinueDialogFlow](../../GraphSVGs/HigherLevelOAuthPromptContinueDialogFlow.svg "Higher Level OAuthPrompt.ContinueDialogFlow()")
 
 *Detailed View*
+
 ![DetailedViewOAuthPromptContinueDialogFlow](../../GraphSVGs/DetailedViewOAuthPromptContinueDialogFlow.svg "Detailed View OAuthPrompt.ContinueDialogFlow()")
 
 ___
