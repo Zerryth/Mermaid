@@ -16,7 +16,7 @@
     Bot ->> Resource: Bot calls API at Protected Resource to send an email on the User's behalf
 ```
 1. The Bot is asking for permission to access the Protected Resource (in this case, the User's email service) on the User's behalf
-2. There are multiple types of OAuth flows that can take place here in order to authenticate the User (owner of the Protected Resource) and authorize the Bot (authorization code, client credentials, etc.).
+2. There are multiple types of OAuth flows that can take place here in order to authenticate the User (owner of the Protected Resource) and authorize the Bot (authorization code, client credentials, etc.). This high-level diagram excludes the various "OAuth dance" that could occur here.
 
 3. **OAuth Participants**:
     - **User**: The User is the owner of the Protected Resource that the OAuth Client wants to access. User normally interacts via Channel or browser.

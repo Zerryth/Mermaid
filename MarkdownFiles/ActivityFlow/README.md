@@ -6,6 +6,7 @@ This section contains diagrams that illustrate the participants involved when Ac
 - [Detailed Look into the SDK](#detailed-look-into-the-sdk)
 - [Activity Flow Participants](#activity-flow-participants)
 - [`ProcessActivityAsync()` Flow](#processactivityasync-flow)
+- [Class Diagrams](#class-diagrams)
 
 # *HTTP Protocol*
 - [`BotFrameworkAdapter` vs. Custom Adapter](#botframeworkadapter-vs-custom-adapter)
@@ -128,7 +129,7 @@ Block diagram of the participants involved in a general Activity flow.
 
 ___
 
-### `ProcessActivityAsync()` Flow
+### **`ProcessActivityAsync()` Flow**
 <details>
     <summary>ProcessActivityAsync()</summary>
 
@@ -136,6 +137,8 @@ ___
 
 </details>
 ___
+
+### **Class Diagrams**
 
 ### *Hierarchies that I looked into in order to better understand and learn about the Activity flow*
 

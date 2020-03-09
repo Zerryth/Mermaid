@@ -1,6 +1,5 @@
-## Authentication Doc Example
+### Bot does not have token yet, OAuth flow
 
-### Bot does not have Token yet, OAuth flow
 ```mermaid
 sequenceDiagram
 
@@ -48,35 +47,7 @@ Bot ->> ProtectedResource: Makes request with Token to access Protected Resource
 Note over Bot, ProtectedResource: Calls "check email" API
 
 ```
+
 1. Authorization Server (AS).
     * The AS can be within Azure, such as using AAD as our token provider, or outside of Azure as well, like in the case of using GitHub as the AS.
 2. There are many different authorization grants, or OAuth flows, that detail how exactly how to use the identity of the owner of the protected resource in exchange for an access token (e.g. authorization code, client credentials, device code, refresh token, implicit, etc.)
-
-
-___
-
-
-## Has Token Path
-```mermaid
-sequenceDiagram
-
-participant User
-participant BFCS as BF Channel Service
-participant BFTS as BF Token Service
-Note over BFCS, BFTS: In Azure Bot Service
-participant Bot
-participant ProtectedResource as Protected Resource
-
-
-User ->> BFCS: Message Activity "Please check my email"
-BFCS ->> Bot: Receives Msg Activity & Determines intent is to check email
-Bot ->> BFTS: Do we have Token already? (https://api.botframework.com/api/usertoken/GetToken)
-Note over BFCS, Bot: For the given userId for the OAuth connection setting called GraphConnection
-alt Has Token
-    BFTS -->> Bot: Returns stored Token
-end
-
-Bot ->> ProtectedResource: Makes request with Token to Protected Resource
-Note over Bot, ProtectedResource: Calls "check email" API
-
-```
