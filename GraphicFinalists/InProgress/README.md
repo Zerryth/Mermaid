@@ -6,7 +6,7 @@ The **Bot Framework Service** lives in the cloud and takes on the role of transl
 
 The `BotFrameworkAdapter` passes the Channels' information off in the form of Activities for your bot to consume. 
 
-![BFAdapterActivityFlow](../../../GraphSVGs/BFAdapterActivityFlow.svg "Activity Flow with BotFrameworkAdapter")
+![BFAdapterActivityFlow](../../ActivityFlow/BotFrameworkAdapterFlow/BFAdapterActivityFlow.svg "Activity Flow with BotFrameworkAdapter")
 
 1. Default adapter used in the SDK is the `BotFrameworkAdapter`.
 2. Bot derives from `ActivityHandler`, which implements `IBot`.
@@ -33,7 +33,7 @@ The Bot Framework SDK includes more recent work on custom adapters as well, such
     * The one custom adapter only speaks to one channel (Slack Adapter can speak to Slack, but not Facebook)
     * You may have to do more of the heavy lifting. For example, if your bot sends a "hero card", the `BotFrameworkAdapter` knows how to translate that hero card into a "Teams hero card" that the Teams channel can consume, but if you use a custom adapter, you may have to do the work of transforming the bot's "hero card" to "Facebook hero card".
 
-![CustomAdapterActivityFlow](../../../GraphSVGs/CustomAdapterActivityFlow.svg "Activity Flow with Custom Adapter")
+![CustomAdapterActivityFlow](../../ActivityFlow/CustomAdapterFlow/CustomAdapterActivityFlow.svg "Activity Flow with Custom Adapter")
 
 1. Core SDK includes custom adapters (e.g. Slack Adapter, Facebook Adapter, Twilio Adapter, etc.)
 2. Bot derives from `ActivityHandler`, which implements `IBot`
@@ -49,10 +49,10 @@ ___
 
 Detailed look into the SDK.
 
-![Activity Flow Diagram](../../../GraphSVGs/GeneralActivityFlow.svg "Generalized Activity Flow")
+![Activity Flow Diagram](../../ActivityFlow/DetailedSdkFlow/DetailedSdkFlow.svg "Generalized Activity Flow")
 
 Iterating on this detailed diagram of the Activity Flow in the BF SDK, defined buckets help solidify knowledge of how the pieces fit on a higher level (draft):
-![Activity Flow Diagram - Buckets Defined](../../../SketchedDrafts/ActivityFlow/ActivityFlowWithDefinedBuckets.png "Activity Flow with Defined Buckets")
+![Activity Flow Diagram - Buckets Defined](../../ActivityFlow/DetailedSdkFlow/ActivityFlowWithDefinedBuckets.png "Activity Flow with Defined Buckets")
 
 1. Bots are essentially websites that are hosted in a Web App exposed over HTTP.
     - For example, your bot receives POST requests to its `"api/messages"` endpoint.
