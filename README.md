@@ -5,4 +5,7 @@ Diagrams that illustrate various concepts within the Bot Framework, to add clari
 - [Activity Flow](./ActivityFlow/README.md)
 - [Authentication](./Authentication/README.md)
 - [Skills](./Skills/README.md)
-- [About the Diagrams](./About/README.md)
+
+___
+
+[About the Diagrams](./About/README.md)
