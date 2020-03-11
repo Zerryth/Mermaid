@@ -1,0 +1,505 @@
+<svg id="mermaid-1583960183227" width="837.875" xmlns="http://www.w3.org/2000/svg" height="500.359375" viewBox="-10 -10 565.25 480.359375"><style>
+
+
+
+#mermaid-1583960183227 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1583960183227 .label text {
+  fill: #333; }
+
+#mermaid-1583960183227 .node rect,
+#mermaid-1583960183227 .node circle,
+#mermaid-1583960183227 .node ellipse,
+#mermaid-1583960183227 .node polygon,
+#mermaid-1583960183227 .node path {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1583960183227 .node .label {
+  text-align: center; }
+
+#mermaid-1583960183227 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1583960183227 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1583960183227 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1583960183227 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1583960183227 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1583960183227 .cluster text {
+  fill: #333; }
+
+#mermaid-1583960183227 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1583960183227 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1583960183227 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1583960183227 .actor-line {
+  stroke: grey; }
+
+#mermaid-1583960183227 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1583960183227 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1583960183227 #arrowhead {
+  fill: #333; }
+
+#mermaid-1583960183227 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1583960183227 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1583960183227 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1583960183227 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1583960183227 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1583960183227 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1583960183227 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1583960183227 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1583960183227 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1583960183227 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1583960183227 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1583960183227 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1583960183227 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1583960183227 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1583960183227 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1583960183227 .section2 {
+  fill: #fff400; }
+
+#mermaid-1583960183227 .section1,
+#mermaid-1583960183227 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1583960183227 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1583960183227 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1583960183227 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1583960183227 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1583960183227 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1583960183227 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.8;
+  shape-rendering: crispEdges; }
+#mermaid-1583960183227   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1583960183227 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1583960183227 .task {
+  stroke-width: 2; }
+
+#mermaid-1583960183227 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1583960183227 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1583960183227 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1583960183227 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1583960183227 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1583960183227 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1583960183227 .taskText0,
+#mermaid-1583960183227 .taskText1,
+#mermaid-1583960183227 .taskText2,
+#mermaid-1583960183227 .taskText3 {
+  fill: white; }
+
+#mermaid-1583960183227 .task0,
+#mermaid-1583960183227 .task1,
+#mermaid-1583960183227 .task2,
+#mermaid-1583960183227 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1583960183227 .taskTextOutside0,
+#mermaid-1583960183227 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1583960183227 .taskTextOutside1,
+#mermaid-1583960183227 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1583960183227 .active0,
+#mermaid-1583960183227 .active1,
+#mermaid-1583960183227 .active2,
+#mermaid-1583960183227 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1583960183227 .activeText0,
+#mermaid-1583960183227 .activeText1,
+#mermaid-1583960183227 .activeText2,
+#mermaid-1583960183227 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1583960183227 .done0,
+#mermaid-1583960183227 .done1,
+#mermaid-1583960183227 .done2,
+#mermaid-1583960183227 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1583960183227 .doneText0,
+#mermaid-1583960183227 .doneText1,
+#mermaid-1583960183227 .doneText2,
+#mermaid-1583960183227 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1583960183227 .crit0,
+#mermaid-1583960183227 .crit1,
+#mermaid-1583960183227 .crit2,
+#mermaid-1583960183227 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1583960183227 .activeCrit0,
+#mermaid-1583960183227 .activeCrit1,
+#mermaid-1583960183227 .activeCrit2,
+#mermaid-1583960183227 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1583960183227 .doneCrit0,
+#mermaid-1583960183227 .doneCrit1,
+#mermaid-1583960183227 .doneCrit2,
+#mermaid-1583960183227 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1583960183227 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1583960183227 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1583960183227 .doneCritText0,
+#mermaid-1583960183227 .doneCritText1,
+#mermaid-1583960183227 .doneCritText2,
+#mermaid-1583960183227 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1583960183227 .activeCritText0,
+#mermaid-1583960183227 .activeCritText1,
+#mermaid-1583960183227 .activeCritText2,
+#mermaid-1583960183227 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1583960183227 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1583960183227   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1583960183227 g.clickable {
+  cursor: pointer; }
+
+#mermaid-1583960183227 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1583960183227 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1583960183227 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1583960183227 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1583960183227 .dashed-line {
+  stroke-dasharray: 3; }
+
+#mermaid-1583960183227 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 .commit-id,
+#mermaid-1583960183227 .commit-msg,
+#mermaid-1583960183227 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583960183227 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1583960183227 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1583960183227 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1583960183227 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583960183227 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1583960183227 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1583960183227 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1583960183227 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1583960183227   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1583960183227 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1583960183227 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1583960183227 {
+    color: rgb(0, 0, 0);
+    font: 16px "trebuchet ms", verdana, arial;
+  }</style><g></g><defs><marker id="extensionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 1,7 L18,13 V 1 Z"></path></marker></defs><defs><marker id="extensionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 1,1 V 13 L18,7 Z"></path></marker></defs><defs><marker id="compositionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="compositionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 5,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><g id="classid-OAuthClient-8" class="classGroup " transform="translate(174.640625,0 )"><rect x="0" y="0" width="117.75" height="53.640625"></rect><text y="15" x="0"><tspan class="title" x="30.0390625">OAuthClient</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="117.75"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- OAuthPromptSettings</tspan><tspan x="5" dy="10">- PromptValidator</tspan></text><line x1="0" y1="49.03125" y2="49.03125" x2="117.75"></line><text x="5" y="64.03125" fill="white" class="classText"></text></g><g id="classid-ServiceClient-9" class="classGroup " transform="translate(0,129.6484375 )"><rect x="0" y="0" width="120.453125" height="41.625"></rect><text y="15" x="0"><tspan x="5">«abstract»</tspan><tspan class="title" dy="10" x="5">ServiceClient</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="120.453125"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="120.453125"></line><text x="5" y="52.015625" fill="white" class="classText"></text></g><g id="classid-IOAuthClient-10" class="classGroup " transform="translate(170.453125,103.640625 )"><rect x="0" y="0" width="126.125" height="93.640625"></rect><text y="15" x="0"><tspan class="title" x="32.8359375">IOAuthClient</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="126.125"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">+ BaseUri</tspan><tspan x="5" dy="10">+ SerializationSettings</tspan><tspan x="5" dy="10">+ DeserializationSettings</tspan><tspan x="5" dy="10">+ Credentials</tspan><tspan x="5" dy="10">+ BotSignIn</tspan><tspan x="5" dy="10">+ UserToken</tspan></text><line x1="0" y1="89.03125" y2="89.03125" x2="126.125"></line><text x="5" y="104.03125" fill="white" class="classText"></text></g><g id="classid-IDisposable-11" class="classGroup " transform="translate(202.1171875,256.3828125 )"><rect x="0" y="0" width="62.796875" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">IDisposable</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="62.796875"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="62.796875"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classid-IUserToken-12" class="classGroup " transform="translate(346.578125,110.546875 )"><rect x="0" y="0" width="198.671875" height="79.828125"></rect><text y="15" x="0"><tspan class="title" x="73.328125">IUserToken</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="198.671875"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="198.671875"></line><text x="5" y="42.015625" fill="white" class="classText"><tspan x="5">GetTokenWithHttpMessagesAsync()</tspan><tspan x="5" dy="10">GetAadTokensWithHttpMessagesAsync()</tspan><tspan x="5" dy="10">SignOutWithHttpMessagesAsync()</tspan><tspan x="5" dy="10">GetTokenStatusWithHttpMessagesAsync()</tspan></text></g><g id="classid-UserToken-13" class="classGroup " transform="translate(360.328125,247.28125 )"><rect x="0" y="0" width="171.171875" height="49.828125"></rect><text y="15" x="0"><tspan class="title" x="60.9765625">UserToken</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="171.171875"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="171.171875"></line><text x="5" y="42.015625" fill="white" class="classText"><tspan x="5">GetTokenWithHttpMessagesAsync()</tspan></text></g><g id="classid-HttpOperationResponseTokenResponse-14" class="classGroup " transform="translate(349.671875,347.109375 )"><rect x="0" y="0" width="192.484375" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">HttpOperationResponseTokenResponse</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="192.484375"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="192.484375"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classid-Token-15" class="classGroup " transform="translate(426.4453125,428.734375 )"><rect x="0" y="0" width="38.9375" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">Token</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="38.9375"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="38.9375"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><path d="M174.640625,44.42627593717596L155.57161458333334,50.12866744764663C136.50260416666666,55.8310589581173,98.36458333333333,67.23584197905865,79.29557291666667,81.43953557286265C60.2265625,95.64322916666667,60.2265625,112.64583333333333,60.2265625,121.14713541666667L60.2265625,129.6484375" id="edge0" class="relation" marker-end="url(#extensionEnd)"></path><g class="classLabel"><rect class="box" x="62.28125" y="56.734375" width="61.9375" height="17.015625"></rect><text class="label" x="92.9988334041242" y="68.84041432838664" fill="red" text-anchor="middle">derives from</text></g><path d="M233.515625,53.640625L233.515625,57.807291666666664C233.515625,61.973958333333336,233.515625,70.30729166666667,233.515625,78.640625C233.515625,86.97395833333333,233.515625,95.30729166666667,233.515625,99.47395833333333L233.515625,103.640625" id="edge1" class="relation" marker-end="url(#extensionEnd)"></path><g class="classLabel"><rect class="box" x="204.828125" y="66.53125" width="58.125" height="17.015625"></rect><text class="label" x="233.515625" y="78.640625" fill="red" text-anchor="middle">implements</text></g><path d="M233.515625,197.28125L233.515625,201.44791666666666C233.515625,205.61458333333334,233.515625,213.94791666666666,233.515625,223.79817708333334C233.515625,233.6484375,233.515625,245.015625,233.515625,250.69921875L233.515625,256.3828125" id="edge2" class="relation" marker-end="url(#extensionEnd)"></path><path d="M292.390625,41.18445253016147L317.9778645833333,47.42714794180123C343.5651041666667,53.66984335344099,394.7395833333333,66.1552341767205,420.3268229166667,77.71563792169358C445.9140625,89.27604166666667,445.9140625,99.91145833333333,445.9140625,105.22916666666667L445.9140625,110.546875" id="edge3" class="relation" marker-start="url(#compositionStart)"></path><g class="classLabel"><rect class="box" x="343.578125" y="51.59375" width="82.28125" height="17.015625"></rect><text class="label" x="384.650863446013" y="63.69381956633333" fill="red" text-anchor="middle">uses to get token</text></g><path d="M445.9140625,190.375L445.9140625,195.69270833333334C445.9140625,201.01041666666666,445.9140625,211.64583333333334,445.9140625,221.13020833333334C445.9140625,230.61458333333334,445.9140625,238.94791666666666,445.9140625,243.11458333333334L445.9140625,247.28125" id="edge4" class="relation" marker-start="url(#extensionStart)"></path><g class="classLabel"><rect class="box" x="372.65625" y="206.71875" width="146.640625" height="17.015625"></rect><text class="label" x="445.9140625" y="218.828125" fill="red" text-anchor="middle">performs token operations with</text></g><path d="M445.9140625,297.109375L445.9140625,301.2760416666667C445.9140625,305.4427083333333,445.9140625,313.7760416666667,445.9140625,322.109375C445.9140625,330.4427083333333,445.9140625,338.7760416666667,445.9140625,342.9427083333333L445.9140625,347.109375" id="edge5" class="relation" marker-end="url(#dependencyEnd)"></path><g class="classLabel"><rect class="box" x="407.90625" y="310" width="77.109375" height="17.015625"></rect><text class="label" x="445.9140625" y="322.109375" fill="red" text-anchor="middle">receives Task of</text></g><path d="M445.9140625,378.734375L445.9140625,382.9010416666667C445.9140625,387.0677083333333,445.9140625,395.4010416666667,445.9140625,403.734375C445.9140625,412.0677083333333,445.9140625,420.4010416666667,445.9140625,424.5677083333333L445.9140625,428.734375" id="edge6" class="relation" marker-start="url(#compositionStart)"></path><g class="classLabel"><rect class="box" x="416.5" y="391.625" width="58.375" height="17.015625"></rect><text class="label" x="445.9140625" y="403.734375" fill="red" text-anchor="middle">which has a</text></g></svg>

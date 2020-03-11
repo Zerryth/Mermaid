@@ -1,0 +1,505 @@
+<svg id="mermaid-1583957202555" width="362.65625" xmlns="http://www.w3.org/2000/svg" height="498.34375" viewBox="-10 -10 248.4375 478.34375"><style>
+
+
+
+#mermaid-1583957202555 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1583957202555 .label text {
+  fill: #333; }
+
+#mermaid-1583957202555 .node rect,
+#mermaid-1583957202555 .node circle,
+#mermaid-1583957202555 .node ellipse,
+#mermaid-1583957202555 .node polygon,
+#mermaid-1583957202555 .node path {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1583957202555 .node .label {
+  text-align: center; }
+
+#mermaid-1583957202555 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1583957202555 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1583957202555 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1583957202555 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1583957202555 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1583957202555 .cluster text {
+  fill: #333; }
+
+#mermaid-1583957202555 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1583957202555 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1583957202555 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1583957202555 .actor-line {
+  stroke: grey; }
+
+#mermaid-1583957202555 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1583957202555 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1583957202555 #arrowhead {
+  fill: #333; }
+
+#mermaid-1583957202555 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1583957202555 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1583957202555 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1583957202555 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1583957202555 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1583957202555 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1583957202555 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1583957202555 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1583957202555 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1583957202555 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1583957202555 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1583957202555 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1583957202555 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1583957202555 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1583957202555 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1583957202555 .section2 {
+  fill: #fff400; }
+
+#mermaid-1583957202555 .section1,
+#mermaid-1583957202555 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1583957202555 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1583957202555 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1583957202555 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1583957202555 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1583957202555 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1583957202555 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.8;
+  shape-rendering: crispEdges; }
+#mermaid-1583957202555   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1583957202555 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1583957202555 .task {
+  stroke-width: 2; }
+
+#mermaid-1583957202555 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1583957202555 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1583957202555 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1583957202555 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1583957202555 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1583957202555 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1583957202555 .taskText0,
+#mermaid-1583957202555 .taskText1,
+#mermaid-1583957202555 .taskText2,
+#mermaid-1583957202555 .taskText3 {
+  fill: white; }
+
+#mermaid-1583957202555 .task0,
+#mermaid-1583957202555 .task1,
+#mermaid-1583957202555 .task2,
+#mermaid-1583957202555 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1583957202555 .taskTextOutside0,
+#mermaid-1583957202555 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1583957202555 .taskTextOutside1,
+#mermaid-1583957202555 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1583957202555 .active0,
+#mermaid-1583957202555 .active1,
+#mermaid-1583957202555 .active2,
+#mermaid-1583957202555 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1583957202555 .activeText0,
+#mermaid-1583957202555 .activeText1,
+#mermaid-1583957202555 .activeText2,
+#mermaid-1583957202555 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1583957202555 .done0,
+#mermaid-1583957202555 .done1,
+#mermaid-1583957202555 .done2,
+#mermaid-1583957202555 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1583957202555 .doneText0,
+#mermaid-1583957202555 .doneText1,
+#mermaid-1583957202555 .doneText2,
+#mermaid-1583957202555 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1583957202555 .crit0,
+#mermaid-1583957202555 .crit1,
+#mermaid-1583957202555 .crit2,
+#mermaid-1583957202555 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1583957202555 .activeCrit0,
+#mermaid-1583957202555 .activeCrit1,
+#mermaid-1583957202555 .activeCrit2,
+#mermaid-1583957202555 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1583957202555 .doneCrit0,
+#mermaid-1583957202555 .doneCrit1,
+#mermaid-1583957202555 .doneCrit2,
+#mermaid-1583957202555 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1583957202555 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1583957202555 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1583957202555 .doneCritText0,
+#mermaid-1583957202555 .doneCritText1,
+#mermaid-1583957202555 .doneCritText2,
+#mermaid-1583957202555 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1583957202555 .activeCritText0,
+#mermaid-1583957202555 .activeCritText1,
+#mermaid-1583957202555 .activeCritText2,
+#mermaid-1583957202555 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1583957202555 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1583957202555   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1583957202555 g.clickable {
+  cursor: pointer; }
+
+#mermaid-1583957202555 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1583957202555 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1583957202555 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1583957202555 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1583957202555 .dashed-line {
+  stroke-dasharray: 3; }
+
+#mermaid-1583957202555 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 .commit-id,
+#mermaid-1583957202555 .commit-msg,
+#mermaid-1583957202555 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1583957202555 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1583957202555 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1583957202555 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1583957202555 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1583957202555 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1583957202555 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1583957202555 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1583957202555 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1583957202555   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1583957202555 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1583957202555 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1583957202555 {
+    color: rgb(0, 0, 0);
+    font: 16px "trebuchet ms", verdana, arial;
+  }</style><g></g><defs><marker id="extensionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 1,7 L18,13 V 1 Z"></path></marker></defs><defs><marker id="extensionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 1,1 V 13 L18,7 Z"></path></marker></defs><defs><marker id="compositionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="compositionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 5,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><g id="classid-OAuthPrompt-6" class="classGroup " transform="translate(66.1171875,0 )"><rect x="0" y="0" width="117.75" height="53.640625"></rect><text y="15" x="0"><tspan class="title" x="26.78125">OAuthPrompt</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="117.75"></line><text x="5" y="32.015625" fill="white" class="classText"><tspan x="5">- OAuthPromptSettings</tspan><tspan x="5" dy="10">- PromptValidator</tspan></text><line x1="0" y1="49.03125" y2="49.03125" x2="117.75"></line><text x="5" y="64.03125" fill="white" class="classText"></text></g><g id="classid-BotAdapter-7" class="classGroup " transform="translate(0,335.09375 )"><rect x="0" y="0" width="110.765625" height="41.625"></rect><text y="15" x="0"><tspan x="5">«abstract»</tspan><tspan class="title" dy="10" x="5">BotAdapter</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="110.765625"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="110.765625"></line><text x="5" y="52.015625" fill="white" class="classText"></text></g><g id="classid-ICredentialTokenProvider-8" class="classGroup " transform="translate(34.3203125,103.640625 )"><rect x="0" y="0" width="181.34375" height="99.828125"></rect><text y="15" x="0"><tspan x="5">«Interface»</tspan><tspan class="title" dy="10" x="5">ICredentialTokenProvider</tspan></text><line x1="0" y1="32.015625" y2="32.015625" x2="181.34375"></line><text x="5" y="42.015625" fill="white" class="classText"></text><line x1="0" y1="37.015625" y2="37.015625" x2="181.34375"></line><text x="5" y="52.015625" fill="white" class="classText"><tspan x="5">GetUserTokenAsync()</tspan><tspan x="5" dy="10">GetOauthSignInLinkAsync()</tspan><tspan x="5" dy="10">SignOutUserAsync()</tspan><tspan x="5" dy="10">GetTokenStatusAsync()</tspan><tspan x="5" dy="10">GetAadTokenAsync()</tspan></text></g><g id="classid-BotFrameworkAdapter-9" class="classGroup " transform="translate(66.9453125,253.46875 )"><rect x="0" y="0" width="116.09375" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">BotFrameworkAdapter</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="116.09375"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="116.09375"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classid-TurnContext-10" class="classGroup " transform="translate(20.46875,426.71875 )"><rect x="0" y="0" width="69.828125" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">TurnContext</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="69.828125"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="69.828125"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><g id="classid-OAuthClient-11" class="classGroup " transform="translate(160.765625,340.09375 )"><rect x="0" y="0" width="67.671875" height="31.625"></rect><text y="15" x="0"><tspan class="title" x="5">OAuthClient</tspan></text><line x1="0" y1="22.015625" y2="22.015625" x2="67.671875"></line><text x="5" y="32.015625" fill="white" class="classText"></text><line x1="0" y1="27.015625" y2="27.015625" x2="67.671875"></line><text x="5" y="42.015625" fill="white" class="classText"></text></g><path d="M124.9921875,53.640625L124.9921875,57.807291666666664C124.9921875,61.973958333333336,124.9921875,70.30729166666667,124.9921875,78.640625C124.9921875,86.97395833333333,124.9921875,95.30729166666667,124.9921875,99.47395833333333L124.9921875,103.640625" id="edge0" class="relation" marker-start="url(#aggregationStart)"></path><g class="classLabel"><rect class="box" x="72.421875" y="66.53125" width="106.0625" height="17.015625"></rect><text class="label" x="124.9921875" y="78.640625" fill="red" text-anchor="middle">uses as token provider</text></g><path d="M98.02255216309342,285.09375L90.91592888591119,289.2604166666667C83.80930560872895,293.4270833333333,69.59605905436447,301.7604166666667,62.489435777182244,310.09375C55.3828125,318.4270833333333,55.3828125,326.7604166666667,55.3828125,330.9270833333333L55.3828125,335.09375" id="edge1" class="relation" marker-end="url(#extensionEnd)"></path><g class="classLabel"><rect class="box" x="35.203125" y="291.8125" width="61.9375" height="17.015625"></rect><text class="label" x="65.91943112203629" y="303.91605127031227" fill="red" text-anchor="middle">derives from</text></g><path d="M55.3828125,376.71875L55.3828125,380.8854166666667C55.3828125,385.0520833333333,55.3828125,393.3854166666667,55.3828125,401.71875C55.3828125,410.0520833333333,55.3828125,418.3854166666667,55.3828125,422.5520833333333L55.3828125,426.71875" id="edge2" class="relation" marker-end="url(#aggregationEnd)"></path><g class="classLabel"><rect class="box" x="19.265625" y="389.609375" width="73.34375" height="17.015625"></rect><text class="label" x="55.3828125" y="401.71875" fill="red" text-anchor="middle">is a member of</text></g><path d="M124.9921875,203.46875L124.9921875,207.63541666666666C124.9921875,211.80208333333334,124.9921875,220.13541666666666,124.9921875,228.46875C124.9921875,236.80208333333334,124.9921875,245.13541666666666,124.9921875,249.30208333333334L124.9921875,253.46875" id="edge3" class="relation" marker-start="url(#extensionStart)"></path><path d="M151.96182283690658,285.09375L159.0684461140888,289.2604166666667C166.17506939127105,293.4270833333333,180.38831594563553,301.7604166666667,187.49493922281775,310.9270833333333C194.6015625,320.09375,194.6015625,330.09375,194.6015625,335.09375L194.6015625,340.09375" id="edge4" class="relation" marker-end="url(#dependencyEnd)"></path><g class="classLabel"><rect class="box" x="136.140625" y="293.078125" width="100.921875" height="17.015625"></rect><text class="label" x="186.22159411986578" y="305.18051152437477" fill="red" text-anchor="middle">creates to get tokens</text></g></svg>
