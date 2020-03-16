@@ -11,18 +11,20 @@
         }
         <<abstract>> BotAdapter
 
-        class ICredentialTokenProvider {
+        class IExtendedUserTokenProvider {
             + GetUserTokenAsync()
             + GetOauthSignInLinkAsync()
             + SignOutUserAsync()
             + GetTokenStatusAsync()
             + GetAadTokenAsync()
+            + GetSignInResourceAsync()
+            + ExchangeTokenAsync()
         }
-        <<Interface>> ICredentialTokenProvider
+        <<Interface>> IExtendedUserTokenProvider
 
-        OAuthPrompt o-- ICredentialTokenProvider: uses as token provider
+        OAuthPrompt o-- IExtendedUserTokenProvider: uses as token provider
         BotFrameworkAdapter --|> BotAdapter: derives from
         BotAdapter --o TurnContext: is a member of
-        ICredentialTokenProvider <|-- BotFrameworkAdapter
+        IExtendedUserTokenProvider <|-- BotFrameworkAdapter
         BotFrameworkAdapter --> OAuthClient : creates to get tokens
 ```
