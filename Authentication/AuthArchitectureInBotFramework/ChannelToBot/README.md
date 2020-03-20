@@ -74,12 +74,21 @@ The Channel's request hits the Bot's `"api/messages"` endpoint, where the SDK ve
 
 ### Details on Signing in Auth Flows
 
+#### **JWT Anatomy**
 Tokens issued by the Bot Framework in auth flows are structured tokens conforming to [JSON Web Token](https://tools.ietf.org/html/rfc7519) (JWT, conversationally prounounced as "jot") formatting. The anatomy of a JWT is: `header.payload.signature`, with the three parts separated by periods. Each value between the periods are Base64URL-encoded. 
 
-![JWT Anatomy](./JwtAnatomy2.png)
+*Decoded JWT Anatomy - Example Token that a Bot Receives on an Inbound Request*
 
-The signature is an optional piece to the token. 
-In order to prevent the token from being maliciously manipulated, however, the Connector ensures to sign all tokens issued
+![JWT Anatomy](./JwtAnatomy.png)
+
+- **Header** - JSON Object used to describe information about the rest of the token and describes the cryptographic operations applied.
+- **Payload** - JSON Object with a set of claims about the authorization.
+- **Signature** - [JSON Web Signature (JWS)] (https://tools.ietf.org/html/draft-jones-json-web-signature-04). Optional.
+
+In order to prevent the token from being maliciously manipulated, the Connector ensures to sign all tokens issued.
+
+For definition on each of the claims in the payload, see [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens).
+
 ___
 
 ### **Verifying Tokens from Inbound Requests to Your Bot in the SDK**
