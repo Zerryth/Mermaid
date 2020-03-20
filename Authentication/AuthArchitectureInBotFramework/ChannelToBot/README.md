@@ -20,7 +20,9 @@ When using the Bot Framework SDK and the default `BotFrameworkAdapter` (i.e. not
 ```
 ___
 
-## Scenario: User Sends a Message from Channel to Bot
+## **Scenario: User Sends a Message from Channel to Bot**
+
+### **Overview of Channel to Bot Auth Flow**
 
 *User at Channel sends message to Bot*
 ```mermaid
@@ -34,7 +36,7 @@ OAuth participants in this scenario:
 
 For more information on OAuth fundamentals regarding what exactly the components in OAuth flows are, see [Azure Active Directory V2 Protocols documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols).
 
-Depending on the request scenario, the User or the Channel itself first authenticates to the authorization endpoint of the Connector (`"/oauth2/v2.0/authorize"`), then authorizes the Channel to send messages to the Bot. As part of this process, to ensure the security of this authorization, the Connector, following [OpenID Connect](https://openid.net/connect/) standards, implements [JSON Object Signing and Encryption](https://www.iana.org/assignments/jose/jose.xhtml) (JOSE) specifications. After the Channel authenticates and authorizes at the Connector, the Connector creates an access token and identity token, [asymmetrically signing](https://openid.net/specs/openid-connect-core-1_0.html#Signing) both.
+Depending on the request scenario, the User or the Channel itself first authenticates to the authorization endpoint of the Connector (`"/oauth2/v2.0/authorize"`), then authorizes the Channel to send messages to the Bot. To ensure the security of this authorization, the Connector, following [OpenID Connect](https://openid.net/connect/) standards, implements [JSON Object Signing and Encryption](https://www.iana.org/assignments/jose/jose.xhtml) (JOSE) specifications; after the Channel authenticates and authorizes at the Connector, the Connector creates an access token and identity token, [asymmetrically signing](https://openid.net/specs/openid-connect-core-1_0.html#Signing) both. 
 
 *Channel Acting on Behalf of Itself*
 ```mermaid
@@ -69,3 +71,16 @@ Depending on the request scenario, the User or the Channel itself first authenti
 ```
 
 The Channel's request hits the Bot's `"api/messages"` endpoint, where the SDK verifies the validity of the Token before allowing the request to process with the Bot's business logic. 
+
+### Details on Signing in Auth Flows
+
+Tokens issued by the Bot Framework in auth flows are structured tokens conforming to [JSON Web Token](https://tools.ietf.org/html/rfc7519) (JWT, conversationally prounounced as "jot") formatting. The anatomy of a JWT is: `header.payload.signature`, with the three parts separated by periods. Each value between the periods are Base64URL-encoded. 
+
+![JWT Anatomy](./JwtAnatomy2.png)
+
+The signature is an optional piece to the token. 
+In order to prevent the token from being maliciously manipulated, however, the Connector ensures to sign all tokens issued
+___
+
+### **Verifying Tokens from Inbound Requests to Your Bot in the SDK**
+
