@@ -88,18 +88,58 @@ Tokens issued by the Bot Framework in auth flows are structured tokens conformin
 
 - **Header** - JSON Object used to describe information about the rest of the token and describes the cryptographic operations applied.
 - **Payload** - JSON Object with a set of claims about the authorization.
-- **Signature** - [JSON Web Signature (JWS)] (https://tools.ietf.org/html/draft-jones-json-web-signature-04). Optional.
+- **Signature** - [JSON Web Signature (JWS)](https://tools.ietf.org/html/draft-jones-json-web-signature-04). Optional.
 
 For definition on each of the claims, see [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens).
 
-In order to prevent the token from being maliciously manipulated, the Connector ensures to sign all tokens issued.
+In order to prevent the token from being maliciously manipulated, the Connector ensures to sign all tokens it issues.
 
 #### **Signing Tokens**
-To armor tokens from attacks, the Connector [asymmetrically signs](https://openid.net/specs/openid-connect-core-1_0.html#Signing) tokens when it issues them. This essentially means that it uses a *private key* to sign the token, and then the Bot uses the Connector's *public key* to verify the token. To sign, you need to use a key ([JWK](https://tools.ietf.org/html/rfc7517)) and a cryptographic algorithm. For example, using the [RS256](https://tools.ietf.org/html/rfc7518) signature method to sign the JWT with an [RSA key](https://simple.wikipedia.org/wiki/RSA_algorithm).
+
+*Participants Involved with Signing a Token*
+
+```mermaid
+    graph LR
+
+        Connector --signs token with --> Private{Private Key}
+
+        Bot -- gets location of Public Key with --> Metadata>OpenID Metadata]
+        Bot([Bot]) --verifies token with --> Public{Public Key}
+        Metadata -. has location of .-> Public
+
+        Connector -- publishes --> Public
+        Connector -- publishes --> Metadata
+
+```
+
+To armor tokens from attacks, the Connector [asymmetrically signs](https://openid.net/specs/openid-connect-core-1_0.html#Signing) tokens when it issues them. This essentially means that it uses a *private key* to sign the token, and then the Bot uses the Connector's *public key* to verify the token. To sign, the Connector needs to use a cryptographic algorithm and a key ([JWK](https://tools.ietf.org/html/rfc7517)). For example, using the [RS256](https://tools.ietf.org/html/rfc7518) signature method to sign a JWT with an [RSA key](https://simple.wikipedia.org/wiki/RSA_algorithm).
 
 ![Public and Private RSA Keys](./RsaKeys.png "Public and Private RSA Keys")
 
-The Connector publishes its public keys that it uses to sign JWT tokens to OpenID metadata at a well-known, static endpoint.
+The Connector publishes [OpenID metadata documents](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) that describes its token service's configuration. 
+<details>
+    <summary>View OpenID Metadata Snippet</summary>
+
+```json
+{
+    "authorization_endpoint": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+    "token_endpoint": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+    "token_endpoint_auth_methods_supported": [
+        "client_secret_post",
+        "private_key_jwt",
+        "client_secret_basic"
+    ],
+    "jwks_uri": "https://login.microsoftonline.com/common/discovery/v2.0/keys",
+    "issuer": "https://login.microsoftonline.com/{tenantid}/v2.0",
+    "id_token_signing_alg_values_supported": ["RS256"],
+    "userinfo_endpoint": "https://graph.microsoft.com/oidc/userinfo"
+}
+```
+</details>
+
+- Included in this document, is the location of the public keys that the Connector uses to sign JWT tokens. The location is a well-known, static endpoint (`"https://login.microsoftonline.com/common/discovery/v2.0/keys"`). 
+
+Back in the JWT's header, it specifies the id of the key (`kid`)--as the Connector can publish multiple public keys--and the signing algorithm (`alg`) used to sign the token, which the Bot uses in its verification process of the signature.
 
 ___
 
