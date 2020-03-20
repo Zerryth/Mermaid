@@ -22,6 +22,9 @@ ___
 
 ## **Scenario: User Sends a Message from Channel to Bot**
 
+- [Overview of Channel to Bot Auth Flow](#overview-of-channel-to-bot-auth-flow)
+- [Details on Signing in Auth Flows](#details-on-signing-in-auth-flows)
+
 ### **Overview of Channel to Bot Auth Flow**
 
 *User at Channel sends message to Bot*
@@ -36,7 +39,7 @@ OAuth participants in this scenario:
 
 For more information on OAuth fundamentals regarding what exactly the components in OAuth flows are, see [Azure Active Directory V2 Protocols documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols).
 
-Depending on the request scenario, the User or the Channel itself first authenticates to the authorization endpoint of the Connector (`"/oauth2/v2.0/authorize"`), then authorizes the Channel to send messages to the Bot. To ensure the security of this authorization, the Connector, following [OpenID Connect](https://openid.net/connect/) standards, implements [JSON Object Signing and Encryption](https://www.iana.org/assignments/jose/jose.xhtml) (JOSE) specifications; after the Channel authenticates and authorizes at the Connector, the Connector creates an access token and identity token, [asymmetrically signing](https://openid.net/specs/openid-connect-core-1_0.html#Signing) both. 
+Depending on the request scenario, the User or the Channel itself first authenticates to the authorization endpoint of the Connector (`"/oauth2/v2.0/authorize"`), then authorizes the Channel to send messages to the Bot. To ensure the security of this authorization, the Connector, following [OpenID Connect](https://openid.net/connect/) standards, implements [JSON Object Signing and Encryption](https://www.iana.org/assignments/jose/jose.xhtml) (JOSE) specifications; after the Channel authenticates and authorizes at the Connector, the Connector creates an access token and an identity token, [asymmetrically signing](https://openid.net/specs/openid-connect-core-1_0.html#Signing) both. 
 
 *Channel Acting on Behalf of Itself*
 ```mermaid
@@ -48,8 +51,8 @@ Depending on the request scenario, the User or the Channel itself first authenti
         Channel ->> Connector: authenticates and authorizes itself
         Connector ->> Connector: creates and signs access and identity tokens
         Connector ->> Channel: returns access and identity tokens
-        Channel ->> Connector: makes request with access token to send message
-        Connector ->> Bot: sends "Why hello, Bot!" with access token
+        Channel ->> Connector: makes request with access token to send Activity
+        Connector ->> Bot: sends Activity with access token
 
 ```
 
@@ -72,22 +75,31 @@ Depending on the request scenario, the User or the Channel itself first authenti
 
 The Channel's request hits the Bot's `"api/messages"` endpoint, where the SDK verifies the validity of the Token before allowing the request to process with the Bot's business logic. 
 
-### Details on Signing in Auth Flows
+### **Details on Signing in Auth Flows**
+- [JWT Anatomy](#jwt-anatomy)
+- [Signing Tokens](#signing-tokens)
 
 #### **JWT Anatomy**
-Tokens issued by the Bot Framework in auth flows are structured tokens conforming to [JSON Web Token](https://tools.ietf.org/html/rfc7519) (JWT, conversationally prounounced as "jot") formatting. The anatomy of a JWT is: `header.payload.signature`, with the three parts separated by periods. Each value between the periods are Base64URL-encoded. 
+Tokens issued by the Bot Framework in auth flows are structured tokens conforming to [JSON Web Token](https://tools.ietf.org/html/rfc7519) (JWT) formatting. (Conversationally prounounced as "jot") . The anatomy of a JWT is: `header.payload.signature`, with the three parts separated by periods. Each value between the periods are Base64URL-encoded. 
 
-*Decoded JWT Anatomy - Example Token that a Bot Receives on an Inbound Request*
+*JWT Anatomy (Plaintext) - Example of a Token that a Bot Receives on an Inbound Request*
 
-![JWT Anatomy](./JwtAnatomy.png)
+![JWT Anatomy](./JwtAnatomy.png "JWT Anatomy")
 
 - **Header** - JSON Object used to describe information about the rest of the token and describes the cryptographic operations applied.
 - **Payload** - JSON Object with a set of claims about the authorization.
 - **Signature** - [JSON Web Signature (JWS)] (https://tools.ietf.org/html/draft-jones-json-web-signature-04). Optional.
 
+For definition on each of the claims, see [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens).
+
 In order to prevent the token from being maliciously manipulated, the Connector ensures to sign all tokens issued.
 
-For definition on each of the claims in the payload, see [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens).
+#### **Signing Tokens**
+To armor tokens from attacks, the Connector [asymmetrically signs](https://openid.net/specs/openid-connect-core-1_0.html#Signing) tokens when it issues them. This essentially means that it uses a *private key* to sign the token, and then the Bot uses the Connector's *public key* to verify the token. To sign, you need to use a key ([JWK](https://tools.ietf.org/html/rfc7517)) and a cryptographic algorithm. For example, using the [RS256](https://tools.ietf.org/html/rfc7518) signature method to sign the JWT with an [RSA key](https://simple.wikipedia.org/wiki/RSA_algorithm).
+
+![Public and Private RSA Keys](./RsaKeys.png "Public and Private RSA Keys")
+
+The Connector publishes its public keys that it uses to sign JWT tokens to OpenID metadata at a well-known, static endpoint.
 
 ___
 
