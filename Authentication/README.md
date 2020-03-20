@@ -1,14 +1,14 @@
 # Authentication in Bot Framework
 How authentication is integrated into the Bot Framework.
 
-- [High Level Authorization Flow](#high-level-authorization-flow)
+- [High Level Authorization Flow Using OAuth 2.0](#high-level-authorization-flow-using-oauth-2.0)
 - [Adding Authentication to Your Bot](#adding-authentication-to-your-bot)
 - [Architecture of Authentication in Bot Framework](#architecture-of-authentication-in-bot-framework)
 - [`OAuthPrompt`](#oauthprompt-behavioral-flow-charts)
 
 ___
 
-## **High Level Authorization Flow**
+## **High Level Authorization Flow Using OAuth 2.0**
 
 Within Bot Framework, an OAuth flow typically boils down to your **bot** wanting to access a **protected resource** on behalf of the **user** (i.e. the **resource owner**). In order to do this, we must verify that the user is someone who has the authority to access the protected resource, and can in turn also delegate part of their authority to the bot to access the resource.
 
