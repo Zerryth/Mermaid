@@ -1,6 +1,11 @@
 # Channel-to-Bot Authentication and Authorization
 
-In order for Channels and Bots built using the Bot Framework SDK to communicate with each other securely, the framework implements OAuth 2.0 authorization flows with [OpenID Connect](https://openid.net/connect/) authentication. For a Channel to send activities to a Bot, the Bot must receive a Token, detailing that the Channel is authorized to send activites to the Bot.
+### Prerequisite
+It is helpful to read the [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#connector-to-bot) documentation before reading this article. This Channel-to-Bot article expands further into the Bot Framework SDK layer details.
+
+___
+
+In order for Channels and Bots to communicate with each other securely, the framework implements OAuth 2.0 authorization flows with [OpenID Connect](https://openid.net/connect/) authentication. For a Channel to send activities to a Bot, the Bot must receive a Token, detailing that the Channel is *authorized* to send activites to the Bot.
 
 ```mermaid
     graph LR
@@ -73,7 +78,7 @@ Depending on the request scenario, the User or the Channel itself first authenti
         Connector ->> Bot: sends "Why hello, Bot!" with access token
 ```
 
-The Channel's request hits the Bot's `"api/messages"` endpoint, where the SDK verifies the validity of the Token before allowing the request to process with the Bot's business logic. 
+The Channel's request hits the Bot's `"api/messages"` endpoint, where the SDK verifies the validity of the Token (sent in the Authorization header of the request) before allowing the request to process with the Bot's business logic. 
 
 ### **Details on Signing in Auth Flows**
 - [JWT Anatomy](#jwt-anatomy)
@@ -96,7 +101,7 @@ In order to prevent the token from being maliciously manipulated, the Connector 
 
 #### **Signing Tokens**
 
-*Participants Involved with Signing a Token*
+*Participants Involved with the Token's Signature*
 
 ```mermaid
     graph LR
@@ -117,8 +122,8 @@ To armor tokens from attacks, the Connector [asymmetrically signs](https://openi
 ![Public and Private RSA Keys](./RsaKeys.png "Public and Private RSA Keys")
 
 The Connector publishes [OpenID metadata documents](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata) that describes its token service's configuration. 
-<details>
-    <summary>View OpenID Metadata Snippet</summary>
+
+*OpenID Metadata Snippet*
 
 ```json
 {
@@ -133,11 +138,12 @@ The Connector publishes [OpenID metadata documents](https://openid.net/specs/ope
     "issuer": "https://login.microsoftonline.com/{tenantid}/v2.0",
     "id_token_signing_alg_values_supported": ["RS256"],
     "userinfo_endpoint": "https://graph.microsoft.com/oidc/userinfo"
+    ...
 }
 ```
-</details>
 
-- Included in this document, is the location of the public keys that the Connector uses to sign JWT tokens. The location is a well-known, static endpoint (`"https://login.microsoftonline.com/common/discovery/v2.0/keys"`). 
+- Included in this document, is the location of the public keys that the Connector uses to sign JWTs. The location is a well-known, static endpoint (`"https://login.microsoftonline.com/common/discovery/v2.0/keys"`). 
+- See more information on OpenID metadata document in [Microsoft identity platform and OpenID Connect protocol](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc#fetch-the-openid-connect-metadata-document).
 
 Back in the JWT's header, it specifies the id of the key (`kid`)--as the Connector can publish multiple public keys--and the signing algorithm (`alg`) used to sign the token, which the Bot uses in its verification process of the signature.
 
@@ -145,3 +151,27 @@ ___
 
 ### **Verifying Tokens from Inbound Requests to Your Bot in the SDK**
 
+#### Higher Level View of Channel's Token Authentication in the Bot Framework SDK 
+When a User at a Channel sends your Bot a message, the Bot Framework SDK validates the Token, to ensure the Channel's been authorized
+
+```mermaid
+    sequenceDiagram
+        participant WebServer
+        participant Adapter
+        participant JwtTokenValidation
+        participant Bot
+
+        WebServer ->> Adapter: process()
+            Note over Adapter: Deserialize Activity
+            Note over Adapter: Grab Auth Header
+
+            Adapter ->> JwtTokenValidation: authenticateRequest()
+                Note over JwtTokenValidation: Validate Token
+                Note over JwtTokenValidation: Trust serviceUrl
+            
+                JwtTokenValidation -->> Adapter: returns ClaimsIdentity if inbound request is successfully authorized
+
+            Note over Adapter: Create ConnectorClient w/AppCredentials
+
+            Adapter ->> Bot: Run Middleware and Bot Logic
+```
