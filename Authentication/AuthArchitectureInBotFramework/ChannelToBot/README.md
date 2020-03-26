@@ -1,6 +1,6 @@
 # Channel-to-Bot Authentication and Authorization
 
-### Prerequisite
+### *Prerequisite*
 It is helpful to read the [Authentication](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#connector-to-bot) documentation before reading this article. This Channel-to-Bot article expands further into the Bot Framework SDK layer details.
 
 ___
@@ -29,6 +29,7 @@ ___
 
 - [Overview of Channel to Bot Auth Flow](#overview-of-channel-to-bot-auth-flow)
 - [Details on Signing in Auth Flows](#details-on-signing-in-auth-flows)
+- [Verifying Tokens from Inbound Requests to Your Bot in the SDK](#verifying-tokens-from-inbound-requests-to-your-bot-in-the-sdk)
 
 ### **Overview of Channel to Bot Auth Flow**
 
@@ -79,6 +80,8 @@ Depending on the request scenario, the User or the Channel itself first authenti
 ```
 
 The Channel's request hits the Bot's `"api/messages"` endpoint, where the SDK verifies the validity of the Token (sent in the Authorization header of the request) before allowing the request to process with the Bot's business logic. 
+
+___
 
 ### **Details on Signing in Auth Flows**
 - [JWT Anatomy](#jwt-anatomy)
@@ -152,7 +155,7 @@ ___
 ### **Verifying Tokens from Inbound Requests to Your Bot in the SDK**
 
 #### Higher Level View of Channel's Token Authentication in the Bot Framework SDK 
-When a User at a Channel sends your Bot a message, the Bot Framework SDK validates the Token, to ensure the Channel's been authorized
+When a User at a Channel sends your Bot a message, the Bot Framework SDK validates the Token, to ensure the Channel's been authorized to communicate with the Bot first. 
 
 ```mermaid
     sequenceDiagram
@@ -169,9 +172,80 @@ When a User at a Channel sends your Bot a message, the Bot Framework SDK validat
                 Note over JwtTokenValidation: Validate Token
                 Note over JwtTokenValidation: Trust serviceUrl
             
-                JwtTokenValidation -->> Adapter: returns ClaimsIdentity if inbound request is successfully authorized
+                JwtTokenValidation -->> Adapter: returns ClaimsIdentity if Token is valid
 
             Note over Adapter: Create ConnectorClient w/AppCredentials
 
             Adapter ->> Bot: Run Middleware and Bot Logic
 ```
+
+The User's message sent from the Channel comes in as a request via the Bot's "`api/messages`" endpoint, where the request gets passed to the Adapter first. At the Adapter, the request is deserialized into an Activity object (a shape that your Bot understands how to consume), and the Channel's Token (sent via request's Authorization header) is checked with the SDK's `JwtTokenValidation`. Only if the Token is valid, will the Channel's request be allowed to reach the Bot's business logic.
+
+#### Inbound Request's Token Authentication Details
+
+`JwtTokenValidation.authenticateRequest()` houses the Bot Framework SDK's OAuth 2.0 and OpenID Connect flow patterns discussed in [Details on Signing in Auth Flows](#details-on-signing-in-auth-flow). First it identifies what Channel is trying to communicate with the Bot to then determine what is the appropriate OpenID metadata document to grab. Using the location specified in the medata document, the SDK will then proceed to get the public key counterpart to the private key that the Connector used to sign the Token. Subsequently, the SDK will ensure that the [Token's claims pass multiple checks](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#step-4-verify-the-jwt-token) before saving the Token's content in the form of a `ClaimsIdentity`. After obtaining the identity, `authenticateRequest()` also adds the host of the Activity's `serviceUrl` to the list of trusted hosts.
+
+*Participants in Token Validation*
+
+```mermaid
+    classDiagram
+        JwtTokenValidation .. ChannelValidation
+        JwtTokenValidation .. EnterpriseChannelChannelValidation
+        JwtTokenValidation .. EmulatorValidation:  validates Channel with
+        JwtTokenValidation .. SkillValidation
+        JwtTokenValidation .. GovernmentChannelValidation
+        ChannelValidation --> JwtTokenExtractor
+        EnterpriseChannelChannelValidation --> JwtTokenExtractor
+        EmulatorValidation --> JwtTokenExtractor: extracts & validates token with
+        SkillValidation --> JwtTokenExtractor
+        GovernmentChannelValidation --> JwtTokenExtractor
+
+
+        JwtTokenValidation --> AppCredentials: trusts serviceUrl with
+```
+
+*`authenticateRequest()` Sequence Diagram*
+```mermaid
+    sequenceDiagram
+        participant JwtTokenValidation
+        participant ChannelValidation as ChannelValidation *1
+        participant JwtTokenExtractor
+        participant AppCredentials
+        
+        JwtTokenValidation ->> ChannelValidation: identify what Channel is communicating w/Bot
+        activate JwtTokenValidation
+        activate ChannelValidation
+            ChannelValidation -->> JwtTokenValidation: Channel identified
+        deactivate ChannelValidation
+
+        JwtTokenValidation ->> ChannelValidation: run Channel-specific validations
+        activate ChannelValidation
+            ChannelValidation ->> ChannelValidation: get appropriate OpenID metadata document
+            ChannelValidation ->> JwtTokenExtractor: extract and validate Token
+            activate JwtTokenExtractor
+                JwtTokenExtractor ->> JwtTokenExtractor: get public signing key *2
+                JwtTokenExtractor ->> JwtTokenExtractor: verify Token signed w/valid signing algorithm and key
+                JwtTokenExtractor ->> JwtTokenExtractor: validate endorsements *3
+
+                JwtTokenExtractor -->> ChannelValidation: return ClaimsIdentity if Token is valid
+            deactivate JwtTokenExtractor
+            ChannelValidation ->> ChannelValidation: run Channel-specific validations
+            ChannelValidation -->> JwtTokenValidation: return ClaimsIdentity
+        deactivate ChannelValidation
+
+        JwtTokenValidation ->> AppCredentials: trustServiceUrl()
+        activate AppCredentials
+            AppCredentials -->> JwtTokenValidation: host of serviceUrl added to list of trusted hosts
+        deactivate AppCredentials
+        deactivate JwtTokenValidation
+
+```
+1. The `ChannelValidation` class in this auth flow depends on what Channel is communicating with the Bot. This class has Channel-specific validations. The appropriate validation class could be:
+    - `ChannelValidation`
+    - `EnterpriseChannelChannelValidation`
+    - `EmulatorValidation`
+    - `SkillValidation`
+    - `GovernmentChannelValidation` (excluding C#)
+
+2. Get Connector's public signing key from location specified in the OpenID metadata document.
+3. Validate endorsements if key specifies that they are needed for the specific Channel that is communicating with Bot.
