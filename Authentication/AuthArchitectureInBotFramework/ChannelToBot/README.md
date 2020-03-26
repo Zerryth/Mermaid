@@ -185,7 +185,7 @@ The User's message sent from the Channel comes in as a request via the Bot's "`a
 
 `JwtTokenValidation.authenticateRequest()` houses the Bot Framework SDK's OAuth 2.0 and OpenID Connect flow patterns discussed in [Details on Signing in Auth Flows](#details-on-signing-in-auth-flow). First it identifies what Channel is trying to communicate with the Bot to then determine what is the appropriate OpenID metadata document to grab. Using the location specified in the medata document, the SDK will then proceed to get the public key counterpart to the private key that the Connector used to sign the Token. Subsequently, the SDK will ensure that the [Token's claims pass multiple checks](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-authentication?view=azure-bot-service-3.0#step-4-verify-the-jwt-token) before saving the Token's content in the form of a `ClaimsIdentity`. After obtaining the identity, `authenticateRequest()` also adds the host of the Activity's `serviceUrl` to the list of trusted hosts.
 
-*Participants in Token Validation*
+*JwtTokenValidation Class Diagram - Participants in Token Validation*
 
 ```mermaid
     classDiagram
