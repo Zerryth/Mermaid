@@ -98,7 +98,7 @@ Tokens issued by the Bot Framework in auth flows are structured tokens conformin
 - **Payload** - JSON Object with a set of claims about the authorization.
 - **Signature** - [JSON Web Signature (JWS)](https://tools.ietf.org/html/draft-jones-json-web-signature-04). Optional.
 
-For definition on each of the claims, see [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens).
+For definition on each of the claims, see [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens). Claims in token may vary in different auth flows.
 
 In order to prevent the token from being maliciously manipulated, the Connector ensures to sign all tokens it issues.
 
