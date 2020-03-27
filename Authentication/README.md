@@ -3,6 +3,7 @@ How authentication is integrated into the Bot Framework.
 
 - [High Level Authorization Flow Using OAuth 2.0](#high-level-authorization-flow-using-oauth-2.0)
 - [Adding Authentication to Your Bot](#adding-authentication-to-your-bot)
+- [Channel to Bot Authentication and Authorization](#channel-to-bot-authentication-and-authorization)
 - [Architecture of Authentication in Bot Framework](#architecture-of-authentication-in-bot-framework)
 - [`OAuthPrompt`](#oauthprompt-behavioral-flow-charts)
 
@@ -113,7 +114,7 @@ This section diagrams the concepts introduced in the [Add authentication to your
 
 ___
 
-## Channel to Bot Authentication
+## Channel to Bot Authentication and Authorization
 See [Channel-to-Bot Authentication and Authorization](./ChannelToBot/README.md).
 
 ___
