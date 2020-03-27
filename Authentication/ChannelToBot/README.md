@@ -7,22 +7,12 @@ ___
 
 In order for Channels and Bots to communicate with each other securely, the framework implements OAuth 2.0 authorization flows with [OpenID Connect](https://openid.net/connect/) authentication. For a Channel to send activities to a Bot, the Bot must receive a Token, detailing that the Channel is *authorized* to send activites to the Bot.
 
-```mermaid
-    graph LR
-        Channel -- Token --> Bot(Bot)
-```
+![Channel with Token communicates with Bot](./SimpleChannelWithTokenToBot.svg "Channel with Token communicates with Bot")
 
 When using the Bot Framework SDK and the default `BotFrameworkAdapter` (i.e. not a custom adapter), the Activity flow includes the Connector layer in between the Channel and Bot. The Connector is part of Azure Bot Service in the cloud, that allows Bots to exhange messages with multiple Channels configured through the Azure portal.
 
-```mermaid
-    graph LR
-        Teams --- Connector
-        Slack --- Connector([Connector])
-        Cortana --- Connector
-        WebChat --- Connector
+![ChannelsToABSLayerToBot](./ChannelsToABSLayerToBot.svg "Channels to ABS layer to Bot")
 
-        Connector --- Bot(Bot)
-```
 ___
 
 ## **Scenario: User Sends a Message from Channel to Bot**
@@ -34,10 +24,9 @@ ___
 ### **Overview of Channel to Bot Auth Flow**
 
 *User at Channel sends message to Bot*
-```mermaid
-    graph LR
-        Channel -- "#quot;Why hello, Bot!#quot;" --> Bot(Bot)
-```
+
+![Why Hello Bot!](./WhyHelloBot.svg "Why Hello Bot!")
+
 OAuth participants in this scenario:
 - **Channel**: OAuth Client
 - **Connector**: Authorization Server (AS) or Identity Provider (IdP)
@@ -48,36 +37,10 @@ For more information on OAuth fundamentals regarding what exactly the components
 Depending on the request scenario, the User or the Channel itself first authenticates to the authorization endpoint of the Connector (`"/oauth2/v2.0/authorize"`), then authorizes the Channel to send messages to the Bot. To ensure the security of this authorization, the Connector, following [OpenID Connect](https://openid.net/connect/) standards, implements [JSON Object Signing and Encryption](https://www.iana.org/assignments/jose/jose.xhtml) (JOSE) specifications; after the Channel authenticates and authorizes at the Connector, the Connector creates an access token and an identity token, [asymmetrically signing](https://openid.net/specs/openid-connect-core-1_0.html#Signing) both. 
 
 *Channel Acting on Behalf of Itself*
-```mermaid
-    sequenceDiagram
-        participant Channel
-        participant Connector
-        participant Bot
+!["Auth Flow - Channel Acting on Behalf of Self"](./ChannelActingOnBehalfOfSelf.svg "Auth Flow - Channel Acting on Behalf of Self")
 
-        Channel ->> Connector: authenticates and authorizes itself
-        Connector ->> Connector: creates and signs access and identity tokens
-        Connector ->> Channel: returns access and identity tokens
-        Channel ->> Connector: makes request with access token to send Activity
-        Connector ->> Bot: sends Activity with access token
-
-```
-
-*Channel Activing on Behalf of User*
-```mermaid
-    sequenceDiagram
-        participant User
-        participant Channel
-        participant Connector
-        participant Bot
-
-        User ->> Channel: send "Why hello, Bot!" to Bot
-        Channel ->> User: requests authorization
-        User ->> Connector: authenticates and authorizes Channel
-        Connector ->> Connector: creates and signs access and identity tokens
-        Connector ->> Channel: returns access and identity tokens
-        Channel ->> Connector: makes request with access token to send message
-        Connector ->> Bot: sends "Why hello, Bot!" with access token
-```
+*Channel Acting on Behalf of User*
+![Channel Acting on Behalf of User](./ChannelActivingOnBehalfOfUser.svg "Channel Acting on Behalf of User")
 
 The Channel's request hits the Bot's `"api/messages"` endpoint, where the SDK verifies the validity of the Token (sent in the Authorization header of the request) before allowing the request to process with the Bot's business logic. 
 
@@ -106,19 +69,7 @@ In order to prevent the token from being maliciously manipulated, the Connector 
 
 *Participants Involved with the Token's Signature*
 
-```mermaid
-    graph LR
-
-        Connector --signs token with --> Private{Private Key}
-
-        Bot -- gets location of Public Key with --> Metadata>OpenID Metadata]
-        Bot([Bot]) --verifies token with --> Public{Public Key}
-        Metadata -. has location of .-> Public
-
-        Connector -- publishes --> Public
-        Connector -- publishes --> Metadata
-
-```
+![Token Signature Participants](./TokenSignatureParticipants.svg "Token Signature Participants")
 
 To armor tokens from attacks, the Connector [asymmetrically signs](https://openid.net/specs/openid-connect-core-1_0.html#Signing) tokens when it issues them. This essentially means that it uses a *private key* to sign the token, and then the Bot uses the Connector's *public key* to verify the token. To sign, the Connector needs to use a cryptographic algorithm and a key ([JWK](https://tools.ietf.org/html/rfc7517)). For example, using the [RS256](https://tools.ietf.org/html/rfc7518) signature method to sign a JWT with an [RSA key](https://simple.wikipedia.org/wiki/RSA_algorithm).
 
@@ -157,27 +108,7 @@ ___
 #### Higher Level View of Channel's Token Authentication in the Bot Framework SDK 
 When a User at a Channel sends your Bot a message, the Bot Framework SDK validates the Token, to ensure the Channel's been authorized to communicate with the Bot first. 
 
-```mermaid
-    sequenceDiagram
-        participant WebServer
-        participant Adapter
-        participant JwtTokenValidation
-        participant Bot
-
-        WebServer ->> Adapter: process()
-            Note over Adapter: Deserialize Activity
-            Note over Adapter: Grab Auth Header
-
-            Adapter ->> JwtTokenValidation: authenticateRequest()
-                Note over JwtTokenValidation: Validate Token
-                Note over JwtTokenValidation: Trust serviceUrl
-            
-                JwtTokenValidation -->> Adapter: returns ClaimsIdentity if Token is valid
-
-            Note over Adapter: Create ConnectorClient w/AppCredentials
-
-            Adapter ->> Bot: Run Middleware and Bot Logic
-```
+![Authentication of the Token sent from Channel](./HigherLevel_TokenAuthentication.svg "Authentication of the Token sent from Channel")
 
 The User's message sent from the Channel comes in as a request via the Bot's "`api/messages`" endpoint, where the request gets passed to the Adapter first. At the Adapter, the request is deserialized into an Activity object (a shape that your Bot understands how to consume), and the Channel's Token (sent via request's Authorization header) is checked with the SDK's `JwtTokenValidation`. Only if the Token is valid, will the Channel's request be allowed to reach the Bot's business logic.
 
@@ -187,59 +118,10 @@ The User's message sent from the Channel comes in as a request via the Bot's "`a
 
 *JwtTokenValidation Class Diagram - Participants in Token Validation*
 
-```mermaid
-    classDiagram
-        JwtTokenValidation .. ChannelValidation
-        JwtTokenValidation .. EnterpriseChannelChannelValidation
-        JwtTokenValidation .. EmulatorValidation:  validates Channel with
-        JwtTokenValidation .. SkillValidation
-        JwtTokenValidation .. GovernmentChannelValidation
-        ChannelValidation --> JwtTokenExtractor
-        EnterpriseChannelChannelValidation --> JwtTokenExtractor
-        EmulatorValidation --> JwtTokenExtractor: extracts & validates token with
-        SkillValidation --> JwtTokenExtractor
-        GovernmentChannelValidation --> JwtTokenExtractor
-
-
-        JwtTokenValidation --> AppCredentials: trusts serviceUrl with
-```
+![JwtTokenValidation Class Diagram](./JwtTokenValidationClassDiagram.svg "JwtTokenValidation Class Diagram")
 
 *`authenticateRequest()` Sequence Diagram*
-```mermaid
-    sequenceDiagram
-        participant JwtTokenValidation
-        participant ChannelValidation as ChannelValidation *1
-        participant JwtTokenExtractor
-        participant AppCredentials
-        
-        JwtTokenValidation ->> ChannelValidation: identify what Channel is communicating w/Bot
-        activate JwtTokenValidation
-        activate ChannelValidation
-            ChannelValidation -->> JwtTokenValidation: Channel identified
-        deactivate ChannelValidation
-
-        JwtTokenValidation ->> ChannelValidation: run Channel-specific validations
-        activate ChannelValidation
-            ChannelValidation ->> ChannelValidation: get appropriate OpenID metadata document
-            ChannelValidation ->> JwtTokenExtractor: extract and validate Token
-            activate JwtTokenExtractor
-                JwtTokenExtractor ->> JwtTokenExtractor: get public signing key *2
-                JwtTokenExtractor ->> JwtTokenExtractor: verify Token signed w/valid signing algorithm and key
-                JwtTokenExtractor ->> JwtTokenExtractor: validate endorsements *3
-
-                JwtTokenExtractor -->> ChannelValidation: return ClaimsIdentity if Token is valid
-            deactivate JwtTokenExtractor
-            ChannelValidation ->> ChannelValidation: run Channel-specific validations
-            ChannelValidation -->> JwtTokenValidation: return ClaimsIdentity
-        deactivate ChannelValidation
-
-        JwtTokenValidation ->> AppCredentials: trustServiceUrl()
-        activate AppCredentials
-            AppCredentials -->> JwtTokenValidation: host of serviceUrl added to list of trusted hosts
-        deactivate AppCredentials
-        deactivate JwtTokenValidation
-
-```
+![JwtTokenValidation.authenticateRequest()](./AuthenticateRequest.svg "JwtTokenValidation.authenticateRequest()")
 1. The `ChannelValidation` class in this auth flow depends on what Channel is communicating with the Bot. This class has Channel-specific validations. The appropriate validation class could be:
     - `ChannelValidation`
     - `EnterpriseChannelChannelValidation`

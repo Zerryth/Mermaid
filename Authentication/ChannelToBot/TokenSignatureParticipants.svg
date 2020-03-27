@@ -1,0 +1,505 @@
+<svg id="mermaid-1585344792538" width="979.6015625" xmlns="http://www.w3.org/2000/svg" height="366.9640808105469" viewBox="0 0 979.6015625 366.9640808105469"><style>
+
+
+
+#mermaid-1585344792538 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1585344792538 .label text {
+  fill: #333; }
+
+#mermaid-1585344792538 .node rect,
+#mermaid-1585344792538 .node circle,
+#mermaid-1585344792538 .node ellipse,
+#mermaid-1585344792538 .node polygon,
+#mermaid-1585344792538 .node path {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1585344792538 .node .label {
+  text-align: center; }
+
+#mermaid-1585344792538 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1585344792538 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1585344792538 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1585344792538 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1585344792538 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1585344792538 .cluster text {
+  fill: #333; }
+
+#mermaid-1585344792538 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1585344792538 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1585344792538 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1585344792538 .actor-line {
+  stroke: grey; }
+
+#mermaid-1585344792538 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1585344792538 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1585344792538 #arrowhead {
+  fill: #333; }
+
+#mermaid-1585344792538 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1585344792538 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1585344792538 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1585344792538 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1585344792538 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1585344792538 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1585344792538 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1585344792538 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1585344792538 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1585344792538 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1585344792538 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1585344792538 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1585344792538 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1585344792538 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1585344792538 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1585344792538 .section2 {
+  fill: #fff400; }
+
+#mermaid-1585344792538 .section1,
+#mermaid-1585344792538 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1585344792538 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1585344792538 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1585344792538 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1585344792538 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1585344792538 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1585344792538 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.8;
+  shape-rendering: crispEdges; }
+#mermaid-1585344792538   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1585344792538 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1585344792538 .task {
+  stroke-width: 2; }
+
+#mermaid-1585344792538 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1585344792538 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1585344792538 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1585344792538 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1585344792538 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1585344792538 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1585344792538 .taskText0,
+#mermaid-1585344792538 .taskText1,
+#mermaid-1585344792538 .taskText2,
+#mermaid-1585344792538 .taskText3 {
+  fill: white; }
+
+#mermaid-1585344792538 .task0,
+#mermaid-1585344792538 .task1,
+#mermaid-1585344792538 .task2,
+#mermaid-1585344792538 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1585344792538 .taskTextOutside0,
+#mermaid-1585344792538 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1585344792538 .taskTextOutside1,
+#mermaid-1585344792538 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1585344792538 .active0,
+#mermaid-1585344792538 .active1,
+#mermaid-1585344792538 .active2,
+#mermaid-1585344792538 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1585344792538 .activeText0,
+#mermaid-1585344792538 .activeText1,
+#mermaid-1585344792538 .activeText2,
+#mermaid-1585344792538 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1585344792538 .done0,
+#mermaid-1585344792538 .done1,
+#mermaid-1585344792538 .done2,
+#mermaid-1585344792538 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1585344792538 .doneText0,
+#mermaid-1585344792538 .doneText1,
+#mermaid-1585344792538 .doneText2,
+#mermaid-1585344792538 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1585344792538 .crit0,
+#mermaid-1585344792538 .crit1,
+#mermaid-1585344792538 .crit2,
+#mermaid-1585344792538 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1585344792538 .activeCrit0,
+#mermaid-1585344792538 .activeCrit1,
+#mermaid-1585344792538 .activeCrit2,
+#mermaid-1585344792538 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1585344792538 .doneCrit0,
+#mermaid-1585344792538 .doneCrit1,
+#mermaid-1585344792538 .doneCrit2,
+#mermaid-1585344792538 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1585344792538 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1585344792538 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1585344792538 .doneCritText0,
+#mermaid-1585344792538 .doneCritText1,
+#mermaid-1585344792538 .doneCritText2,
+#mermaid-1585344792538 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1585344792538 .activeCritText0,
+#mermaid-1585344792538 .activeCritText1,
+#mermaid-1585344792538 .activeCritText2,
+#mermaid-1585344792538 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1585344792538 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1585344792538   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1585344792538 g.clickable {
+  cursor: pointer; }
+
+#mermaid-1585344792538 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1585344792538 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1585344792538 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1585344792538 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1585344792538 .dashed-line {
+  stroke-dasharray: 3; }
+
+#mermaid-1585344792538 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 .commit-id,
+#mermaid-1585344792538 .commit-msg,
+#mermaid-1585344792538 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1585344792538 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1585344792538 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1585344792538 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1585344792538 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1585344792538 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1585344792538 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1585344792538 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1585344792538 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1585344792538   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1585344792538 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1585344792538 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1585344792538 {
+    color: rgb(0, 0, 0);
+    font: 16px "trebuchet ms", verdana, arial;
+  }</style><g transform="translate(0, 0)"><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M104.20852579086943,180.8390655517578L286.4921875,81.9195327758789L477.6742187500001,82.41953277587892" marker-end="url(#arrowhead296)" style="fill:none"></path><defs><marker id="arrowhead296" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M94.3515625,326.44871036433676L286.4921875,296.7765655517578L468.7104127104187,282.2536528413391" marker-end="url(#arrowhead297)" style="fill:none"></path><defs><marker id="arrowhead297" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M94.3515625,333.33198022956213L286.4921875,347.0890655517578L551.09375,347.0890655517578L740.0234375,347.0890655517578L853.2744997218643,297.1291902736222" marker-end="url(#arrowhead298)" style="fill:none"></path><defs><marker id="arrowhead298" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M649.5,275.4015655517578L740.0234375,274.9015655517578L831.546875,275.4015655517578" marker-end="url(#arrowhead299)" style="fill:none;stroke-width:2px;stroke-dasharray:3;"></path><defs><marker id="arrowhead299" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M119.796875,202.7140655517578L286.4921875,202.7140655517578L551.09375,202.7140655517578L740.0234375,202.7140655517578L853.2744997218643,253.67394082989344" marker-end="url(#arrowhead300)" style="fill:none"></path><defs><marker id="arrowhead300" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M119.796875,215.3486976414672L286.4921875,253.0265655517578L468.7104127104187,268.54947826217654" marker-end="url(#arrowhead301)" style="fill:none"></path><defs><marker id="arrowhead301" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="translate(286.4921875,81.9195327758789)" style="opacity: 1;"><g transform="translate(-72.46875,-11.875)" class="label"><foreignObject width="144.94140625" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">signs token with</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(286.4921875,296.7765655517578)" style="opacity: 1;"><g transform="translate(-141.6953125,-11.875)" class="label"><foreignObject width="283.3984375" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">gets location of Public Key with</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(551.09375,347.0890655517578)" style="opacity: 1;"><g transform="translate(-84.1796875,-11.875)" class="label"><foreignObject width="168.359375" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">verifies token with</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(740.0234375,274.9015655517578)" style="opacity: 1;"><g transform="translate(-66.0234375,-11.875)" class="label"><foreignObject width="132.05078125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">has location of</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(551.09375,202.7140655517578)" style="opacity: 1;"><g transform="translate(-41.421875,-11.875)" class="label"><foreignObject width="82.8515625" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">publishes</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(286.4921875,253.0265655517578)" style="opacity: 1;"><g transform="translate(-41.421875,-11.875)" class="label"><foreignObject width="82.8515625" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">publishes</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="Connector" transform="translate(63.8984375,202.7140655517578)" style="opacity: 1;"><rect rx="0" ry="0" x="-55.8984375" y="-21.875" width="111.796875" height="43.75" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-45.8984375,-11.875)"><foreignObject width="91.796875" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Connector</div></foreignObject></g></g></g><g class="node" id="Private" transform="translate(551.09375,81.9195327758789)" style="opacity: 1;"><polygon points="73.91953125,0 147.8390625,-73.91953125 73.91953125,-147.8390625 0,-73.91953125" transform="translate(-73.91953125,73.91953125)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-50.2578125,-11.875)"><foreignObject width="100.52734375" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Private Key</div></foreignObject></g></g></g><g class="node" id="Bot" transform="translate(63.8984375,331.1515655517578)" style="opacity: 1;"><rect rx="21.875" ry="21.875" x="-30.453125" y="-21.875" width="60.90625" height="43.75" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-14.984375,-11.875)"><foreignObject width="29.98046875" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Bot</div></foreignObject></g></g></g><g class="node" id="Metadata" transform="translate(551.09375,274.9015655517578)" style="opacity: 1;"><polygon points="-21.875,0 173.9375,0 173.9375,-43.75 -21.875,-43.75 0,-21.875" transform="translate(-86.96875,21.875)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-76.96875,-11.875)"><foreignObject width="153.9453125" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OpenID Metadata</div></foreignObject></g></g></g><g class="node" id="Public" transform="translate(901.32421875,274.9015655517578)" style="opacity: 1;"><polygon points="70.27734375,0 140.5546875,-70.27734375 70.27734375,-140.5546875 0,-70.27734375" transform="translate(-70.27734375,70.27734375)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-46.2109375,-11.875)"><foreignObject width="92.421875" height="23.75"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Public Key</div></foreignObject></g></g></g></g></g></g></svg>
