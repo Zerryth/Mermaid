@@ -21,7 +21,7 @@ In the SDK, we have `IRecognizer` and `Recognizer` that classes implement/derive
 - *However* when looking at `tests.schema`, you can see that *all* recognizers, regardless of deriving/implementing `Recognizer`/`IRecognizer` are categoriezed as `Microsoft.IRecognizer` kind.
 
 ### Class Diagram of Recognizers in the SDK Currently
-![recognizers-class-diagram-all-classes.svg](../Images/recognizers-class-diagram-all-classes.svg "recognizers-class-diagram-all-classes")
+![recognizers-class-diagram-all-classes.svg](../Images/recognizers-class-diagram-all-classes-currently.svg "recognizers-class-diagram-all-classes")
 
 ### IRecognizer Class Diagram
 ![irecognizer-class-diagram-unabridged](../Images/irecognizer-class-diagram-unabridged.svg "irecognizer-class-diagram-unabridged")
