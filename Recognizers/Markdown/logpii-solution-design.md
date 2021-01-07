@@ -142,9 +142,9 @@ Add a base `AdaptiveRecognizer` class, from which the adaptive recognizers can i
 
 ```mermaid
 classDiagram
-    Recognzier <|-- AdaptiveRecognizer
-    AdaptiveRecognizer <|-- LuisAdaptiveRecognizer
-    AdaptiveRecognizer <|-- OrchestratorAdaptiveRecognizer
+    Recognizer <|-- LuisAdaptiveRecognizer
+    Recognizer <|-- OrchestratorAdaptiveRecognizer
+    Recognizer <|-- AdaptiveRecognizer
     AdaptiveRecognizer <|-- QnAMakerRecognizer
     AdaptiveRecognizer <|-- MockLuisRecognizer
     AdaptiveRecognizer <|-- CrossTrainedRecognizerSet
