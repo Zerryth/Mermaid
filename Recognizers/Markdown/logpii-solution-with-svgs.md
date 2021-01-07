@@ -31,7 +31,7 @@ In the SDK, we have `IRecognizer` and `Recognizer` that classes implement/derive
 #### `Recognizer` Class Diagram with `AdaptiveRecognizer`
 Add a base `AdaptiveRecognizer` class, from which the adaptive recognizers can inherit from and can gain `LogPersonalInformation` flag with a `FillRecognizerResultTelemetryProperties` method override to determine whether or not to log PII in telemetry.
 
-![recognizer-with-adaptiverecognizer-class-diagram](../Images/recognizer-with-adaptiverecognizer-class-diagram.svg "recognizer-with-adaptiverecognizer-class-diagram")
+![recognizer-with-adaptiverecognizer-class-diagram](../Images/recognizers-with-adaptiverecognizer-class-diagram.svg "recognizer-with-adaptiverecognizer-class-diagram")
 
 #### Sequence diagram illustrating the behavior of logging event.
 ![logging-telemetry-in-recognizers-sequence-diagram](../Images/logging-telemetry-in-recognizers-sequence-diagram.svg "logging-telemetry-in-recognizers-sequence-diagram")
