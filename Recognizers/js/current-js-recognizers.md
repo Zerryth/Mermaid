@@ -9,13 +9,15 @@ RecognizerConfiguration <|-- LuisAdaptiveRecognizerConfiguration : extends
 LuisAdaptiveRecognizerConfiguration <|-- LuisAdaptiveRecognizer : implements
 Recognizer <|-- LuisAdaptiveRecognizer : extends
 
-Recognizer <|-- QnAMakerRecognizer : extends
-QnAMakerRecognizerConfiguration <|-- QnAMakerRecognizer : implements
 RecognizerConfiguration <|-- QnAMakerRecognizerConfiguration : extends
+QnAMakerRecognizerConfiguration <|-- QnAMakerRecognizer : implements
+Recognizer <|-- QnAMakerRecognizer : extends
 
-Recognizer <|-- OrchestratorAdaptiveRecognizer : extends
 OrchestratorAdaptiveRecognizerConfiguration <|-- OrchestratorAdaptiveRecognizer : implements
 RecognizerConfiguration <|-- OrchestratorAdaptiveRecognizerConfiguration : implements
+Recognizer <|-- OrchestratorAdaptiveRecognizer : extends
+
+Configurable <|-- OrchestratorRecognizer : extends
 
 RecognizerConfiguration <|-- CrossTrainedRecognizerSetConfiguration : implements
 CrossTrainedRecognizerSetConfiguration <|-- CrossTrainedRecognizerSet : implements
@@ -37,6 +39,8 @@ RecognizerSetConfiguration <|-- RegexRecognizerConfiguration : implements
 Recognizer <|-- ChannelMentionEntityRecognizer : extends
 Recognizer <|-- EntityRecognizer : extends
 Recognizer <|-- ValueRecognizer : extends
+
+EntityRecognizer <|.. AllOtherEntitySubclasses
 
 class Configurable {
     <<abstract>>
@@ -95,11 +99,6 @@ class MultiLanguageRecognizerConfiguration {
     <<interface>>
     + languagePolicy
     + Record_Of_StringOrRecognizer recognizers
-}
-
-class RecognizerSetConfiguration {
-    <<interface>>
-    + Array_Of_StringOrRecognizer recognizers
 }
 
 class RegexRecognizerConfiguration {
