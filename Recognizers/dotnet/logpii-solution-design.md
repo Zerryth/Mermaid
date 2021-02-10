@@ -143,9 +143,9 @@ Add a base `AdaptiveRecognizer` class, from which the adaptive recognizers can i
 ```mermaid
 classDiagram
     Recognizer <|-- LuisAdaptiveRecognizer
-    Recognizer <|-- OrchestratorAdaptiveRecognizer
+    Recognizer <|-- QnAMakerRecognizer
     Recognizer <|-- AdaptiveRecognizer
-    AdaptiveRecognizer <|-- QnAMakerRecognizer
+    AdaptiveRecognizer <|-- OrchestratorAdaptiveRecognizer
     AdaptiveRecognizer <|-- MockLuisRecognizer
     AdaptiveRecognizer <|-- CrossTrainedRecognizerSet
     AdaptiveRecognizer <|-- ChannelMentionEntityRecognizer
